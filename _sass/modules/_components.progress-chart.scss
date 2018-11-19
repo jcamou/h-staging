@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    #PROGRESS-CHART
+\*------------------------------------*/
+
+.pc {
+  position                  : relative;
+  width                     : 100%;
+  border-radius             : 16px;
+  background-color          : $color__gray--light;
+  // margin-bottom             : 1em;
+}
+
+.pc--thin {
+  height                    : 12px;
+}
+
+.pc--thick {
+  height                    : 24px;
+}
+
+.pc__item-column {
+  height                    : inherit;
+  position                  : absolute;
+  top                       : 0;
+  left                      : 0;
+  background-color          : $color__blue--med;
+  border-bottom-left-radius : 14px;
+  border-top-left-radius    : 14px;
+
+}
+
+.pc__item-column--right {
+  height                    : inherit;
+  position                  : absolute;
+  top                       : 0;
+  right                     : 0;
+  background-color          : $color__orange--base;
+  border-bottom-right-radius: 14px;
+  border-top-right-radius   : 14px;
+
+}
+
+.pc__label-row {
+  display                   : block;
+  font-weight               : $font-weight--bold;
+}
+
+.pc__label-row--small {
+  font-size                 : 12px;
+}
+
+.pc__label-item {
+  display                   : inline-block;
+}
+
+.pc__label-item--name {
+  width                     : 55%;
+}
+
+.pc__background--orange {
+  background-color: $color__orange--base;
+}

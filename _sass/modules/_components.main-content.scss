@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #MAIN-CONTENT
+\*------------------------------------*/
+
+.main-content {
+  // margin-left: 250px;
+}
+
+.main-content__title-section {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+
+  @media print {
+    padding-top: 4rem !important;
+    page-break-after: avoid;
+  }
+}

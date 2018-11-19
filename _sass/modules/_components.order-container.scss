@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #ORDER-CONTAINER
+\*------------------------------------*/
+
+
+.order-container {
+  display      : block;
+  margin-bottom: 100px;
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}

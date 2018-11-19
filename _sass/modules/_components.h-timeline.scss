@@ -1,0 +1,91 @@
+/*------------------------------------*\
+    #H-TIMELINE
+\*------------------------------------*/
+
+.h-timeline__item {
+  padding-left: 35px;
+  border-left: 1px dashed $color__gray--med;
+  padding-bottom: 40px;
+
+  >p {
+    margin-bottom: 0;
+  }
+
+  &:last-of-type {
+    border-left-color: transparent;
+  }
+}
+
+.h-timeline__title-container {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.h-timeline__number {
+  position        : absolute;
+  left            : -50px;
+  text-align      : center;
+  background-color: white;
+  width           : 28px;
+  height          : 28px;
+  border          : 2px solid $color__blue--base;
+  font-size       : 14px;
+  border-radius   : 20px;
+  padding-top     : 2px;
+  font-weight     : $font-weight--med;
+  color           : $color__blue--base;
+
+}
+
+
+// Regular timeline
+// Used in hoth x report
+
+.timeline__item {
+  display: block;
+
+  &:last-of-type {
+    .timeline__text-container {
+      border-left-style: dashed;
+    }
+  }
+}
+
+.timeline__text-container {
+  position: relative;
+  display: inline-block;
+  width: 75%;
+  padding-left: 24px;
+  border-left: 2px solid $color__blue--base;
+  padding-bottom: 40px;
+
+    >p {
+      margin-bottom: 0;
+    }
+}
+
+.timeline__bubble {
+  position: absolute;
+  left: -9px;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $color__blue--base;
+  background-color: white;
+}
+
+.timeline__title {
+  color: $color__blue--dark;
+  font-weight: $font-weight--med;
+  line-height: 16px;
+  margin-bottom: .5em;
+}
+
+.timeline__date {
+  float: left;
+  width: 23%;
+  padding-right: 24px;
+  font-size: 12px;
+  font-weight: $font-weight--med;
+  color: $color__gray--dark;
+}

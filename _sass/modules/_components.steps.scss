@@ -1,0 +1,42 @@
+///*------------------------------------*\
+//    #STEPS
+//\*------------------------------------*/
+
+.step__number {
+  float        : left;
+  padding-right: 8px;
+  font-size    : 24px;
+  color        : $color__blue--base;
+  border-right : 1px solid $color__gray--med;
+}
+
+.step__description {
+  padding-top: 10px;
+  padding-left: 35px;
+}
+
+.step__divider-container {
+  position: relative;
+
+}
+
+.step__divider-heading {
+  position        : absolute;
+  top             : -9px;
+  background-color: $color__gray--background;
+  padding-right   : 16px;
+}
+
+.step__divider {
+  border-top: 1px dashed $color__gray--med;
+}
+
+.step__divider-container--nav {
+  .step__divider-heading {
+    background-color: $color__black--base;
+    color           : $color__gray--light;
+    font-size       : 10px;
+    padding-right   : 8px;
+    top             : -8px;
+  }
+}

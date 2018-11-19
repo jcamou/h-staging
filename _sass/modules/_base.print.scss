@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    #PRINT
+\*------------------------------------*/
+
+@media print {
+  * {
+    overflow: visible !important;
+  }
+
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  p:first-line,
+  div:first-line,
+  blockquote:first-line,
+  li:first-line {
+      // color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
+
+  .row {
+    overflow: visible !important;
+  }
+
+  .d-print--none {
+    display: none;
+  }
+
+  .col-print-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-print-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+
+  .col-print-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

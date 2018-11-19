@@ -1,0 +1,120 @@
+/*------------------------------------*\
+    #H-TABLES
+\*------------------------------------*/
+
+.h-tables {
+
+  thead {
+    font-size        : 10px;
+    color            : $color__gray--base;
+    text-transform: uppercase;
+
+    th {
+      padding-top    : 12px;
+      padding-bottom : 12px;
+      border-top: none;
+      border-bottom: 1px solid $color__gray--base;
+      cursor         : pointer;
+      transition: color $transition;
+
+      &:first-of-type {
+        padding-left : 16px;
+      }
+
+      &:last-of-type {
+        padding-right: 16px;
+      }
+
+      &:hover, &:focus {
+        color        : $color__blue--base;
+      }
+    }
+  }
+
+  tbody tr {
+    &:nth-child(odd) {
+      background-color: white;
+    }
+  }
+
+  td {
+    padding-top   : 12px;
+    padding-bottom: 12px;
+    font-size     : 12px;
+    line-height   : 1.5em;
+    font-weight   : 500;
+    color         : $color__gray--dark;
+    border-color  : $color__gray--light;
+
+    &:first-of-type {
+      padding-left   : 16px;
+    }
+
+    &:last-of-type {
+      padding-right  : 16px;
+    }
+  }
+
+  @media print {
+    page-break-inside: avoid;
+  }
+}
+
+.h-tables--simple {
+  border             : none;
+  box-shadow         : none;
+
+  thead {
+    font-size        : 12px;
+    border-color     : white;
+    th {
+      border-top     : none;
+      color: $color__gray--base;
+
+      &:first-of-type {
+        padding-left : 0;
+      }
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+  }
+
+  td { 
+    color            : $color__black--base;
+    border-color     : $color__gray--light;
+    padding-top      : 6px;
+    padding-bottom   : 6px;
+    font-size        : 12px;
+
+    &:first-of-type {
+      padding-left   : 0;
+    }
+
+    &:last-of-type {
+      padding-right  : 0;
+    }
+  }
+}
+
+.h-tables--dark {
+  background-color   : transparent;
+
+  thead {
+    color            : white;
+  }
+
+  td {
+    color            : white;
+    border-color     : white;
+  }
+
+}
+
+.h-tables__position {
+  float     : left;
+  width     : 20px;
+  text-align: center;
+
+}

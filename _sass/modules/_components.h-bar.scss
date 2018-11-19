@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    #H-BAR
+\*------------------------------------*/
+
+.h-bar__container {
+
+}
+
+.h-bar__row {
+  position     : relative;
+  border-bottom: 1px solid $color__gray--med;
+  height       : 30px;
+  line-height  : 30px;
+  margin-bottom: 3px;
+}
+
+.h-bar__row-title {
+  position    : absolute;
+  z-index     : 1;
+  float       : left;
+  padding-left: 4px;
+  font-size   : 12px;
+  font-weight : 500;
+}
+
+.h-bar__row-amount {
+  float: right;
+  font-size: 12px;
+  font-weight: $font-weight--bold;
+  color: $color__gray--dark;
+}
+
+.h-bar__background {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  background-color: $color__green--lime;
+  opacity: .5;
+}

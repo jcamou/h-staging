@@ -1,0 +1,65 @@
+/*------------------------------------*\
+    #TOC-NAV
+\*------------------------------------*/
+
+#tocNav {
+  display: block;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.toc-nav {
+  position: fixed;
+  top     : 175px;
+
+ @media screen and (max-width: 320px) {
+   .profile-pic {
+     width: 100px;
+     float: none;
+   }
+ }
+}
+
+.toc-nav__link {
+  display    : block;
+  line-height: 36px;
+  font-size  : 14px;
+  font-weight: $font-weight--med;
+  color      : $color__gray--base;
+  transition : color $transition;
+  cursor     : pointer;
+
+  &:hover, &:focus {
+    color: $color__black--base;
+    text-decoration: none;
+  }
+
+  .h-report & {
+    color      : $color__gray--base;
+
+    &:hover, &:focus {
+      color: $color__black--base;
+      text-decoration: none;
+    }
+  }
+}
+
+.toc-nav__dl-container {
+  border-top: 1px dashed $color__gray--med;
+  margin-top: 10px;
+  padding-top: 10px;
+
+  .material-icons {
+    padding-top: 1px;
+  }
+
+  a {
+    display: block;
+  }
+}

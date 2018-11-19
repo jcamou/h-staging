@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #ICONS
+\*------------------------------------*/
+
+.ui-icon {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.ui-icon__inline-link {
+  position: relative;
+  top: 5px;
+  margin-left: 2px;
+}
+
+.ui-icon__headline {
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}
+
+.ui-icon--20 {
+  height: 20px;
+  width: 20px;
+}
+
+.ui-icon--30 {
+  height: 30px;
+  width: 30px;
+}

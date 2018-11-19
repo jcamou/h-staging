@@ -1,0 +1,167 @@
+///*------------------------------------*\
+//    #BUTTONS
+//\*------------------------------------*/
+
+
+// BUTTONS
+.h-btn {
+  background-color: $color__gray--base;
+  padding         : 8px 24px;
+  font-size       : 12px;
+  font-weight     : $font-weight--med;
+  letter-spacing  : .5px;
+  color           : white;
+  border          : none;
+  cursor          : pointer;
+  border-radius   : 2px;
+  text-align: center;
+  transition      : all $transition;
+  box-shadow      : $box-shadow;
+
+  &:hover, &:focus {
+    background-color: $color__gray--dark;
+    text-decoration: none;
+  }
+
+  &:focus {
+      outline:        1px dotted white;
+      outline-offset: -4px;
+    }
+
+  &:active {
+    background-color: $color__black--base !important;
+  }
+}
+
+.h-btn--primary {
+  background-color: $color__red--base;
+  color           : white;
+
+  &:hover, &:focus {
+    color: white;
+    background-color: $color__red--dark;
+  }
+
+  &:active {
+    background-color: $color__red--darkest !important;
+  }
+
+  .h-report & {
+    background-color: $color__red--base;
+    color           : white;
+
+    &:hover, &:focus {
+      color: white;
+      background-color: $color__red--dark;
+    }
+
+    &:active {
+      background-color: $color__red--darkest !important;
+    }
+  }
+}
+
+.h-btn--blue {
+  background-color: $color__blue--base;
+  color           : white;
+
+  &:hover, &:focus {
+    background-color: $color__blue--dark;
+    color: white;
+  }
+
+  &:active {
+    background-color: darken($color__blue--base, 15%);
+    color: white;
+  }
+}
+
+.h-btn--red-inverse {
+  background-color: white;
+  border: 2px solid $color__red--base;
+  color           : $color__red--base;
+
+  &:hover, &:focus {
+    background-color: $color__red--dark;
+    color: white;
+  }
+
+  &:active {
+    background-color: $color__red--darkest !important;
+  }
+}
+
+.h-btn--green {
+  background-color: $color__green--base;
+  color           : white;
+
+  &:hover, &:focus {
+    background-color: darken($color__green--base, 10%);
+    color: white;
+  }
+
+  &:active {
+    background-color: darken($color__green--base, 15%);
+    color: white;
+  }
+}
+
+
+
+
+.h-btn--full-width {
+  display: block;
+  width: 100%;
+}
+
+.h-btn--husky {
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.h-btn--round {
+  border-radius: 20px;
+}
+
+// Button Links
+
+.btn-link {
+  font-size      : 12px;
+  text-decoration: none;
+  color          : $color__blue--base;
+  cursor         : pointer;
+  font-weight    : $font-weight--med;
+  transition     : color $transition;
+
+  &:hover, &:focus {
+    color        : darken($color__blue--base, 10%);
+  }
+}
+
+.h-btn__link--blue {
+  color: $color__blue--base;
+
+  &:hover, &:focus {
+    color: $color__blue--dark;
+    text-decoration: none;
+  }
+}
+
+.h-btn__link--red {
+  color: $color__red--base;
+
+  &:hover, &:focus {
+    color: $color__red--dark;
+    text-decoration: none;
+  }
+}
+
+.h-btn__link--gray {
+  color: $color__gray--base;
+
+  &:hover, &:focus {
+    color: $color__gray--dark;
+    text-decoration: none;
+  }
+}

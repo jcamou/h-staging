@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>notification__error--gray</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="overview-v2" transform="translate(-876.000000, -962.000000)" fill-rule="nonzero">
+            <g id="panel__anchor-text-profile" transform="translate(312.000000, 878.000000)">
+                <g id="success" transform="translate(564.000000, 84.000000)">
+                    <g id="notification__error--gray">
+                        <circle id="Oval" fill="#EDEDED" cx="20.5" cy="20.5" r="20.5"></circle>
+                        <rect id="Rectangle-15" fill="#9B9B9B" x="19" y="8" width="3" height="18.45" rx="1.5"></rect>
+                        <ellipse id="Oval-2" fill="#9B9B9B" cx="20.5" cy="31.5375" rx="1.5" ry="1.5375"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

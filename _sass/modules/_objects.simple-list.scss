@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    #SIMPLE-LIST
+\*------------------------------------*/
+
+.simple-list--no-dots {
+  list-style-type: none;
+  padding        : 0;
+  margin         : 0;
+}
+
+.simple-list--inline {
+  li {
+    display: inline;
+  }
+}
+
+.simple-list__seperator--dots {
+  li {
+    &:after { 
+      content       : " \00b7"; 
+      color         : $color__blue--base;
+      font-size     : 28px;
+      text-align    : center;
+      vertical-align: middle;
+      padding-left  : 6px;
+      padding-right : 2px;
+      display       : inline-block;
+
+      .h-report & {
+        color: $color__red--dark;
+      }
+    }
+
+    &:last-child {
+      &:after {
+        content: none;
+      }
+    }
+
+
+  }
+}
+
+.simple-list--left-border {
+  border-left : 3px solid;
+  padding-left: 18px;
+}
+
+.simple-list--border-blue {
+  border-color: $color__blue--base;
+}

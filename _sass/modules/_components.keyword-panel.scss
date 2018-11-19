@@ -1,0 +1,63 @@
+/*------------------------------------*\
+    #KEYWORD-PANEL
+\*------------------------------------*/
+
+.keyword-panel {
+  display         : flex;
+  justify-content: space-between;
+  position        : relative;
+  min-width       : 0;
+  word-wrap       : break-word;
+  background-color: white;
+  border          : 1px solid $color__gray--light;
+  border-radius   : 2px;
+  margin-bottom: 20px;
+  box-shadow      : 0px 3px 15px 1px rgba(0, 0, 0, 0.04);
+}
+
+.keyword-panel__keyword-container {
+  float  : left;
+  padding: 1em;
+  word-wrap: break-word;
+}
+
+.keyword-panel__position-container {
+  float      : right;
+  border-left: 1px solid $color__gray--light;
+  padding    : 1em;
+  text-align: center;
+  min-width: 107px;
+}
+
+.keyword-panel__keyword {
+  font-size: 16px;
+  font-weight: $font-weight--med;
+}
+
+.keyword-panel__url {
+  display      : block;
+  font-size    : 12px;
+  font-weight  : $font-weight--med;
+  margin-bottom: 8px;
+}
+
+.keyword-panel__change {
+  font-size: 24px;
+  color: $color__green--base;
+  font-weight: $font-weight--bold;
+}
+
+.keyword-panel__position-history-container {
+  display: block;
+  line-height: 12px;
+}
+
+.keyword-panel__position {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: $font-weight--med;
+}
+
+.keyword-panel__position--old {
+  display: inline-block;
+}

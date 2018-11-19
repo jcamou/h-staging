@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>notification__success</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="overview-v2" transform="translate(-876.000000, -1012.000000)" fill-rule="nonzero" stroke-width="3">
+            <g id="notification__success" transform="translate(876.000000, 1012.000000)">
+                <circle id="Oval" stroke="#5DE675" fill="#5DE675" cx="20.5" cy="20.5" r="19"></circle>
+                <polyline id="Path-4" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" points="9.03780419 22.0435739 16.019551 29.1493184 30.9353283 13.0091956"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

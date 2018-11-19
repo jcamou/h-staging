@@ -1,0 +1,112 @@
+/*------------------------------------*\
+    #BORDERED-PANEL
+\*------------------------------------*/
+
+.bordered-panel {
+  position        : relative;
+  display         : block;
+  text-decoration : none;
+  border          : 2px solid $color__gray--med;
+  background-color: transparent;
+  border-radius   : 4px;
+  padding         : 30px 20px;
+  transition      : all $transition;
+  color           : $color__black--base;
+
+  p {
+    line-height: 1.5em;
+  }
+  
+}
+
+.bordered-panel--hover {
+  cursor: pointer;
+  &:hover, &:focus {
+    border-color: $color__red--base;
+    background-color: white;
+    text-decoration: none;
+    color: $color__black--base;
+
+    .bordered-panel__name {
+      color: $color__red--base;
+    }
+  }
+}
+
+.bordered-panel--blue-border {
+  border-color: $color__blue--base;
+}
+
+.bordered-panel--green-border {
+  border-color: $color__green--base;
+}
+
+.bordered-panel--light-gray-border {
+  border-color: $color__gray--light;
+}
+
+.bordered-panel__name {
+  color: $color__black--base;
+  font-size: 14px;
+  font-weight: $font-weight--bold;
+  margin-bottom: 4px;
+  transition: color $transition;
+  text-decoration: none;
+}
+
+.border-panel--text-centered {
+  text-align: center;
+}
+
+.bordered-panel__img {
+  width: 48px;
+}
+
+.bordered-panel__img--75 {
+  width: 75px;
+}
+
+.bordered-panel__img--200 {
+  width: 200px;
+}
+
+.bordered-panel__text-pad--100 {
+  padding-left: 100px;
+}
+
+.bordered-panel__bg--white {
+  background-color: white;
+}
+
+.bordered-panel__link {
+  position           : relative;
+  background-image   : url('/assets/images/icons/icon__link.svg');
+  width              : 24px;
+  height             : 34px;
+  background-size    : contain;
+  background-repeat  : no-repeat;
+  background-position: 50%;
+  margin             : auto;
+  margin-bottom      : -7px;
+  z-index            : 999;
+
+  @media print {
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+// Needs a home
+.page-header__img {
+  float: left;
+  padding-top: 14px;
+}
+
+.page-header__text {
+  padding-left: 100px;
+}
+
+.icon__width--150 {
+  width: 150px;
+}
+
+

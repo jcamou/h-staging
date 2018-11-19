@@ -1,0 +1,69 @@
+/*------------------------------------*\
+    #HOTH-FORMS
+\*------------------------------------*/
+
+.hoth-form__label {
+  font-weight: $font-weight--bold;
+  color: $color__gray--dark;
+  font-size: 14px;
+}
+
+.h-form__input {
+  cursor: pointer;
+  border: 2px solid $color__gray--med !important;
+  border-radius: 2px !important;
+  transition: all $transition !important;
+  font-size: 14px !important; 
+  color: $color__black--base !important;
+
+  &:hover  {
+    border-color: $color__gray--base !important;
+  }
+
+  &:focus {
+    border-color: $color__blue--base !important;
+  }
+
+  &:active {
+    border-color: $color__blue--base !important;
+  }
+
+  // Old Bootstrap overrides
+  background-color: #ffffff;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  display: block !important;
+  margin-bottom: 0 !important;
+
+}
+
+.h-form__input--150 {
+  min-width: 150px;
+}
+
+.hoth-form__invalid-feedback {
+  color: $color__red--base;
+}
+
+.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
+  border-color: $color__red--base;
+}
+
+#orderSupportFormContainer {
+  display: none;
+}
+
+#publicSalesFormContainer {
+  display: none;
+
+}
+
+#publicSupportFormContainer {
+  display: none;
+}
+
+
+#supportTypeSelect {
+  display: block;
+}

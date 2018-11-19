@@ -1,0 +1,71 @@
+/*------------------------------------*\
+    #NOTICATIONS
+\*------------------------------------*/
+
+
+.notification__img-container {
+  float: left;
+}
+
+.notification__text-container {
+  padding-left: 60px;
+}
+
+.notification__img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+
+  .notification--success & {
+    background-image: url('../images/icons/notification__success.svg');
+  }
+  .notification--error & {
+    background-image: url('../images/icons/notification__error.svg');
+  }
+
+  .notification--error--gray & {
+    background-image: url('../images/icons/notification__error--gray.svg');
+  }
+
+  .notification--no-new & {
+    background-image: url('../images/icons/icon__notification--notifications.svg');
+  }
+
+  .notification--user & {
+    background-image: url('../images/icons/icon__notification--user.svg');
+  }
+
+  .notification--star & {
+    background-image: url('../images/icons/icon__notification--star.svg');
+  }
+
+  .notification--webby & {
+    background-image: url('../images/icons/icon__notification--webby.svg');
+  }
+
+  .notification--promo & {
+    background-image: url('../images/icons/icon__notification--promo.svg');
+  }
+
+  .notification--black-fri & {
+    background-image: url('../images/icons/icon__notification--black-fri.svg');
+  }
+}
+
+.notification--success {
+  strong {
+    color: #43c358;
+  }
+}
+
+.notification--error {
+  strong {
+    color: #ea5054;
+  }
+}
+
+.notification__position--middle {
+  margin-top: 25vh;
+}

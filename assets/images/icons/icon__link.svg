@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="31px" viewBox="0 0 16 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icon__link</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OG--Product-Breakdown" transform="translate(-492.000000, -510.000000)">
+            <g id="icon__link" transform="translate(488.000000, 506.000000)">
+                <circle id="Oval" stroke="#9B9B9B" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" cx="12" cy="29" r="5"></circle>
+                <g id="outline-arrow_downward-24px" transform="translate(12.000000, 12.000000) scale(1, -1) translate(-12.000000, -12.000000) ">
+                    <g id="Bounding_Boxes">
+                        <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    </g>
+                    <g id="Outline_1_" transform="translate(4.000000, 0.000000)" fill="#9B9B9B" fill-rule="nonzero">
+                        <polygon id="Shape" points="16 12 14.59 10.59 9 16.17 9 0 7 0 7 16.17 1.42 10.58 0 12 8 20"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
