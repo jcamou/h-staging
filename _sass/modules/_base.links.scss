@@ -5,21 +5,13 @@
 
 a {
   text-decoration: none;
-  color          : $color__blue--base;
+  color          : $blue--primary;
   cursor         : pointer;
   font-weight    : inherit;
   transition     : color $transition;
 
   &:hover, &:focus {
     color        : darken($color__blue--base, 10%);
-  }
-
-  .h-report & {
-    color: $color__red--base;
-
-    &:hover, &:focus {
-      color        : $color__red--darkest;
-    }
   }
 }
 
@@ -34,19 +26,37 @@ a {
 
 .link__action {
   font-size      : 14px;
-  color          : $color__blue--base;
+  color          : $blue--primary;
   font-weight    : $font-weight--med;
   text-decoration: none;
   border-bottom  : 1px solid transparent;
   transition     : all $transition;
 
   &.link__action--subtle {
-    color: $color__gray--base;
+    color: $grey--500;
   }
 
   &:hover, &:focus {
     text-decoration: none;
-    border-color        : darken($color__blue--base, 10%);
+    border-color        : $blue--700;
   }
 
+}
+
+.link__highlight {
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+.link__highlight--white {
+  background-color: white;
+  color           : $red--primary;
+  border-radius   : 2px;
+  transition      : all $transition;
+
+  &:hover, &:focus {
+    text-decoration : none;
+    background-color: rgba(255,255,255,.1);
+    color           : white;
+  }
 }

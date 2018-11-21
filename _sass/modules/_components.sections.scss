@@ -19,15 +19,54 @@ section {
   position: relative;
 }
 
-.section__bg--blue {
-  background-color: $color__blue--base;
+.section--big {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+
+.section__heading {
+  font-size: 36px;
+}
+
+/*
+# Backbground Colors 
+*/
+
+// Grey
+
+.section__grey--100 {
+  background-color: $grey--100;
+}
+
+// Red
+.section__red--500 {
+  background-color: $red--primary;
+  color           : white;
+}
+
+// Blue
+.section__blue--700 {
+  background-color: $blue--700;
   color: white;
 }
 
-.section__bg--gray {
-  // background-color: $color__gray--bg;
+
+// Purple
+.section__purple--400 {
+  background-color: $purple--400;
+  color           : white;
 }
 
-.section__bg--gray-2 {
-  // background-color: $color__gray--2;
+.section__bg-border {
+  border: 15px solid white;
+}
+
+// Background imgs 
+.section__bg--bubbes {
+
+  background-position: center right;
+  background-image: url(/assets/images/imgs/img__bubbles.svg);
+
+
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon__order-approval</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-461.000000, -3033.000000)">
+            <g id="section__timeline" transform="translate(455.000000, 2534.000000)">
+                <g id="item__order-approval" transform="translate(6.000000, 499.000000)">
+                    <g id="icon__order-approval">
+                        <circle id="Oval" stroke="#FFDAD9" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" cx="22" cy="22" r="19"></circle>
+                        <path d="M41,22 C41,11.5065898 32.4934102,3 22,3" id="Oval" stroke="#D4403B" stroke-width="2" fill-rule="nonzero"></path>
+                        <path d="M41,41 C41,30.5065898 32.4934102,22 22,22" id="Oval" stroke="#D4403B" stroke-width="2" fill-rule="nonzero" transform="translate(31.500000, 31.500000) scale(1, -1) translate(-31.500000, -31.500000) "></path>
+                        <path d="M22,41 C22,30.5065898 13.4934102,22 3,22" id="Oval" stroke="#D4403B" stroke-width="2" fill-rule="nonzero" transform="translate(12.500000, 31.500000) scale(-1, -1) translate(-12.500000, -31.500000) "></path>
+                        <g id="dividers" fill-rule="nonzero" stroke="#FFFFFF" stroke-linecap="square">
+                            <path d="M37.5,22 L43.1804104,22" id="Line-6"></path>
+                            <path d="M0.5,22 L6.18041039,22" id="Line-6"></path>
+                            <path d="M22,0.5 L22,7.02983026" id="Line-7"></path>
+                            <path d="M22,36.5 L22,43.0298303" id="Line-7"></path>
+                        </g>
+                        <g id="baseline-thumb_up-24px" transform="translate(10.000000, 10.000000)">
+                            <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                            <path d="M1,21 L5,21 L5,9 L1,9 L1,21 Z M23,10 C23,8.9 22.1,8 21,8 L14.69,8 L15.64,3.43 L15.67,3.11 C15.67,2.7 15.5,2.32 15.23,2.05 L14.17,1 L7.59,7.59 C7.22,7.95 7,8.45 7,9 L7,19 C7,20.1 7.9,21 9,21 L18,21 C18.83,21 19.54,20.5 19.84,19.78 L22.86,12.73 C22.95,12.5 23,12.26 23,12 L23,10 Z" id="Shape" fill="#D4403B" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

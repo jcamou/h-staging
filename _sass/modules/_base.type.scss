@@ -15,9 +15,10 @@
  h3,
  h4,
  h5 {
-  font-family  : $font-family;
-  font-weight  : 400;
-  color        : $color__black--base;
+  font-family: $font-family;
+  font-weight: 400;
+  color      : $grey--800;
+  line-height: 1.3em;
  }
 
  h1 {
@@ -27,6 +28,7 @@
 
  h2 {
   font-size    : 30px;
+  font-weight: $font-weight--extrabold;
  }
 
  h3 {

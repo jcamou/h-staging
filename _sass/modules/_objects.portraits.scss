@@ -1,0 +1,118 @@
+/*------------------------------------*\
+    #PORTRAITS
+\*------------------------------------*/
+
+.portrait {
+  background-size    : contain;
+  background-repeat  : no-repeat;
+  background-position: 50%;
+  height             : 100%;
+  width              : 100%;
+  max-height         : 120px;
+  max-width          : 120px;
+  border-radius      : 60px;
+  box-shadow         : 0px 3px 15px 4px rgba(0,0,0,.1);
+}
+
+.portrait--100 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.portrait--60 {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+
+.portrait__experts {
+  position         : absolute;
+  background-size  : contain;
+  background-repeat: no-repeat;
+  width            : 250px;
+  height           : 250px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.portrait__experts--left {
+  background-image: url("/assets/images/imgs/img__experts--left.png");
+  top             : -150;
+  left            : 50px;
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("/assets/images/imgs/img__experts--left@2x.png");
+  }
+}
+
+.portrait__experts--right {
+  background-image: url("/assets/images/imgs/img__experts--right.png");
+  bottom          : -150;
+  right           : 50px;
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("/assets/images/imgs/img__experts--right@2x.png");
+  }
+}
+
+
+// Team Members
+.portrait__ashley {
+  background-image: url("/assets/images/imgs/img__ashley.png");
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("/assets/images/imgs/img__ashley@2x.png");
+  }
+}
+
+.portrait__brooke {
+  background-image: url("/assets/images/imgs/img__brooke.png");
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("/assets/images/imgs/img__brooke@2x.png");
+  }
+}
+
+.portrait__jacob {
+  background-image: url("/assets/images/imgs/img__jacob.png");
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("/assets/images/imgs/img__jacob@2x.png");
+  }
+}
+
+.portrait__jake {
+  background-image: url("/assets/images/imgs/img__jake.png");
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("/assets/images/imgs/img__jake@2x.png");
+  }
+}
+
+.portrait__micaela {
+  background-image: url("/assets/images/imgs/img__micaela.png");
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("/assets/images/imgs/img__micaela@2x.png");
+  }
+}
+
+.portrait__steven {
+  background-image: url("/assets/images/imgs/img__steven.png");
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    background-image: url("/assets/images/imgs/img__steven@2x.png");
+  }
+}

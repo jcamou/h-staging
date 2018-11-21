@@ -22,6 +22,10 @@
  * Material-icons.......Size and color styles for material icons. 
  * Icons................Styles for all internal icons.
  * H-pill...............Styles for status pills.
+ * Highlight............Styles for text highlighting.
+ * Portraits............Styles for member portraits and profile pics.
+ * Dividers.............Styles for different hr dividers.
+ * Branding.............Styles for logos or any other branding asset.
  *
  * COMPONENTS
  * Panels...............Card-like panels used on ther dashboard.
@@ -47,6 +51,7 @@
  * HELPERS
  * Type.................Text helpers.
  * Sizing...............Utility classes for sizing.
+ * Spacing..............Utility classes for spacing.
  *
  * TEMP
  * Boostrap-Fillins.....Bootstrap 4 classes for backend.
@@ -83,6 +88,10 @@
 @import "modules/objects.material-icons";
 @import "modules/objects.icons";
 @import "modules/objects.h-pill";
+@import "modules/objects.highlight";
+@import "modules/objects.portraits";
+@import "modules/objects.dividers";
+@import "modules/objects.branding";
 
 
 /**
@@ -114,6 +123,7 @@
  */
 @import "modules/helpers.type";
 @import "modules/helpers.sizing";
+@import "modules/helpers.spacing";
 
 
 /**

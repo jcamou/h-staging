@@ -4,7 +4,7 @@
 
 .h-pill {
   display         : inline-block;
-  background-color: $color__gray--light;
+  background-color: $grey--200;
   font-size       : 10px;
   font-weight     : $font-weight--med;
   padding         : 2px 12px;
@@ -16,24 +16,22 @@
 
 }
 
-.h-pill--green {
-  background-color: $color__green--base;
+.h-pill--med {
+  font-size: 12px;
+  font-weight: $font-weight--bold;
+}
+
+.h-pill__green--500 {
+  background-color: $green--500;
   color: white;
 
 }
 
-.h-pill--red {
-  background-color: $color__red--base;
+.h-pill__red--500 {
+  background-color: $red--primary;
   color: white;
-
 }
 
-.h-pill--blue-light {
-  background-color: #c0e1ff;
-  color: #496176;
-}
-
-.h-pill--pink-light {
-  background-color: #e7bffb;
-  color: #654C78;
+.h-pill__border {
+  border: 2px solid white;
 }

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="555px" height="143px" viewBox="0 0 555 143" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>img__month-to-month</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="10"></circle>
+        <filter x="-120.0%" y="-105.0%" width="340.0%" height="340.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0837579257 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="10" cy="10" r="10"></circle>
+        <filter x="-120.0%" y="-105.0%" width="340.0%" height="340.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0837579257 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-5" cx="10" cy="10" r="10"></circle>
+        <filter x="-120.0%" y="-105.0%" width="340.0%" height="340.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0837579257 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-450.000000, -1658.000000)">
+            <g id="section__intro-close" transform="translate(450.000000, 1542.500000)">
+                <g id="img__month-to-month" transform="translate(0.000000, 115.000000)">
+                    <g id="month--2" transform="translate(190.000000, 0.500000)">
+                        <polyline id="shadow" stroke="#EDEDED" stroke-width="2" stroke-linecap="round" fill-rule="nonzero" points="47 2 47 61 64 61 64 87 85 87 85 117.024968 142 117"></polyline>
+                        <g id="blog-green" transform="translate(48.000000, 0.000000)" fill-rule="nonzero">
+                            <rect id="Rectangle" stroke="#464646" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="63" height="58"></rect>
+                            <rect id="Rectangle" fill="#EDEDED" x="2" y="2" width="61" height="6"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="34" width="43" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#70E7AF" x="11" y="21" width="43" height="9"></rect>
+                            <rect id="Rectangle" fill="#95F3C7" x="11" y="21" width="9" height="9"></rect>
+                            <rect id="Rectangle" fill="#464646" x="11" y="15" width="24" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="40" width="28" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#298EE9" x="41" y="40" width="13" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="46" width="9" height="2" rx="1"></rect>
+                        </g>
+                        <g id="blog" transform="translate(65.000000, 26.000000)" fill-rule="nonzero">
+                            <rect id="Rectangle" stroke="#464646" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="63" height="58"></rect>
+                            <rect id="Rectangle" fill="#EDEDED" x="2" y="2" width="61" height="6"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="27" width="43" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="41" y="21" width="13" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#464646" x="11" y="15" width="24" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="33" width="28" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#298EE9" x="11" y="21" width="28" height="2" rx="1"></rect>
+                        </g>
+                        <g id="video" transform="translate(86.000000, 56.000000)" fill-rule="nonzero">
+                            <rect id="Rectangle" stroke="#464646" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="63" height="58"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="47" width="10" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="41" width="43" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#464646" x="11" y="35" width="24" height="2" rx="1"></rect>
+                            <g transform="translate(11.000000, 14.000000)">
+                                <rect id="Rectangle" fill="#D4403B" x="0" y="0" width="43" height="16"></rect>
+                                <polygon id="Path-5" fill="#FFFFFF" points="19 5 19 11 25.0015259 7.99119715"></polygon>
+                            </g>
+                            <rect id="header" fill="#EDEDED" x="2" y="2" width="61" height="6"></rect>
+                        </g>
+                        <g id="icon__more" transform="translate(140.000000, 105.000000)" fill-rule="nonzero">
+                            <g id="Oval">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <circle stroke="#298EE9" stroke-width="2" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" cx="10" cy="10" r="9"></circle>
+                            </g>
+                            <rect id="Rectangle" fill="#298EE9" x="9" y="6" width="2" height="8" rx="1"></rect>
+                            <rect id="Rectangle" fill="#298EE9" transform="translate(10.000000, 10.000000) rotate(90.000000) translate(-10.000000, -10.000000) " x="9" y="6" width="2" height="8" rx="1"></rect>
+                        </g>
+                        <g id="calendar__2">
+                            <polygon id="Fill-1" fill="#FFFFFF" points="1 35 35 35 35 1 1 1"></polygon>
+                            <path d="M0,36 L36,36 L36,0 L0,0 L0,36 Z M2,33.999 L34,33.999 L34,2 L2,2 L2,33.999 Z" id="Fill-2" fill="#464646"></path>
+                            <polygon id="Fill-3" fill="#E1443D" points="2 10 34 10 34 2 2 2"></polygon>
+                            <path d="M4,32 L32,32 L32,12 L4,12 L4,32 Z M5,31 L31,31 L31,13 L5,13 L5,31 Z" id="Fill-4" fill="#EDEDED"></path>
+                            <path d="M11.5,13 L11.5,32" id="Stroke-5" stroke="#EDEDED"></path>
+                            <path d="M25.5,13 L25.5,32" id="Stroke-6" stroke="#EDEDED"></path>
+                            <path d="M18.5,13 L18.5,32" id="Stroke-7" stroke="#EDEDED"></path>
+                            <path d="M4.5,17.5 L31.5,17.5" id="Stroke-8" stroke="#EDEDED"></path>
+                            <path d="M4.5,22.5 L31.5,22.5" id="Stroke-9" stroke="#EDEDED"></path>
+                            <path d="M4.5,27.5 L31.5,27.5" id="Stroke-10" stroke="#EDEDED"></path>
+                        </g>
+                    </g>
+                    <g id="month--3" transform="translate(380.000000, 0.500000)">
+                        <polyline id="shadow" stroke="#EDEDED" stroke-width="2" stroke-linecap="round" fill-rule="nonzero" points="47 2 47 61 64 61 64 87 85 87 85 117.024968 142 117"></polyline>
+                        <g id="blog__purple" transform="translate(48.000000, 0.000000)" fill-rule="nonzero">
+                            <rect id="Rectangle" stroke="#464646" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="63" height="58"></rect>
+                            <rect id="Rectangle" fill="#EDEDED" x="2" y="2" width="61" height="6"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="34" width="43" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#B3B0EF" x="11" y="21" width="43" height="9"></rect>
+                            <rect id="Rectangle" fill="#464646" x="11" y="15" width="24" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="40" width="28" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#298EE9" x="41" y="40" width="13" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="46" width="9" height="2" rx="1"></rect>
+                        </g>
+                        <g id="blog__red" transform="translate(65.000000, 26.000000)" fill-rule="nonzero">
+                            <rect id="Rectangle" stroke="#464646" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="63" height="58"></rect>
+                            <g id="video" transform="translate(11.000000, 27.000000)">
+                                <rect id="Rectangle" fill="#D4403B" x="0" y="0" width="43" height="16"></rect>
+                                <polygon id="Path-5" fill="#FFFFFF" points="19 5 19 11 25.0015259 7.99119715"></polygon>
+                            </g>
+                            <rect id="Rectangle" fill="#EDEDED" x="2" y="2" width="61" height="6"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="47" width="24" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="41" y="21" width="13" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#464646" x="11" y="15" width="24" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#298EE9" x="11" y="21" width="28" height="2" rx="1"></rect>
+                        </g>
+                        <g id="blog__blue" transform="translate(86.000000, 56.000000)" fill-rule="nonzero">
+                            <rect id="Rectangle" stroke="#464646" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="63" height="58"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="42" width="13" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="33" y="36" width="21" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#464646" x="11" y="30" width="24" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#298EE9" x="11" y="36" width="20" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#EDEDED" x="2" y="2" width="61" height="6"></rect>
+                            <rect id="Rectangle" fill="#298EE9" x="2" y="8" width="61" height="16"></rect>
+                        </g>
+                        <g id="icon__more" transform="translate(140.000000, 105.000000)" fill-rule="nonzero">
+                            <g id="Oval">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <circle stroke="#298EE9" stroke-width="2" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" cx="10" cy="10" r="9"></circle>
+                            </g>
+                            <rect id="Rectangle" fill="#298EE9" x="9" y="6" width="2" height="8" rx="1"></rect>
+                            <rect id="Rectangle" fill="#298EE9" transform="translate(10.000000, 10.000000) rotate(90.000000) translate(-10.000000, -10.000000) " x="9" y="6" width="2" height="8" rx="1"></rect>
+                        </g>
+                        <g id="calendar--3">
+                            <polygon id="Fill-1" fill="#FFFFFF" points="1 35 35 35 35 1 1 1"></polygon>
+                            <path d="M0,36 L36,36 L36,0 L0,0 L0,36 Z M2,33.999 L34,33.999 L34,2 L2,2 L2,33.999 Z" id="Fill-2" fill="#464646"></path>
+                            <polygon id="Fill-3" fill="#E1443D" points="2 10 34 10 34 2 2 2"></polygon>
+                            <path d="M4,32 L32,32 L32,12 L4,12 L4,32 Z M5,31 L31,31 L31,13 L5,13 L5,31 Z" id="Fill-4" fill="#EDEDED"></path>
+                            <path d="M11.5,13 L11.5,32" id="Stroke-5" stroke="#EDEDED"></path>
+                            <path d="M25.5,13 L25.5,32" id="Stroke-6" stroke="#EDEDED"></path>
+                            <path d="M18.5,13 L18.5,32" id="Stroke-7" stroke="#EDEDED"></path>
+                            <path d="M4.5,17.5 L31.5,17.5" id="Stroke-8" stroke="#EDEDED"></path>
+                            <path d="M4.5,22.5 L31.5,22.5" id="Stroke-9" stroke="#EDEDED"></path>
+                            <path d="M4.5,27.5 L31.5,27.5" id="Stroke-10" stroke="#EDEDED"></path>
+                        </g>
+                    </g>
+                    <g id="month--1" transform="translate(0.000000, 0.500000)">
+                        <polyline id="shadow" stroke="#EDEDED" stroke-width="2" stroke-linecap="round" fill-rule="nonzero" points="47 2 47 61 64 61 64 87 85 87 85 117.024968 142 117"></polyline>
+                        <g id="blog__purple" transform="translate(48.000000, 0.000000)" fill-rule="nonzero">
+                            <rect id="Rectangle" stroke="#464646" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="63" height="58"></rect>
+                            <rect id="Rectangle" fill="#EDEDED" x="2" y="2" width="61" height="6"></rect>
+                            <rect id="Rectangle" fill="#808080" x="31" y="21" width="23" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#464646" x="11" y="15" width="24" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="31" y="33" width="23" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="39" width="43" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="45" width="12" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#298EE9" x="31" y="27" width="11" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="44" y="27" width="10" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#8681EC" x="11" y="21" width="16" height="14"></rect>
+                        </g>
+                        <g id="blog__blue" transform="translate(65.000000, 26.000000)" fill-rule="nonzero">
+                            <rect id="Rectangle" stroke="#464646" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="63" height="58"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="43" width="28" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#84BFF4" x="11" y="27" width="43" height="12"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="21" width="43" height="2" rx="1"></rect>
+                            <rect id="title" fill="#464646" x="11" y="15" width="24" height="2" rx="1"></rect>
+                            <rect id="header" fill="#EDEDED" x="2" y="2" width="61" height="6"></rect>
+                        </g>
+                        <g id="blog__green" transform="translate(86.000000, 56.000000)" fill-rule="nonzero">
+                            <rect id="Rectangle" stroke="#464646" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="63" height="58"></rect>
+                            <rect id="Rectangle" fill="#EDEDED" x="2" y="2" width="61" height="6"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="34" width="43" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#70E7AF" x="11" y="21" width="43" height="9"></rect>
+                            <rect id="Rectangle" fill="#95F3C7" x="11" y="21" width="9" height="9"></rect>
+                            <rect id="Rectangle" fill="#464646" x="11" y="15" width="24" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="40" width="28" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#298EE9" x="41" y="40" width="13" height="2" rx="1"></rect>
+                            <rect id="Rectangle" fill="#808080" x="11" y="46" width="9" height="2" rx="1"></rect>
+                        </g>
+                        <g id="icon__more" transform="translate(140.000000, 105.000000)" fill-rule="nonzero">
+                            <g id="Oval">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <circle stroke="#298EE9" stroke-width="2" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" cx="10" cy="10" r="9"></circle>
+                            </g>
+                            <rect id="Rectangle" fill="#298EE9" x="9" y="6" width="2" height="8" rx="1"></rect>
+                            <rect id="Rectangle" fill="#298EE9" transform="translate(10.000000, 10.000000) rotate(90.000000) translate(-10.000000, -10.000000) " x="9" y="6" width="2" height="8" rx="1"></rect>
+                        </g>
+                        <g id="calendar--1">
+                            <polygon id="Fill-1" fill="#FFFFFF" points="1 35 35 35 35 1 1 1"></polygon>
+                            <path d="M0,36 L36,36 L36,0 L0,0 L0,36 Z M2,33.999 L34,33.999 L34,2 L2,2 L2,33.999 Z" id="Fill-2" fill="#464646"></path>
+                            <polygon id="Fill-3" fill="#E1443D" points="2 10 34 10 34 2 2 2"></polygon>
+                            <path d="M4,32 L32,32 L32,12 L4,12 L4,32 Z M5,31 L31,31 L31,13 L5,13 L5,31 Z" id="Fill-4" fill="#EDEDED"></path>
+                            <path d="M11.5,13 L11.5,32" id="Stroke-5" stroke="#EDEDED"></path>
+                            <path d="M25.5,13 L25.5,32" id="Stroke-6" stroke="#EDEDED"></path>
+                            <path d="M18.5,13 L18.5,32" id="Stroke-7" stroke="#EDEDED"></path>
+                            <path d="M4.5,17.5 L31.5,17.5" id="Stroke-8" stroke="#EDEDED"></path>
+                            <path d="M4.5,22.5 L31.5,22.5" id="Stroke-9" stroke="#EDEDED"></path>
+                            <path d="M4.5,27.5 L31.5,27.5" id="Stroke-10" stroke="#EDEDED"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

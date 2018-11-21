@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon--campaign-start</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-462.000000, -3212.000000)">
+            <g id="section__timeline" transform="translate(455.000000, 2534.000000)">
+                <g id="item__campaign-start" transform="translate(7.000000, 678.000000)">
+                    <g id="icon--campaign-start">
+                        <circle id="Oval" stroke="#D4403B" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" cx="22" cy="22" r="19"></circle>
+                        <g id="dividers" fill-rule="nonzero" stroke="#FFFFFF" stroke-linecap="square">
+                            <path d="M37.5,22 L43.1804104,22" id="Line-6"></path>
+                            <path d="M0.5,22 L6.18041039,22" id="Line-6"></path>
+                            <path d="M22,0.5 L22,7.02983026" id="Line-7"></path>
+                            <path d="M22,36.5 L22,43.0298303" id="Line-7"></path>
+                        </g>
+                        <g id="baseline-trending_up-24px" transform="translate(10.000000, 10.000000)">
+                            <polygon id="Path" fill="#D4403B" points="16 6 18.29 8.29 13.41 13.17 9.41 9.17 2 16.59 3.41 18 9.41 12 13.41 16 19.71 9.71 22 12 22 6"></polygon>
+                            <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

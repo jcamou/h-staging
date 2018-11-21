@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon--program-onboarding</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-461.000000, -2852.000000)">
+            <g id="section__timeline" transform="translate(455.000000, 2534.000000)">
+                <g id="item__program-onboarding" transform="translate(6.000000, 318.000000)">
+                    <g id="icon--program-onboarding">
+                        <circle id="Oval" stroke="#FFDAD9" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" cx="22" cy="22" r="19"></circle>
+                        <path d="M41,22 C41,11.5065898 32.4934102,3 22,3" id="Oval" stroke="#D4403B" stroke-width="2" fill-rule="nonzero"></path>
+                        <path d="M41,41 C41,30.5065898 32.4934102,22 22,22" id="Oval" stroke="#D4403B" stroke-width="2" fill-rule="nonzero" transform="translate(31.500000, 31.500000) scale(1, -1) translate(-31.500000, -31.500000) "></path>
+                        <g id="baseline-call-24px" transform="translate(10.000000, 10.000000)">
+                            <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                            <path d="M20.01,15.38 C18.78,15.38 17.59,15.18 16.48,14.82 C16.13,14.7 15.74,14.79 15.47,15.06 L13.9,17.03 C11.07,15.68 8.42,13.13 7.01,10.2 L8.96,8.54 C9.23,8.26 9.31,7.87 9.2,7.52 C8.83,6.41 8.64,5.22 8.64,3.99 C8.64,3.45 8.19,3 7.65,3 L4.19,3 C3.65,3 3,3.24 3,3.99 C3,13.28 10.73,21 20.01,21 C20.72,21 21,20.37 21,19.82 L21,16.37 C21,15.83 20.55,15.38 20.01,15.38 Z" id="Path" fill="#D4403B"></path>
+                        </g>
+                        <g id="dividers" fill-rule="nonzero" stroke="#FFFFFF" stroke-linecap="square">
+                            <path d="M37.5,22 L43.1804104,22" id="Line-6"></path>
+                            <path d="M0.5,22 L6.18041039,22" id="Line-6"></path>
+                            <path d="M22,0.5 L22,7.02983026" id="Line-7"></path>
+                            <path d="M22,36.5 L22,43.0298303" id="Line-7"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
