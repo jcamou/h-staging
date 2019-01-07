@@ -2,10 +2,19 @@
     #HOTH-FORMS
 \*------------------------------------*/
 
-.hoth-form__label {
+.form-group {
+  position: relative;
+}
+
+.h-form__label {
   font-weight: $font-weight--bold;
   color: $color__gray--dark;
   font-size: 14px;
+}
+
+.h-form__label-description {
+  font-size: 12px;
+  font-weight: $font-weight--regular;
 }
 
 .h-form__input {
@@ -29,12 +38,12 @@
   }
 
   // Old Bootstrap overrides
-  background-color: #ffffff;
+  background-color  : #ffffff;
   -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  display: block !important;
-  margin-bottom: 0 !important;
+  -moz-box-shadow   : none !important;
+  box-shadow        : none !important;
+  display           : block !important;
+  margin-bottom     : 0 !important;
 
 }
 
@@ -50,20 +59,22 @@
   border-color: $color__red--base;
 }
 
-#orderSupportFormContainer {
-  display: none;
+.h-form__input-icon {
+  position           : absolute;
+  display            : inline-block;
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  width              : 18px;
+  height             : 18px;
+  bottom: 10px;
+  right: 10px;
 }
 
-#publicSalesFormContainer {
-  display: none;
-
+.h-form__input-icon--correct {
+  background-image: url('../images/icons/icon__correct.svg');
 }
 
-#publicSupportFormContainer {
-  display: none;
-}
-
-
-#supportTypeSelect {
-  display: block;
+.h-form__input-icon--wrong {
+  background-image: url('../images/icons/icon__wrong.svg');
 }

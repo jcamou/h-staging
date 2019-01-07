@@ -1,0 +1,44 @@
+---
+layout: default
+title: Sign Up
+---
+
+<div class="container">
+  <div class="row justify-content-center mb-5">
+      <div class="col-sm-12 col-md-8 col-lg-6">
+        <h1>Welcome to The HOTH</h1>
+        <div class="text__font-size--14 mb-1">Lets get you a free account and start ranking in the search results.</div>
+        <div class="text__font-size--14">Already have an account? <a href="#" class="text--bold">Log in.</a></div>
+      </div>
+    </div>
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-8 col-lg-6">
+      <form class="needs-validation mb-5" novalidate>
+        <div class="form-group">
+          <label for="fname" class="h-form__label">Full Name</label>
+          <input type="text" class="form-control h-form__input" name="fname" id="fname" placeholder="Enter John Smith" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="h-form__label">Email</label>
+          <input type="email" class="form-control h-form__input" name="email" id="email" placeholder="email@domain.com" required><i class="h-form__input-icon h-form__input-icon--wrong"></i>
+        </div>
+
+        <div class="form-group">
+          <label for="signUpPassword" class="h-form__label">Password</label>
+          <input type="password" class="form-control h-form__input" name="password" id="password" placeholder="Create your password" required>
+        </div>
+
+        <div class="form-group mb-5">
+          <label for="phone" class="h-form__label">
+            Phone Number
+          <div class="h-form__label-description">We'll never give it out</div></label>
+
+          <input type="tel" class="form-control h-form__input" id="phone" name="phone" placeholder="Phone Number" required>
+        </div>
+
+        <button type="submit" class="h-btn btn-primary h-btn--primary">Sign Up Now</button>
+      </form>
+    </div>
+  </div>
+</div>

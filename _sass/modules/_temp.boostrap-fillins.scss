@@ -1,0 +1,249 @@
+.text-center {
+    text-align: center!important;
+}
+
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+
+.align-middle {
+    vertical-align: middle!important;
+}
+
+.d-inline-block {
+    display: inline-block!important;
+}
+
+.float-left {
+    float: left!important;
+}
+
+.float-right {
+    float: right!important;
+}
+
+.p-0 {
+    padding: 0!important;
+}
+
+.pt-4, .py-4 {
+    padding-top: 1.5rem!important;
+}
+
+.pt-5, .py-5 {
+    padding-top: 3rem!important;
+}
+
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+
+.mb-1, .my-1 {
+    margin-bottom: .25rem!important;
+}
+
+.mb-2, .my-2 {
+    margin-bottom: .5rem!important;
+}
+
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem!important;
+}
+
+.mb-5, .my-5 {
+    margin-bottom: 3rem!important;
+}
+
+.mt-1, .my-1 {
+    margin-top: .25rem!important;
+}
+
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+
+.mr-2, .mx-2 {
+    margin-right: .5rem!important;
+}
+
+.mr-3, .mx-3 {
+    margin-right: 1rem!important;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+
+.align-self-end {
+    -ms-flex-item-align: end!important;
+    align-self: flex-end!important;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+.pl-sm-5, .px-sm-5 {
+    padding-left: 3rem!important;
+}
+  .col-sm-12 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+}
+
+@media (min-width: 992px) {
+.pl-lg-0, .px-lg-0 {
+    padding-left: 0!important;
+}
+
+.col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-lg-5 {
+      -ms-flex: 0 0 41.666667%;
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
+  }
+
+.col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-lg-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.col-lg-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+}
+
+.form-control {
+    display: block;
+    width: 100% !important;
+    height: calc(2.25rem + 2px) !important;
+    padding: .375rem .75rem !important;
+    font-size: 1rem;
+    line-height: 1.5 !important;
+    background-color: #fff;
+    background-clip: padding-box;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.custom-select.is-invalid~.invalid-feedback, .custom-select.is-invalid~.invalid-tooltip, .form-control.is-invalid~.invalid-feedback, .form-control.is-invalid~.invalid-tooltip, .was-validated .custom-select:invalid~.invalid-feedback, .was-validated .custom-select:invalid~.invalid-tooltip, .was-validated .form-control:invalid~.invalid-feedback, .was-validated .form-control:invalid~.invalid-tooltip {
+    display: block;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.hoth-form__invalid-feedback {
+    color: #E1443D;
+}
+
+textarea.form-control {
+    height: auto !important;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+
+// .wrapper {
+//   box-sizing: border-box;
+
+//   *, *:before, *:after {
+//   box-sizing: inherit;
+// }
+// }
