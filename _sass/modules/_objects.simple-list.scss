@@ -49,3 +49,39 @@
 .simple-list--border-blue {
   border-color: $color__blue--base;
 }
+
+
+.simple-list__ol {
+  list-style: none;
+  counter-reset: h-counter;
+}
+
+.simple-list__ol li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 1em;
+  counter-increment: h-counter;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: counter(h-counter) ". ";
+    color: $grey--700;
+    font-weight: $font-weight--bold;
+
+  }
+}
+
+.simple-list__sub-list {
+  list-style: none;
+  counter-reset: h-counter--alpha;
+
+  li {
+    counter-increment: h-counter--alpha;
+
+    &:before {
+      content: counter(h-counter--alpha, lower-alpha) ". ";
+    }
+  }
+}

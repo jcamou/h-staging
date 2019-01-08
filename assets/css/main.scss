@@ -4,7 +4,8 @@
  * CONTENTS
  *
  * SETTINGS
- * Global...............Globally-available variables and config.
+ * Global..................Globally-available variables and config.
+ * Global--Order-Reports...Globally-available variables and config for Order Reports.
  * Colors...............Manage our color palette in isolation.
  *
  * TOOLS
@@ -61,7 +62,8 @@
  * #SETTINGS
  */
 @import "modules/settings.colors";
-@import "modules/settings.global";
+// @import "modules/settings.global";
+@import "modules/settings.global--order-reports";
 
 
 

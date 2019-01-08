@@ -22,3 +22,16 @@
   background-color: $purple--500;
   color: white;
 }
+
+
+.panel__title {
+  font-size       : 18px;
+  margin-bottom   : 16px;
+}
+
+.panel__metric-heading {
+  font-size    : 12px;
+  font-weight  : $font-weight--med;
+  color        : $color__gray--dark;
+  margin-bottom: 4px;
+}

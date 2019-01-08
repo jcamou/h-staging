@@ -11,6 +11,14 @@ html, body {
 
 }
 
+body {
+  background-color: #FBFBFB;
+  
+  @media print {
+    background-color: white;
+  }
+}
+
 html {
   box-sizing: border-box;
 }
