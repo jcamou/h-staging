@@ -48,6 +48,7 @@
  * Attachment-panel.....Panels with linkable items.
  * Order-container......Styles for order summaries and containers.
  * Keyword-panel........Panels for keyword changes.
+ * Text-panel...........Top bordered panel to show text. Usually for the user to do somehting with. 
  *
  * HELPERS
  * Type.................Text helpers.
@@ -118,6 +119,7 @@
 @import "modules/components.attachment-panel";
 @import "modules/components.order-container";
 @import "modules/components.keyword-panel";
+@import "modules/components.text-panel";
 
 
 /**

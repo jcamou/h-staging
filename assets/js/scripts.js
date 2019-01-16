@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     var organicTrafficData = [
                         {x: new Date(2018, 10, 10), y: 322 },
                         {x: new Date(2018, 09, 15), y: 299 },
