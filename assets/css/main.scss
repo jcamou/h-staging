@@ -27,6 +27,7 @@
  * Portraits............Styles for member portraits and profile pics.
  * Dividers.............Styles for different hr dividers.
  * Branding.............Styles for logos or any other branding asset.
+ * Range................Styles for slider input.
  *
  * COMPONENTS
  * Panels...............Card-like panels used on ther dashboard.
@@ -49,6 +50,10 @@
  * Order-container......Styles for order summaries and containers.
  * Keyword-panel........Panels for keyword changes.
  * Text-panel...........Top bordered panel to show text. Usually for the user to do somehting with. 
+ * Article..............Article overlay styles.
+ * Card.................Overriding styles for card component.
+ * Modals...............Overriding styles for modal component.
+ * Price-panel..........Panel that contains order info and estimated price.
  *
  * HELPERS
  * Type.................Text helpers.
@@ -57,14 +62,15 @@
  *
  * TEMP
  * Boostrap-Fillins.....Bootstrap 4 classes for backend.
+ * Marketing............Styles to help out Bobby.
  */
 
 /**
  * #SETTINGS
  */
 @import "modules/settings.colors";
-// @import "modules/settings.global";
-@import "modules/settings.global--order-reports";
+@import "modules/settings.global";
+// @import "modules/settings.global--order-reports";
 
 
 
@@ -95,6 +101,8 @@
 @import "modules/objects.portraits";
 @import "modules/objects.dividers";
 @import "modules/objects.branding";
+@import "modules/objects.video-container";
+@import "modules/objects.range";
 
 
 /**
@@ -119,7 +127,10 @@
 @import "modules/components.attachment-panel";
 @import "modules/components.order-container";
 @import "modules/components.keyword-panel";
-@import "modules/components.text-panel";
+@import "modules/components.article";
+@import "modules/components.card";
+@import "modules/components.modals";
+@import "modules/components.price-panel";
 
 
 /**
@@ -133,7 +144,7 @@
 /**
  * #TEMPS
  */
-
+// @import "modules/temp.marketing";
 
 
 

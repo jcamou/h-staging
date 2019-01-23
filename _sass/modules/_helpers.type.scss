@@ -113,6 +113,10 @@
   line-height: 26px;
 }
 
+.text__lh--36 {
+  line-height: 36px;
+}
+
 .text__lh--38 {
   line-height: 38px;
 }
@@ -134,12 +138,31 @@
   color: $color__gray--med;
 }
 
-.text__color--grey--700 {
+.text__grey--500 {
+  color: $grey--500;
+}
+
+.text__grey--600 {
+  color: $grey--600;
+}
+
+
+.text__grey--700 {
   color: $grey--700;
 }
 
 .text__color--orange {
   color         : $color__orange--base;
+}
+
+// Blue
+
+.text__blue--500 {
+  color: $blue--primary;
+}
+
+.text__blue--700 {
+  color: $blue--700;
 }
 
 .text__color--blue {
@@ -148,6 +171,10 @@
 
 .text__color--blue-dark {
   color         : $color__blue--dark;
+}
+
+.text__green--600 {
+  color: $green--600;
 }
 
 .text__color--green {

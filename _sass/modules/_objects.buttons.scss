@@ -4,13 +4,13 @@
 
 
 // BUTTONS
-.h-btn {
-  background-color: $color__gray--base;
+.h-btn, .btn {
+  background-color: $grey--200;
+  color           : $grey--800;
   padding         : 8px 24px;
   font-size       : 12px;
   font-weight     : $font-weight--med;
   letter-spacing  : .5px;
-  color           : white;
   border          : none;
   cursor          : pointer;
   border-radius   : 2px;
@@ -19,7 +19,8 @@
   box-shadow      : $box-shadow;
 
   &:hover, &:focus {
-    background-color: $color__gray--dark;
+    background-color: $grey--700;
+    color: white;
     text-decoration: none;
   }
 
@@ -29,21 +30,25 @@
     }
 
   &:active {
-    background-color: $color__black--base !important;
+    background-color: $grey--800 !important;
+    color: white;
   }
 }
 
-.h-btn--primary {
-  background-color: $color__red--base;
+
+
+.h-btn--primary, .btn--primary {
+  background-color: $blue--primary;
   color           : white;
 
   &:hover, &:focus {
+    background-color: $blue--600;
     color: white;
-    background-color: $color__red--dark;
   }
 
   &:active {
-    background-color: $color__red--darkest !important;
+    background-color: $blue--700;
+    color: white;
   }
 
   .h-report & {
@@ -58,6 +63,21 @@
     &:active {
       background-color: $color__red--darkest !important;
     }
+  }
+}
+
+.btn--red {
+  background-color: $red--primary;
+  color: white;
+
+  &:hover, &:focus {
+    background-color: $red--600;
+    color: white;
+  }
+
+  &:active {
+    background-color: $red--700;
+    color: white;
   }
 }
 
@@ -109,7 +129,7 @@
 
 
 
-.h-btn--full-width {
+.h-btn--full-width, .btn--full-width {
   display: block;
   width: 100%;
 }
@@ -165,3 +185,30 @@
     text-decoration: none;
   }
 }
+
+
+.h-btn-group {
+  a, form, .btn {
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.h-btn-group__sm--full-width {
+  @media screen and (max-width: 767px) {
+      form {
+        display: block !important;
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .btn {
+        width: 100%;
+        display: block;
+        margin-bottom: 1em;
+      }
+    }
+  }

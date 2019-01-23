@@ -1,3 +1,7 @@
+function rangeGetValue(myValue){
+  document.getElementById("currentValue").innerHTML = myValue;
+}
+
 $(document).ready(function() {
 
     var organicTrafficData = [

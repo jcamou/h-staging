@@ -11,7 +11,7 @@
   border-radius   : 4px;
   padding         : 30px 20px;
   transition      : all $transition;
-  color           : $color__black--base;
+  color           : $grey--700;
 
   p {
     line-height: 1.5em;
@@ -21,14 +21,15 @@
 
 .bordered-panel--hover {
   cursor: pointer;
+
   &:hover, &:focus {
-    border-color: $color__red--base;
+    border-color    : $red--primary;
     background-color: white;
-    text-decoration: none;
-    color: $color__black--base;
+    text-decoration : none;
+    color           : $grey--700;
 
     .bordered-panel__name {
-      color: $color__red--base;
+      color: $red--primary;
     }
   }
 }
@@ -50,6 +51,10 @@
 
 .bordered-panel__green--300 {
   border-color: $green--300;
+}
+
+.bordered-panel__green--600 {
+  border-color: $green--600;
 }
 
 

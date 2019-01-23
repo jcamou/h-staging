@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    #PRICE-PANEL
+\*------------------------------------*/
+
+.price-panel {
+    position        : relative;
+    padding         : 1.25rem;
+    background-color: white;
+    border-radius   : 4px;
+    box-shadow      : $box-shadow;
+}
+
+.price-panel__item-container {
+  background-color: $grey--100;
+  border-radius: 4px;
+}
+
+.price-panel__price-container {
+  padding         : 2em 0;
+  text-align: center;
+}
+
+.price-panel__price {
+  position: relative;
+  font-weight: $font-weight--bold;
+  font-size: 36px;
+}
+
+.price-panel__dollar-sign {
+  position: absolute;
+  font-size: 12px;
+}
+
+.price-panel__discount {
+  color: $green--600;
+  font-size: 12px;
+  font-weight: $font-weight--bold;
+}

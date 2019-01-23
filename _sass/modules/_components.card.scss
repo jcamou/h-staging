@@ -1,0 +1,50 @@
+///*------------------------------------*\
+//    #CARD
+//\*------------------------------------*/
+
+.card {
+  padding      : 1.5em;
+  margin-bottom: 2em;
+  min-height   : 450px;
+  transition   : all $transition; 
+
+  @media screen and (max-width: 767px) {
+    min-height: auto;
+  }
+}
+
+.card--hoverable {
+  &:hover {
+    border-color: $grey--400;
+    box-shadow: $box-shadow;
+  }
+}
+
+.card--complete {
+  color: $grey--400;
+  border-color: $grey--200;
+
+  .card__keywords {
+    color: $grey--400;
+  }
+
+  &:hover {
+    border-color: $grey--200;
+    box-shadow: none;
+  }
+
+}
+
+.card__item-type {
+  float: left;
+  font-size: 12px; 
+  text-transform: uppercase;
+  font-weight: $font-weight--bold;
+  letter-spacing: 1px;
+  color: $grey--600;
+}
+
+.card__keywords {
+  font-size: 14px;
+  color: $grey--700;
+}
