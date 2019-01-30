@@ -32,6 +32,12 @@
       color: $red--primary;
     }
   }
+
+  &.active {
+    border-color: $red--primary;
+    background-color: white;
+    box-shadow: $box-shadow;
+  }
 }
 
 

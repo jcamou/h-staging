@@ -4,23 +4,43 @@
 
 .price-panel {
     position        : relative;
-    padding         : 1.25rem;
+    padding         : 2em 1.25rem;
     background-color: white;
     border-radius   : 4px;
     box-shadow      : $box-shadow;
 }
 
 .price-panel__item-container {
-  background-color: $grey--100;
-  border-radius: 4px;
+}
+
+.price-panel__item-list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  font-size: 14px;
+
+  li {
+    padding-left: 12px;
+    color: $blue--primary;
+  }
+}
+
+li+.item-list__v-line--separator {
+  &:before {
+    content: '|';
+    padding-right: 6px;
+    padding-left: 6px;
+    color: $grey--600;
+  }
 }
 
 .price-panel__price-container {
-  padding         : 2em 0;
+  padding         : 1em 0 2em;
   text-align: center;
 }
 
 .price-panel__price {
+  display: inline;
   position: relative;
   font-weight: $font-weight--bold;
   font-size: 36px;
@@ -29,10 +49,17 @@
 .price-panel__dollar-sign {
   position: absolute;
   font-size: 12px;
+  top: 5px;
+  left: -10px;
+  color: $grey--600;
+}
+
+#totalDiscountContainer {
+  display: none;
 }
 
 .price-panel__discount {
-  color: $green--600;
-  font-size: 12px;
-  font-weight: $font-weight--bold;
-}
+  display: inline;
+  color: $grey--600;
+  border-bottom: 2px solid $green--400;
+  font-size: 12px;}

@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    #SELECTION-PANEL
+\*------------------------------------*/
+
+.selection-panel {
+  position        : relative;
+  display         : block;
+  text-decoration : none;
+  border          : 2px solid $grey--100;
+  background-color: $grey--100;
+  border-radius   : 4px;
+  padding         : 30px 20px 20px;
+  color           : $grey--700;
+  text-align      : center;
+  transition      : all $transition;
+  cursor          : pointer;
+
+  &:hover, &:focus {
+    border-color   : $red--primary;
+    text-decoration: none;
+  }
+
+    
+}
+
+.selection-panel__checkmark {
+  position        : absolute;
+  top             : 12px;
+  right           : 12px;
+  width           : 20px;
+  height          : 20px;
+  border-radius   : 10px;
+  background-color: white;
+  
+  .selection-panel--active & {
+    background-color: $red--primary;
+    background-image: url("/assets/images/icons/icon__checkmark-circle--red.svg");
+  }
+}
+
+.selection-panel--active {
+  border-color    : $red--primary;
+  background-color: white;
+  box-shadow      : $box-shadow;
+}
+
+.selection-panel__hovered-emphasis-text {
+  color: $grey--700;
+  transition: color $transition;
+
+  .selection-panel--active & {
+    color: $red--700;
+  }
+}

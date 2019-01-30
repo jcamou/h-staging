@@ -2,64 +2,149 @@
 layout: default
 title: GP Pricing
 ---
-<div class="container">
+<div class="container mt-5 mb-5">
   <div class="row justify-content-between">
     <div class="col-sm-12 col-lg-8">
       <h2>Guest Post Pricing</h2>
-      <p class="mb-5">This is where we add a few sentences explaining exactly what it is we do around here. And why people should stop and take a look at this.</p>
+      <p class="mb-5">Choose between Domain Authority or Organic Traffic.</p>
+    </div>
+  </div>
+   <div class="row justify-content-between">
+    <div class="col-sm-12 col-lg-8">
+      <h3 class="mb-4">1. Choose Criteria</h3>
 
-
-
-      <h3>1. Choose Criteria</h3>
-
-      <div class="row mb-5">
+      <div class="row pl-4 spacing__margin-bottom--80">
         <div class="col-sm-12 col-lg-6 mb-3">
-          <div class="bordered-panel bordered-panel--hover text-center">
-            <div class="text--bold mb-2">Domain Authority</div>
-            <p class="mb-4">Domain Authority is a scale from 1 - 100 essentially rating how "powerful" a site is.</p>
-            <div class="text__font-size--14 text__blue--500 text--bold">Starting at $100</div>
+          <div id="daPanel" class="selection-panel selection-panel--active">
+            <div class="selection-panel__checkmark"></div>
+            <div class="text--bold text__font-size--16 mb-1">Domain Authority</div>
+            <p class="text__font-size--14 mb-4">Domain Authority is a scale from 1 - 100 essentially rating how "powerful" a site is.</p>
+            <div class="text__font-size--14 text__grey--500">Starting at</div>
+            <div class="text__font-size--24 selection-panel__hovered-emphasis-text">$100</div>
           </div>
         </div>
         <div class="col-sm-12 col-lg-6 mb-3">
-          <div class="bordered-panel bordered-panel--hover text-center">
-            <div class="text--bold mb-2">Traffic</div>
-            <p class="mb-4">Choose guest posts on websites with specific monthly organic traffic.</p>
-            <div class="text__font-size--14 text__grey--600 text--bold">Starting at 100</div>
+          <div id="trafficPanel" class="selection-panel">
+            <div class="selection-panel__checkmark"></div>
+            <div class="text--bold text__font-size--16 mb-1">Traffic</div>
+            <p class="text__font-size--14 mb-4">Choose guest posts on websites with specific monthly organic traffic.</p>
+            <div class="text__font-size--14 text__grey--500">Starting at</div>
+            <div class="text__font-size--24 selection-panel__hovered-emphasis-text">$200</div>
           </div>
         </div>
       </div>
 
-      <h3>2. Choose Details</h3>
+      <h3 class="mb-4">2. Choose Details</h3>
 
-      <div id="detailsDA">
-        <div class="row">
-          <div class="col-sm-12 col-lg-4">
+      <div id="detailsDA" class="spacing__margin-bottom--80">
+        <div class="row justify-content-between pl-4">
+          <div class="col-sm-12 col-lg-5">
             <div class="text--bold text__font-size--16">DA Strength</div>
-            <p class="text__font-size--16 mb-4">The higher the number the more powerful the site.</p>
+            <p class="text__font-size--14 mb-4">The higher the number the more powerful the site.</p>
           </div>
           <div class="col-sm-12 col-lg-6">
+            <div class="text-right mb-4 text__font-size--14 text__grey--600"><span id="currentValueRange" class="text--bold text__grey--700 text__font-size--24">10</span>+ DA</div>
             <div class="range">
-              <input type="range" min="10" max="50" step="10" value="1" oninput="rangeGetValue(this.value)">
+              <input id="daStrengthSlider" type="range" min="10" max="50" step="10" value="1" oninput="rangeGetValue(this.value)">
+            </div>
+            <div class="range__end-labels">
+              <span class="range__end-labels--start">10</span>
+              <span class="range__end-labels--end">50</span>
             </div>
           </div>
-          <div class="col-sm-12 col-lg-2">
-            <div id="currentValue" class="text--bold text__font-size--24 text-right">10</div>
+          
+        </div>
+        <hr>
+        <div class="row justify-content-between pl-4">
+          <div class="col-sm-12 col-lg-5">
+            <div class="text--bold text__font-size--16">Quantity</div>
+            <p class="text__font-size--14 mb-4">Choose the number of posts.</p>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="text__font-size--14 text-right mb-4 text__grey--600"><span id="quantityValueRange" class="text__font-size--24 text--bold text__grey--700 mr-1">1</span>Posts</div>
+            <div class="range">
+              <input id="daQuantitySlider" type="range" min="1" max="100" step="1" value="1" oninput="rangeGetValueQuantity(this.value)">
+            </div>
+            <div class="range__end-labels">
+              <span class="range__end-labels--start">1</span>
+              <span class="range__end-labels--end">100</span>
+            </div>
           </div>
         </div>
       </div>
-      
 
-    </div>
-    <div class="col-sm-12 col-lg-3">
-      <div class="price-panel">
-        <div>You've Selected</div>
-        <div class="price-panel__item-container">
+
+      <div id="detailsTraffic" style="display: none;">
+        <div class="row justify-content-between pl-4">
+          <div class="col-sm-12 col-lg-5">
+            <div class="text--bold text__font-size--16">Traffic</div>
+            <p class="text__font-size--14 mb-4">Choose the minimum organic monthly traffic. </p>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="text-right mb-4 text__font-size--14 text__grey--600"><span id="trafficCurrentValueRange" class="text--bold text__grey--700 mr-1 text__font-size--24">1,000</span> Traffic/Mo.</div>
+            <div class="range">
+              <input id="trafficSlider" type="range" min="0" max="4" step="1" value="0" oninput="rangeGetTrafficValue(this.value)">
+            </div>
+            <div class="range__end-labels">
+              <span class="range__end-labels--start">1,000</span>
+              <span class="range__end-labels--end">50,000</span>
+            </div>
+          </div>
           
         </div>
+        <hr>
+        <div class="row justify-content-between pl-4">
+          <div class="col-sm-12 col-lg-5">
+            <div class="text--bold text__font-size--16">Quantity</div>
+            <p class="text__font-size--14 mb-4">Choose the number of posts.</p>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="text__font-size--14 text-right mb-4 text__grey--600"><span id="trafficQuantityValueRange" class="text__font-size--24 text--bold text__grey--700 mr-1">1</span>Posts</div>
+            <div class="range">
+              <input id="trafficQuantitySlider" type="range" min="1" max="100" step="1" value="1" oninput="rangeGetTrafficValueQuantity(this.value)">
+            </div>
+            <div class="range__end-labels">
+              <span class="range__end-labels--start">1</span>
+              <span class="range__end-labels--end">100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-lg-3">
+      <div class="price-panel">
+        <div class="text-center text--bold color__grey--600 mb-4">You've Selected</div>
+        <!-- DA -->
+        <div id="daItemContainer" class="price-panel__item-container">
+          <div class="text__font-size--14 text--bold">Guest Post</div>
+          <ul class="price-panel__item-list">
+            <li><span id="currentValuePricingTable" class="text--bold">10 </span>+ DA</li>
+            <li><span id="quantityValuePricingTable" class="text--bold">1</span> Post</li>
+          </ul>
+        </div>
+        <!-- Traffic -->
+        <div id="trafficItemContainer" class="price-panel__item-container" style="display: none;">
+          <div class="text__font-size--14 text--bold">Guest Post</div>
+          <ul class="price-panel__item-list">
+            <li><span id="currentValueTrafficPricingTable" class="text--bold">1,000</span> Organic Traffic</li>
+            <li><span id="quantityValueTrafficPricingTable" class="text--bold">1</span> Posts</li>
+          </ul>
+          
+        </div>
+        <hr>
+        <div class="d-block clearfix pt-1 text__grey--600">
+          <div class="float-left text__font-size--14 text--bold">Orig. Price</div>
+          <div id="totalOriginalPriceContainer" class="float-right">$<span id="totalOriginalPrice">100</span></div>
+        </div>
+        <div id="totalDiscountContainer" class="clearfix text__green--600">
+          <div class="float-left text--bold text__font-size--14">Bulk Discount</div>
+          <div class="float-right text--bold">- <span id="totalDiscountAmount">0</span>%</div>
+        </div>
+        <hr>
         <div class="price-panel__price-container">
-          <div>Total Cost</div>
-          <div class="price-panel__price"><span class="price-panel__dollar-sign">$</span>2,000</div>
-          <div class="price-panel__discount">12.5% Discount Applied!</div>
+          <div class="text--bold text__grey--600">Total Cost</div>
+          <div class="price-panel__price"><span class="price-panel__dollar-sign">$</span><span id="totalPrice">100</span></div>
         </div>
         <div class="btn btn--red btn--full-width">Order Now!</div>
       </div>

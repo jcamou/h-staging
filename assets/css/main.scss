@@ -54,6 +54,7 @@
  * Card.................Overriding styles for card component.
  * Modals...............Overriding styles for modal component.
  * Price-panel..........Panel that contains order info and estimated price.
+ * Selection-panel......Bordered panels used for menus and selections. 
  *
  * HELPERS
  * Type.................Text helpers.
@@ -108,7 +109,7 @@
 /**
  * #COMPONENTS
  */
-@import "modules/components.panels";
+@import "modules/components.panels";  //Need to reevaluate this component
 @import "modules/components.h-tables";
 @import "modules/components.headers";
 @import "modules/components.navbar";
@@ -119,7 +120,7 @@
 @import "modules/components.h-bar";
 @import "modules/components.notifications";
 @import "modules/components.vendor-assets";
-@import "modules/components.bordered-panel";
+@import "modules/components.bordered-panel";  //Need to revaluate this component
 @import "modules/components.h-forms";
 @import "modules/components.sections";
 @import "modules/components.toc-nav";
@@ -131,6 +132,7 @@
 @import "modules/components.card";
 @import "modules/components.modals";
 @import "modules/components.price-panel";
+@import "modules/components.selection-panel";
 
 
 /**

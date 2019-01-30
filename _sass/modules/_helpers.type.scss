@@ -181,6 +181,14 @@
   color         : $color__green--base;
 }
 
+/**
+ * Red
+ */
+
+ .text__red--700 {
+  color: $red--700;
+ }
+
 .text__color--red {
   color         : $color__red--base;
 }
@@ -196,6 +204,14 @@
 
 .text__font-style--italic {
   font-style    : italic;
+}
+
+/**
+ * Text Decoration.
+ */
+
+.text__decoration--line-through {
+  text-decoration: line-through;
 }
 
  /**

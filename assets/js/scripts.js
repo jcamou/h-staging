@@ -1,6 +1,120 @@
 function rangeGetValue(myValue){
-  document.getElementById("currentValue").innerHTML = myValue;
+  document.getElementById("currentValueRange").innerHTML = myValue;
+  document.getElementById("currentValuePricingTable").innerHTML = myValue;
+  calculateEstimatedTotal();
 }
+
+function rangeGetValueQuantity(myValue){
+  document.getElementById("quantityValueRange").innerHTML = myValue;
+  document.getElementById("quantityValuePricingTable").innerHTML = myValue;
+  calculateEstimatedTotal();
+}
+
+function rangeGetTrafficValue(myValue){
+  var trafficValues = [1000, 5000, 10000, 20000, 50000];
+  var trafficValueFormatted = trafficValues[myValue].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+  document.getElementById("trafficCurrentValueRange").innerHTML = trafficValueFormatted;
+  document.getElementById("currentValueTrafficPricingTable").innerHTML = trafficValueFormatted;
+  calculateTrafficEstimatedTotal();
+}
+
+function rangeGetTrafficValueQuantity(myValue){
+  document.getElementById("trafficQuantityValueRange").innerHTML = myValue;
+  document.getElementById("quantityValueTrafficPricingTable").innerHTML = myValue;
+  calculateTrafficEstimatedTotal();
+}
+
+function calculateEstimatedTotal() {
+  var daStrength = document.getElementById('daStrengthSlider').value;
+  var quantity = document.getElementById('daQuantitySlider').value;
+  var discount = 0.0;
+  var baseUnitPrice = 0;
+
+  // Calculate base totalPrice
+  if      (daStrength == 10) { baseUnitPrice = 100; }
+  else if (daStrength == 20) { baseUnitPrice = 150; }
+  else if (daStrength == 30) { baseUnitPrice = 200; }
+  else if (daStrength == 40) { baseUnitPrice = 400; }
+  else if (daStrength == 50) { baseUnitPrice = 500; }
+
+  // Calculate Discount
+  if (quantity < 5) { 
+    discount = 0.0;
+    $("#totalDiscountContainer").hide();
+    $( "#totalOriginalPriceContainer" ).removeClass("text__decoration--line-through");
+  }
+  else if (quantity >= 5 && quantity < 10) { 
+    discount = .10;
+    $("#totalDiscountContainer").show();
+    $( "#totalOriginalPriceContainer" ).addClass("text__decoration--line-through");
+  }
+  else if (quantity >= 10) { 
+    discount = .125;
+    $("#totalDiscountContainer").show();
+    $( "#totalOriginalPriceContainer" ).addClass("text__decoration--line-through");
+  }
+  
+  var total = (baseUnitPrice * quantity);
+  var totalDiscount = total * discount;
+  var totalWithDiscount = total - totalDiscount;
+
+  total = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  totalWithDiscount = totalWithDiscount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+  document.getElementById('totalOriginalPrice').innerHTML = total;
+  document.getElementById('totalPrice').innerHTML = totalWithDiscount;
+  document.getElementById('totalDiscountAmount').innerHTML = discount * 100;
+}
+
+function calculateTrafficEstimatedTotal() {
+
+  var trafficValues = [1000, 5000, 10000, 20000, 50000]; // Traffic Values Array
+  var traffic = trafficValues[document.getElementById('trafficSlider').value];
+  var quantity = document.getElementById('trafficQuantitySlider').value;
+  var baseUnitPrice = 0;
+
+    // Calculate base totalPrice
+  if      (traffic == 1000) { baseUnitPrice = 200; }
+  else if (traffic == 5000) { baseUnitPrice = 300; }
+  else if (traffic == 10000) { baseUnitPrice = 400; }
+  else if (traffic == 20000) { baseUnitPrice = 450; }
+  else if (traffic == 50000) { baseUnitPrice = 500; }
+  
+  var total = (baseUnitPrice * quantity);
+
+  total = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+  document.getElementById('totalOriginalPrice').innerHTML = total;
+  document.getElementById('totalPrice').innerHTML = total;
+  document.getElementById('totalPrice').innerHTML = total;
+}
+
+$( "#daPanel" ).click(function() {
+    $("#detailsDA").show("slow");
+    $("#detailsTraffic").hide(1000);
+    $("#daItemContainer").show("slow");
+    $("#trafficItemContainer").hide(1000);
+    $( "#daPanel" ).addClass("selection-panel--active");
+    $( "#trafficPanel" ).removeClass("selection-panel--active");
+    calculateEstimatedTotal();
+  });  
+
+$( "#trafficPanel" ).click(function() {
+  $("#detailsDA").hide();
+  $("#detailsTraffic").show("slow");
+  $("#trafficItemContainer").show("slow");
+  $("#daItemContainer").hide(1000);
+  $( "#trafficPanel" ).addClass("selection-panel--active");
+  $( "#daPanel" ).removeClass("selection-panel--active");
+  $("#totalDiscountContainer").hide();
+  $( "#totalOriginalPriceContainer" ).removeClass("text__decoration--line-through");
+  calculateTrafficEstimatedTotal();
+});  
+
+
+
+// Switch Criteria
 
 $(document).ready(function() {
 
