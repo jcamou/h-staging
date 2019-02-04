@@ -2,5 +2,38 @@
 layout: default
 title: GP Pricing
 ---
-<h1>Test</h1>
-<p>Success</p>
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <!-- Filter seection -->
+        <h1 class="text-center">What kind of SEO service are you looking for?</h1>
+        <div class="btn-group btn-group-justified" >
+                <a href="#" class="btn btn-primary">All Services</a>
+                <a href="#" class="btn btn-primary">Managed SEO</a>
+                <a href="#" class="btn btn-primary">Link Building</a>
+                <a href="#" class="btn btn-primary">Content Creation</a>
+                <a href="#" class="btn btn-primary">Reputation Mgmt.</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="card-deck">
+            {% for product in site.products %} 
+            <div class="card my-3 p-0 card--hoverable">
+                <div class="card-header">
+                    <!--<img src="/assets/images/branding/hothman.png" class="mr-3" style="width: 40px; height: 50px; float: left;" alt="HOTH">-->
+                    <h3 class="my-auto">{{ product.title }}</h3>
+                    <div>{% for category in product.categories %} <a href="#" class="card__keywords">{{ category }}</a> {% endfor %}</div>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{ product.summary }}</p>
+                    <div class="price mt-auto"><i class="material-icons md-18 mr-1">monetization_on</i>{{ product.pricing }}</div>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ product.url}}" class="card-link text__heading--uppercase">Take a tour</a>
+                    <a href="{{ product.url}}" class="card-link text__heading--uppercase">Place order</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -51,6 +51,7 @@
  * Keyword-panel........Panels for keyword changes.
  * Text-panel...........Top bordered panel to show text. Usually for the user to do somehting with. 
  * Article..............Article overlay styles.
+ * Card-deck............Overriding styles for card-deck component.
  * Card.................Overriding styles for card component.
  * Modals...............Overriding styles for modal component.
  * Price-panel..........Panel that contains order info and estimated price.
@@ -129,6 +130,7 @@
 @import "modules/components.order-container";
 @import "modules/components.keyword-panel";
 @import "modules/components.article";
+@import "modules/components.card-deck"; // Responsive card-deck columns
 @import "modules/components.card";
 @import "modules/components.modals";
 @import "modules/components.price-panel";
