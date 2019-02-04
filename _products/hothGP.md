@@ -4,8 +4,9 @@ title: HothGP
 summary: "Get Awesome, In-Content White Hat Links Through Manual Blogger Outreach – Done For You! "
 pricing: "$500+"
 categories: 
-    - Managed SEO
     - Link Building
+filters: 
+    - link-building
 ---
 
 Hoth GP product content

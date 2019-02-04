@@ -2,23 +2,24 @@
 layout: default
 title: GP Pricing
 ---
+
 <div class="container mt-5 mb-5">
     <div class="row justify-content-center">
         <!-- Filter seection -->
         <h1 class="text-center">What kind of SEO service are you looking for?</h1>
-        <div class="btn-group btn-group-justified" >
-                <a href="#" class="btn btn-primary">All Services</a>
-                <a href="#" class="btn btn-primary">Managed SEO</a>
-                <a href="#" class="btn btn-primary">Link Building</a>
-                <a href="#" class="btn btn-primary">Content Creation</a>
-                <a href="#" class="btn btn-primary">Reputation Mgmt.</a>
+        <div class="btn-group btn-group-justified" id="productFilterContainer">
+            <button class="btn active" onclick="filterSelection('all')">All Services</button>
+            <button class="btn" onclick="filterSelection('managed-seo')">Managed SEO</button>
+            <button class="btn" onclick="filterSelection('link-building')">Link Building</button>
+            <button class="btn" onclick="filterSelection('content-creation')">Content Creation</button>
+            <button class="btn" onclick="filterSelection('reputation-mgmt')">Reputation Mgmt.</button>
         </div>
     </div>
     
     <div class="container">
         <div class="card-deck">
             {% for product in site.products %} 
-            <div class="card my-3 p-0 card--hoverable">
+            <div class="card my-3 p-0 card--hoverable filterDiv {% for filter in product.filters %} {{filter }} {% endfor %}">
                 <div class="card-header">
                     <!--<img src="/assets/images/branding/hothman.png" class="mr-3" style="width: 40px; height: 50px; float: left;" alt="HOTH">-->
                     <h3 class="my-auto">{{ product.title }}</h3>
@@ -37,3 +38,71 @@ title: GP Pricing
         </div>
     </div>
 </div>
+
+
+<!-- Move to scripts -->
+<script>
+filterSelection("all")
+function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    // Add the "show" class (display:inherit) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+    removeClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+    }
+}
+
+// Show filtered elements
+function addClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+    }
+    }
+}
+
+// Hide elements that are not selected
+function removeClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+    }
+    element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("productFilterContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+}
+</script>
+
+<!-- Move -->
+<style>
+.card-deck .card{
+    min-height: auto;
+}
+
+.card.filterDiv {
+    display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.card.show {
+    display: inherit;
+}
+</style>

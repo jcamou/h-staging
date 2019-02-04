@@ -6,6 +6,9 @@ pricing: "$300+"
 categories: 
     - Managed SEO
     - Link Building
+filters: 
+    - managed-seo
+    - link-building
 ---
 
 HothMega content

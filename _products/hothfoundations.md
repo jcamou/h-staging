@@ -6,6 +6,9 @@ pricing: "$600+"
 categories: 
     - Managed SEO
     - Link Building
+filters: 
+    - managed-seo
+    - link-building
 ---
 
 Hoth Foundations product content
