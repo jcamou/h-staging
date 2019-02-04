@@ -9,6 +9,8 @@ categories:
 filters: 
     - managed-seo
     - link-building
+hide-mascot: true
+
 ---
 
 Hoth Foundations product content

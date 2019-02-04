@@ -21,8 +21,8 @@ title: GP Pricing
             {% for product in site.products %} 
             <div class="card my-3 p-0 card--hoverable filterDiv {% for filter in product.filters %} {{filter }} {% endfor %}">
                 <div class="card-header">
-                    <img src="/assets/images/branding/hothman.png" class="mr-3" style="width: 40px; height: 50px; float: left;" alt="HOTH">
-                    <h3 class="my-auto">HOTH<span class="text__color--red">{{ product.title }}</span></h3>
+                    {% if product.hide-mascot != true %}<img src="/assets/images/branding/hothman.png" class="mr-3" style="width: 40px; height: 50px; float: left;" alt="HOTH">{% endif %}
+                    <h3 class="my-auto">HOTH<span class="{% if product.product-color %}{{product.product-color}}{% else %} text__color--red{% endif %}">{{ product.title }}</span></h3>
                     <div>{% for category in product.categories %} <a href="#" class="card__keywords">{{ category }}</a> {% endfor %}</div>
                 </div>
                 <div class="card-body">

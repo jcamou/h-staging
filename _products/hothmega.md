@@ -3,6 +3,7 @@ layout: product
 title: Mega
 summary: "Let Us Take Care of Your SEO For You. Get A Massive Discount, A Custom SEO Strategy & Extra Bonuses"
 pricing: "$300+"
+product-color: text__color--purple
 categories: 
     - Managed SEO
     - Link Building
