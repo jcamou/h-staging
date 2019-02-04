@@ -1,6 +1,6 @@
 ---
 layout: product
-title: "HothLocal"
+title: Local
 summary: "Get The Best Local Citation Building With The HOTH Local SEO Services"
 pricing: "$400+"
 categories: 

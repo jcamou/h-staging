@@ -24,8 +24,10 @@ $cards-per-line: (
 
 @each $name, $breakpoint in $grid-breakpoints {
 	@media (min-width: $breakpoint) {
-		.card-deck .card {
-			flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
-		}
+        @if($name != "xs"){
+		    .card-deck .card {
+                flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$grid-gutter-width});
+            }
+        }
 	}
 }

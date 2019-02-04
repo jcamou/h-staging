@@ -1,6 +1,6 @@
 ---
 layout: product
-title: HothFoundations
+title: Foundations
 summary: "Get Quality Contextual Link Building to Boost Your Site’s Ranking In The Search Engines"
 pricing: "$600+"
 categories: 

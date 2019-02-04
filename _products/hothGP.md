@@ -1,6 +1,6 @@
 ---
 layout: product
-title: HothGP
+title: GP
 summary: "Get Awesome, In-Content White Hat Links Through Manual Blogger Outreach – Done For You! "
 pricing: "$500+"
 categories: 

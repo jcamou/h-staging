@@ -1,6 +1,6 @@
 ---
 layout: product
-title: "HothX"
+title: X
 summary: "#1 Selling, Fully-Managed, Advanced SEO Service!"
 pricing: "Starts at $500/Month + $250 Set Up"
 categories: 

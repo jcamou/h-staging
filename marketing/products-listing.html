@@ -4,12 +4,12 @@ title: GP Pricing
 ---
 
 <div class="container mt-5 mb-5">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mb-4">
         <!-- Filter seection -->
-        <h1 class="text-center">What kind of SEO service are you looking for?</h1>
+        <h1 class="text-center mb-4">What kind of SEO service are you looking for?</h1>
         <div class="btn-group btn-group-justified" id="productFilterContainer">
             <button class="btn active" onclick="filterSelection('all')">All Services</button>
-            <button class="btn" onclick="filterSelection('managed-seo')">Managed SEO</button>
+            <button class="btn"  onclick="filterSelection('managed-seo')">Managed SEO</button>
             <button class="btn" onclick="filterSelection('link-building')">Link Building</button>
             <button class="btn" onclick="filterSelection('content-creation')">Content Creation</button>
             <button class="btn" onclick="filterSelection('reputation-mgmt')">Reputation Mgmt.</button>
@@ -21,13 +21,14 @@ title: GP Pricing
             {% for product in site.products %} 
             <div class="card my-3 p-0 card--hoverable filterDiv {% for filter in product.filters %} {{filter }} {% endfor %}">
                 <div class="card-header">
-                    <!--<img src="/assets/images/branding/hothman.png" class="mr-3" style="width: 40px; height: 50px; float: left;" alt="HOTH">-->
-                    <h3 class="my-auto">{{ product.title }}</h3>
+                    <img src="/assets/images/branding/hothman.png" class="mr-3" style="width: 40px; height: 50px; float: left;" alt="HOTH">
+                    <h3 class="my-auto">HOTH<span class="text__color--red">{{ product.title }}</span></h3>
                     <div>{% for category in product.categories %} <a href="#" class="card__keywords">{{ category }}</a> {% endfor %}</div>
                 </div>
                 <div class="card-body">
                     <p class="card-text">{{ product.summary }}</p>
-                    <div class="price mt-auto"><i class="material-icons md-18 mr-1">monetization_on</i>{{ product.pricing }}</div>
+                    <!-- icon style question -->
+                    <div class="price"><i class="material-icons md-18 mr-1 mb-1" style="vertical-align: middle">monetization_on</i>{{ product.pricing }}</div>
                 </div>
                 <div class="card-footer">
                     <a href="{{ product.url}}" class="card-link text__heading--uppercase">Take a tour</a>
@@ -95,14 +96,21 @@ for (var i = 0; i < btns.length; i++) {
 <style>
 .card-deck .card{
     min-height: auto;
+    transition: opacity 600ms ease-in-out;
 }
 
 .card.filterDiv {
-    display: none; /* Hidden by default */
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    /*display: none;*/ /* Hidden by default */
 }
 
 /* The "show" class is added to the filtered elements */
 .card.show {
-    display: inherit;
+    visibility: inherit;
+    opacity: 1;
+    position: inherit;
+    /*display: inherit;*/
 }
 </style>
