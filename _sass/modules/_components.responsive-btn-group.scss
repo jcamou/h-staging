@@ -1,0 +1,96 @@
+///*------------------------------------*\
+//    #RESPONSIVE BUTTON-GROUP
+//\*------------------------------------*/
+
+.responsive-btn-group{
+    position: relative;
+    display: inline-flex;
+}
+
+.responsive-btn-group > .btn {
+    border-radius: 0; // Only the first and last button get a border radius
+    background-color: transparent;
+    font-size: 16px;
+    border: 1px solid $red--primary;
+    margin-left: 0;
+    color: $red--primary;
+
+    &:hover{
+        color: darken( $red--primary, 5% );
+        background-color: $grey--100;
+        text-decoration: underline;
+    }
+
+    &.active, &:focus{
+        color: white;
+        background-color: $red--primary;
+        text-decoration: none;
+    }
+
+    /* Add a pure CSS check-mark for the active button */
+    &.active:before{
+        /*Add another block-level blank space*/
+        content: '';
+        display: inline-block;
+
+        /*Make it a small rectangle so the border will create an L-shape*/
+        width: 0.48em;
+        height: 0.85em;
+        margin-right: 0.6em;
+        border-radius: 2px;
+        
+        /*Add a white border on the bottom and left, creating that 'L' */
+        border: solid white;
+        border-width: 0 0.2em 0.2em 0;
+        
+        /*Rotate the L 45 degrees to turn it into a checkmark*/
+        transform: rotate(45deg);
+    }
+}
+
+/* setting the border radius of first and last child */
+.responsive-btn-group > .btn:first-child {
+border-radius: 0.3em 0 0 0.3em;
+}
+
+.responsive-btn-group > .btn:last-child:not(:first-child) {
+border-radius: 0 0.3em 0.3em 0;
+}
+
+.responsive-btn-group > :not(:first-child) {
+    margin-left: -1px; // this way the borders of the middle buttons are overlapping
+}
+
+/* Stack the button group vertically for small screens */
+@media (max-width: 991px) {
+    .responsive-btn-group{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .responsive-btn-group > .btn {
+      display: block;
+      width: 100%;
+    }
+    
+    /* making the border-radius correct */
+    .responsive-btn-group > .btn:first-child {
+      border-radius: 6px 6px 0 0;
+    }
+    .responsive-btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+      border-top-right-radius: 6px;
+    }
+    .responsive-btn-group > .btn:last-child:not(:first-child) {
+      border-radius: 0 0 6px 6px;
+    }
+    
+    .responsive-btn-group > :not(:first-child) {
+        margin-top: -1px; // this way the borders of the middle buttons are overlapping (vertically for stacked mode)
+    }
+
+    /* fixing margin */
+    .responsive-btn-group .btn + .btn {
+      margin-left: 0;
+    }
+  }

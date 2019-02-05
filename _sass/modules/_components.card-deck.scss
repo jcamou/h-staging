@@ -22,6 +22,17 @@ $cards-per-line: (
     xl: 3
 );
 
+/* Move this code */
+.card-deck .card{
+    min-height: 320px;
+    transition: none; /* transition is put to none to avoid conflict with filter animations (mixitup.min.js) */;
+}
+
+.card-deck a:hover .card-header{
+    text-decoration: none;
+}
+
+
 @each $name, $breakpoint in $grid-breakpoints {
 	@media (min-width: $breakpoint) {
         @if($name != "xs"){

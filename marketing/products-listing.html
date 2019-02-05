@@ -3,36 +3,38 @@ layout: default
 title: GP Pricing
 ---
 
-<div class="container mt-5 mb-5">
-    <div class="row justify-content-center mb-4">
+<div class="container mt-5 mb-5" style="min-height: 100vh">
+    <div class="row justify-content-center mb-4 px-4">
         <!-- Filter seection -->
-        <h1 class="text-center mb-4">What kind of SEO service are you looking for?</h1>
-        <div class="btn-group btn-group-justified" id="productFilterContainer">
-            <button class="btn active" onclick="filterSelection('all')">All Services</button>
-            <button class="btn"  onclick="filterSelection('managed-seo')">Managed SEO</button>
-            <button class="btn" onclick="filterSelection('link-building')">Link Building</button>
-            <button class="btn" onclick="filterSelection('content-creation')">Content Creation</button>
-            <button class="btn" onclick="filterSelection('reputation-mgmt')">Reputation Mgmt.</button>
-        </div>
+        <h1 class="text-center mb-4">What kind of SEO service are you looking for?</h1>       
+            <div class="responsive-btn-group">
+                <button class="btn" data-filter="all">All Services</button>
+                <button class="btn" data-filter=".managed-seo">Managed SEO</button>
+                <button class="btn" data-filter=".link-building">Link Building</button>
+                <button class="btn" data-filter=".content-creation">Content Creation</button>
+                <button class="btn" data-filter=".reputation-mgmt">Reputation Mgmt.</button>
+            </div>
     </div>
     
     <div class="container">
         <div class="card-deck">
             {% for product in site.products %} 
-            <div class="card my-3 p-0 card--hoverable filterDiv {% for filter in product.filters %} {{filter }} {% endfor %}">
-                <div class="card-header">
-                    {% if product.hide-mascot != true %}<img src="/assets/images/branding/hothman.png" class="mr-3" style="width: 40px; height: 50px; float: left;" alt="HOTH">{% endif %}
-                    <h3 class="my-auto">HOTH<span class="{% if product.product-color %}{{product.product-color}}{% else %} text__color--red{% endif %}">{{ product.title }}</span></h3>
-                    <div>{% for category in product.categories %} <a href="#" class="card__keywords">{{ category }}</a> {% endfor %}</div>
-                </div>
+            <div class="card my-3 p-0 card--hoverable {% for filter in product.filters %} {{filter }} {% endfor %}">
+                <a href="{{ product.url}}" class="link--no-decoration">
+                    <div class="card-header">
+                        {% if product.hide-mascot != true %}<img src="/assets/images/branding/hothman.png" class="mr-3" style="width: 40px; height: 50px; float: left;" alt="HOTH">{% endif %}
+                        <h3 class="my-auto">HOTH<span class="{% if product.product-color %}{{product.product-color}}{% else %} text__color--red{% endif %}">{{ product.title }}</span></h3>
+                        <div>{% for category in product.categories %} <span class="card__keywords">{{ category }}</span> {% endfor %}</div>
+                    </div>
+                </a>    
                 <div class="card-body">
                     <p class="card-text">{{ product.summary }}</p>
                     <!-- icon style question -->
                     <div class="price"><i class="material-icons md-18 mr-1 mb-1" style="vertical-align: middle">monetization_on</i>{{ product.pricing }}</div>
                 </div>
                 <div class="card-footer">
-                    <a href="{{ product.url}}" class="card-link text__heading--uppercase">Take a tour</a>
-                    <a href="{{ product.url}}" class="card-link text__heading--uppercase">Place order</a>
+                    <a href="{{ product.url}}" class="card-link text__heading--uppercase link--red">Take a tour</a>
+                    <a href="{{ product.url}}" class="card-link text__heading--uppercase link--red">Place order</a>
                 </div>
             </div>
             {% endfor %}
@@ -42,75 +44,23 @@ title: GP Pricing
 
 
 <!-- Move to scripts -->
+<script src="/assets/js/mixitup.min.js"></script>
 <script>
-filterSelection("all")
-function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("filterDiv");
-    if (c == "all") c = "";
-    // Add the "show" class (display:inherit) to the filtered elements, and remove the "show" class from the elements that are not selected
-    for (i = 0; i < x.length; i++) {
-    removeClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-    }
-}
-
-// Show filtered elements
-function addClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-        element.className += " " + arr2[i];
-    }
-    }
-}
-
-// Hide elements that are not selected
-function removeClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1); 
-    }
-    }
-    element.className = arr1.join(" ");
-}
-
-// Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("productFilterContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var mixer = mixitup('.container', {
+        selectors: {
+            target: '.card'
+        },
+        classNames: {
+            block: '',
+            elementFilter: ''
+        },
+        animation: {
+            duration: 600
+        }
     });
-}
 </script>
 
 <!-- Move -->
 <style>
-.card-deck .card{
-    min-height: auto;
-    transition: none;/*opacity 600ms ease-in-out*/;
-}
 
-.card.filterDiv {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    /*display: none;*/ /* Hidden by default */
-}
-
-/* The "show" class is added to the filtered elements */
-.card.show {
-    visibility: inherit;
-    opacity: 1;
-    position: inherit;
-    /*display: inherit;*/
-}
 </style>

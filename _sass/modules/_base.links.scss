@@ -24,6 +24,14 @@ a {
   }
 }
 
+.link--red {
+  color          : $red--primary;
+
+  &:hover, &:focus {
+    color        : lighten($red--primary, 5%);
+  }
+}
+
 .link__action {
   font-size      : 14px;
   color          : $blue--primary;
@@ -58,5 +66,13 @@ a {
     text-decoration : none;
     background-color: rgba(255,255,255,.1);
     color           : white;
+  }
+}
+
+.link--no-decoration{
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
   }
 }
