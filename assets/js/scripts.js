@@ -25,11 +25,34 @@ function rangeGetTrafficValueQuantity(myValue){
   calculateTrafficEstimatedTotal();
 }
 
+var packageID = 7;
+
+var pk = {
+    da10:7,
+    da20:17,
+    da30:27,
+    da40:323,
+    da50:482,
+    tr1000:519,
+    tr5000:520,
+    tr10000:521,
+    tr20000:522,
+    tr50000:523
+};
+
+$('body').on('click', 'div.price-panel > div.btn.btn--red.btn--full-width', function () {
+    var quantity = document.getElementById('daQuantitySlider').value;
+    document.location.href = 'https://www.thehoth.com/dashboard/cart/gp/' + packageID + (quantity > 1 ? '?quantity='+quantity : '');
+});
+
 function calculateEstimatedTotal() {
   var daStrength = document.getElementById('daStrengthSlider').value;
   var quantity = document.getElementById('daQuantitySlider').value;
   var discount = 0.0;
   var baseUnitPrice = 0;
+  var promo = 1;
+
+  packageID = pk['da'+daStrength];
 
   // Calculate base totalPrice
   if      (daStrength == 10) { baseUnitPrice = 100; }
@@ -39,7 +62,12 @@ function calculateEstimatedTotal() {
   else if (daStrength == 50) { baseUnitPrice = 500; }
 
   // Calculate Discount
-  if (quantity < 5) { 
+  if (promo == 1) {
+    discount = .25;
+    $("#totalDiscountContainer").show();
+    $( "#totalOriginalPriceContainer" ).addClass("text__decoration--line-through");
+  }
+  else if (quantity < 5) { 
     discount = 0.0;
     $("#totalDiscountContainer").hide();
     $( "#totalOriginalPriceContainer" ).removeClass("text__decoration--line-through");
@@ -73,6 +101,9 @@ function calculateTrafficEstimatedTotal() {
   var traffic = trafficValues[document.getElementById('trafficSlider').value];
   var quantity = document.getElementById('trafficQuantitySlider').value;
   var baseUnitPrice = 0;
+  var promo = 1;
+
+  packageID = pk['tr'+traffic];
 
     // Calculate base totalPrice
   if      (traffic == 1000) { baseUnitPrice = 200; }
@@ -80,14 +111,39 @@ function calculateTrafficEstimatedTotal() {
   else if (traffic == 10000) { baseUnitPrice = 400; }
   else if (traffic == 20000) { baseUnitPrice = 450; }
   else if (traffic == 50000) { baseUnitPrice = 500; }
+
+  // Calculate Discount
+  if (promo == 1) {
+    discount = .25;
+    $("#totalDiscountContainer").show();
+    $( "#totalOriginalPriceContainer" ).addClass("text__decoration--line-through");
+  }
+  else if (quantity < 5) { 
+    discount = 0.0;
+    $("#totalDiscountContainer").hide();
+    $( "#totalOriginalPriceContainer" ).removeClass("text__decoration--line-through");
+  }
+  else if (quantity >= 5 && quantity < 10) { 
+    discount = .10;
+    $("#totalDiscountContainer").show();
+    $( "#totalOriginalPriceContainer" ).addClass("text__decoration--line-through");
+  }
+  else if (quantity >= 10) { 
+    discount = .125;
+    $("#totalDiscountContainer").show();
+    $( "#totalOriginalPriceContainer" ).addClass("text__decoration--line-through");
+  }
   
   var total = (baseUnitPrice * quantity);
+  var totalDiscount = total * discount;
+  var totalWithDiscount = total - totalDiscount;
 
   total = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  totalWithDiscount = totalWithDiscount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
   document.getElementById('totalOriginalPrice').innerHTML = total;
-  document.getElementById('totalPrice').innerHTML = total;
-  document.getElementById('totalPrice').innerHTML = total;
+  document.getElementById('totalPrice').innerHTML = totalWithDiscount;
+  document.getElementById('totalDiscountAmount').innerHTML = discount * 100;
 }
 
 $( "#daPanel" ).click(function() {
@@ -117,6 +173,7 @@ $( "#trafficPanel" ).click(function() {
 // Switch Criteria
 
 $(document).ready(function() {
+    calculateEstimatedTotal();
 
     var organicTrafficData = [
                         {x: new Date(2018, 10, 10), y: 322 },
