@@ -8,7 +8,7 @@
 }
 
 .responsive-btn-group > .btn {
-    border-radius: 0; // Only the first and last button get a border radius
+    border-radius: 0; // Only the first and last button in the group get a border radius
     background-color: transparent;
     font-size: 16px;
     border: 1px solid $red--primary;
@@ -48,7 +48,7 @@
     }
 }
 
-/* setting the border radius of first and last child */
+/* Setting the border radius of first and last child of the group */
 .responsive-btn-group > .btn:first-child {
 border-radius: 0.3em 0 0 0.3em;
 }

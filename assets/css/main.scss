@@ -57,6 +57,7 @@
  * Modals...............Overriding styles for modal component.
  * Price-panel..........Panel that contains order info and estimated price.
  * Selection-panel......Bordered panels used for menus and selections. 
+ * Wells................Section without border or shadow to hightlight text or call to actions. 
  *
  * HELPERS
  * Type.................Text helpers.
@@ -137,6 +138,7 @@
 @import "modules/components.modals";
 @import "modules/components.price-panel";
 @import "modules/components.selection-panel";
+@import "modules/components.wells";
 
 
 /**
