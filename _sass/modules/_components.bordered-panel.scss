@@ -55,6 +55,10 @@
 
 // Border Color
 
+.bordered-panel__red--500 {
+  border-color: $red--primary;
+}
+
 .bordered-panel__green--300 {
   border-color: $green--300;
 }

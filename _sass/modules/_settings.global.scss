@@ -3,8 +3,10 @@
 //\*------------------------------------*/
 
 
-
-$border-radius       : 2px;
+$page__background-color: white;
+$link__color           : $red--primary;
+$link__color--hover: $red--600;
+$border-radius         : 2px;
 
 $max-width           : 1140px;
 $max-width--content  : 700px;

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="55px" viewBox="0 0 57 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>illustration__approval</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-192.000000, -231.000000)" stroke-width="2">
+            <g id="illustration__approval" transform="translate(193.000000, 232.000000)">
+                <polyline id="Path" stroke="#808080" fill="#FFFFFF" points="41.8478261 38.8586957 41.8478261 52.0108696 0 52.0108696 0 0.597826087 41.8478261 0.597826087 41.8478261 11.3586957"></polyline>
+                <path d="M0,7.77173913 L41.8478261,7.77173913" id="Path" stroke="#808080"></path>
+                <path d="M3.58695652,4.18478261 L5.97826087,4.18478261" id="Path" stroke="#808080"></path>
+                <path d="M7.17391304,4.18478261 L9.56521739,4.18478261" id="Path" stroke="#808080"></path>
+                <polyline id="Path" stroke="#808080" fill="#BDDDFA" points="13.1521739 25.7065217 4.7826087 25.7065217 4.7826087 13.75 13.1521739 13.75"></polyline>
+                <path d="M3.58695652,31.6847826 L13.1521739,31.6847826" id="Path" stroke="#808080"></path>
+                <path d="M3.58695652,36.4673913 L13.1521739,36.4673913" id="Path" stroke="#808080"></path>
+                <path d="M3.58695652,41.25 L19.1304348,41.25" id="Path" stroke="#808080"></path>
+                <path d="M3.58695652,46.0326087 L19.1304348,46.0326087" id="Path" stroke="#808080"></path>
+                <path d="M52.6086957,13.75 L19.1304348,13.75 C17.8097539,13.75 16.7391304,14.8206234 16.7391304,16.1413043 L16.7391304,34.076087 C16.7391304,35.3967679 17.8097539,36.4673913 19.1304348,36.4673913 L23.9130435,36.4673913 L27.5,42.4456522 L31.0869565,36.4673913 L52.6086957,36.4673913 C53.9293766,36.4673913 55,35.3967679 55,34.076087 L55,16.1413043 C55,14.8206234 53.9293766,13.75 52.6086957,13.75 Z" id="Path" stroke="#464646" fill="#FFFFFF"></path>
+                <path d="M39.4565217,20.923913 L47.826087,29.2934783" id="Path" stroke="#D4403B"></path>
+                <path d="M47.826087,20.923913 L39.4565217,29.2934783" id="Path" stroke="#D4403B"></path>
+                <polyline id="Path" stroke="#2EAA71" points="33.4782609 20.923913 27.5 29.2934783 23.9130435 25.7065217"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

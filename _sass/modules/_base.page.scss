@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  background-color: white;
+  background-color: $page__background-color;
   
   @media print {
     background-color: white;

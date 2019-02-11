@@ -23,6 +23,10 @@
   color: white;
 }
 
+.panel__red--100 {
+  background-color: $red--100;
+}
+
 
 .panel__title {
   font-size       : 18px;
@@ -34,4 +38,30 @@
   font-weight  : $font-weight--med;
   color        : $color__gray--dark;
   margin-bottom: 4px;
+}
+
+.panel__metric-heading {
+  font-size    : 12px;
+  font-weight  : $font-weight--med;
+  color        : $color__gray--dark;
+  margin-bottom: 4px;
+}
+
+.panel__metric {
+  font-size    : 18px;
+  font-weight  : $font-weight--med;
+  color        : $grey--800;
+  margin-bottom: 4px;
+}
+
+.panel__metric--big {
+  font-size: 32px;
+}
+
+.panel__trend {
+  font-weight: $font-weight--med;
+}
+
+.panel__trend--positive {
+  color: $green--600;
 }

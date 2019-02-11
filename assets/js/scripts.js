@@ -4,6 +4,12 @@ function rangeGetValue(myValue){
   calculateEstimatedTotal();
 }
 
+function rangeGetValueContentLevel(myValue){
+  document.getElementById("contentLevelValueRange").innerHTML = myValue;
+  document.getElementById("contentLevelPricingTable").innerHTML = myValue;
+  calculateEstimatedTotal();
+}
+
 function rangeGetValueQuantity(myValue){
   document.getElementById("quantityValueRange").innerHTML = myValue;
   document.getElementById("quantityValuePricingTable").innerHTML = myValue;
@@ -42,24 +48,75 @@ var pk = {
 
 $('body').on('click', 'div.price-panel > div.btn.btn--red.btn--full-width', function () {
     var quantity = document.getElementById('daQuantitySlider').value;
-    document.location.href = 'https://www.thehoth.com/dashboard/cart/gp/' + packageID + (quantity > 1 ? '?quantity='+quantity : '');
+    var contentLevel = document.getElementById('daContentLevelSlider').value;
+    document.location.href = 'https://www.thehoth.com/dashboard/cart/gp/' + packageID + (quantity > 1 ||  contentLevel > 500 ? '?' : '') + (quantity > 1 ? 'quantity='+quantity : '') + (contentLevel > 500 ? '&contentLevel='+contentLevel : '');
 });
+
+
 
 function calculateEstimatedTotal() {
   var daStrength = document.getElementById('daStrengthSlider').value;
+  var contentLevel = document.getElementById('daContentLevelSlider').value;
   var quantity = document.getElementById('daQuantitySlider').value;
   var discount = 0.0;
   var baseUnitPrice = 0;
+  var contentLevelUpsell = 0;
   var promo = 1;
 
   packageID = pk['da'+daStrength];
 
-  // Calculate base totalPrice
-  if      (daStrength == 10) { baseUnitPrice = 100; }
-  else if (daStrength == 20) { baseUnitPrice = 150; }
-  else if (daStrength == 30) { baseUnitPrice = 200; }
-  else if (daStrength == 40) { baseUnitPrice = 400; }
-  else if (daStrength == 50) { baseUnitPrice = 500; }
+  // Calculate base totalPrice and content level
+  if (daStrength == 10) { 
+      baseUnitPrice = 100; 
+
+      if (contentLevel == 1000) {
+          contentLevelUpsell = 15;
+      }
+      else if (contentLevel ==1500) {
+          contentLevelUpsell = 25; 
+      }
+  }
+  else if (daStrength == 20) { 
+    baseUnitPrice = 150; 
+
+    if (contentLevel == 1000) {
+        contentLevelUpsell = 15;
+    }
+    else if (contentLevel ==1500) {
+        contentLevelUpsell = 25; 
+    }
+  }
+  else if (daStrength == 30) { 
+    baseUnitPrice = 200; 
+
+    if (contentLevel == 1000) {
+        contentLevelUpsell = 25;
+    }
+    else if (contentLevel ==1500) {
+        contentLevelUpsell = 50; 
+    }
+  }
+  else if (daStrength == 40) { 
+    baseUnitPrice = 400; 
+
+    if (contentLevel == 1000) {
+        contentLevelUpsell = 25;
+    }
+    else if (contentLevel ==1500) {
+        contentLevelUpsell = 50; 
+    }
+  }
+  else if (daStrength == 50) { 
+    baseUnitPrice = 500; 
+
+    if (contentLevel == 1000) {
+        contentLevelUpsell = 25;
+    }
+    else if (contentLevel ==1500) {
+        contentLevelUpsell = 50; 
+    }
+  }
+
 
   // Calculate Discount
   if (promo == 1) {
@@ -83,7 +140,7 @@ function calculateEstimatedTotal() {
     $( "#totalOriginalPriceContainer" ).addClass("text__decoration--line-through");
   }
   
-  var total = (baseUnitPrice * quantity);
+  var total = ((baseUnitPrice + contentLevelUpsell) * quantity);
   var totalDiscount = total * discount;
   var totalWithDiscount = total - totalDiscount;
 

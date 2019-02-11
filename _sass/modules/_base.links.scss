@@ -5,13 +5,13 @@
 
 a {
   text-decoration: none;
-  color          : $red--primary;
+  color          : $link__color;
   cursor         : pointer;
   font-weight    : inherit;
   transition     : color $transition;
 
   &:hover, &:focus {
-    color        : $red--600;
+    color        : $link__color--hover;
   }
 }
 
