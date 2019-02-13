@@ -1,13 +1,19 @@
 ---
 layout: product
 title: GP
-summary: "Get Awesome, In-Content White Hat Links Through Manual Blogger Outreach – Done For You! "
-pricing: "$500+"
-product-color: text__color--orange
+summary: "Premium guest post & blogger outreach service. Get awesome, in-content white hat links through manual blogger outreach – done for you!"
+pricing: "Starts at $75"
+product-color: text__color--gp
 categories: 
     - Link Building
 filters: 
     - link-building
 ---
 
-Hoth GP product content
+<h1>White Hat, Manual Link Building</h1>
+
+HOTH Guest Post
+
+Getting white hat links can be tricky and time-consuming. Luckily, we’ve got it down to a science. When ordering you can select between two guaranteed options: the publisher site’s DA or the publisher site’s traffic.
+
+With HOTH Guest Post, we will manually reach out to key authority sites in your industry, secure a guest post spot, write a value-packed article with your links naturally included, and post it on the site.

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: product
 title: GP Pricing
 ---
 
@@ -13,14 +13,15 @@ title: GP Pricing
                 <img src="/assets/images/branding/logo__thehoth--dark.svg" width="100px" class="my-auto" alt="2 Months Left">
             </div>
             <div class="col-md-6 text-center text-md-right">
-                <span class="mr-3 text__font-size--18">Want some help?</span><div class="btn btn--red btn-lg">Book a call</div></div>
+                <span class="mr-3 text__font-size--18">Want some help?</span><a href="https://www.thehoth.com/meet/" class="btn btn--red btn-lg">Book a call</a></div>
         </div>
     </div>
 </header>
 
 <div class="container mt-5 mb-5 content" style="min-height: 300vh;">
     <div class="row justify-content-center mb-4 px-4">
-        <!-- Filter seection -->
+        <!-- Filter seection 
+             These filters will target .card elements in the .card-deck container with the respective data-filter classes -->
         <h1 class="text-center mb-4">What kind of SEO service are you looking for?</h1>       
             <div class="responsive-btn-group">
                 <button class="btn" data-filter="all">All Services</button>
@@ -28,13 +29,16 @@ title: GP Pricing
                 <button class="btn" data-filter=".link-building">Link Building</button>
                 <button class="btn" data-filter=".content-creation">Content Creation</button>
                 <button class="btn" data-filter=".reputation-mgmt">Reputation Mgmt.</button>
+                <button class="btn" data-filter=".other">Other</button>
             </div>
     </div>
     
     <div class="container p-1 mb-5">
+        <!-- Card deck with equal height .card elements -->
         <div class="card-deck" id="cardDeck">
             {% for product in site.products %} 
-            <div class="card my-3 p-0 card--hoverable {% for filter in product.filters %} {{filter }} {% endfor %}">
+            <!-- each card gets a class that will be used to filter by "tag"/"category" -->
+            <div class="card my-3 p-0 card--hoverable card--light-shadow {% for filter in product.filters %} {{filter }} {% endfor %}">
                 <a href="{{ product.url}}" class="link--no-decoration">
                     <div class="card-header">
                         {% if product.hide-mascot != true %}<img src="/assets/images/branding/logo__thehoth--mascot.png" class="mr-3" style="width: 40px; height: 50px; float: left;" alt="HOTH">{% endif %}
@@ -58,46 +62,9 @@ title: GP Pricing
     <div class="well text-center pt-5 pb-5" id="productFooter">
         <h2>Want some help?</h2>
         <p class="mx-auto">We have a full suite of products for every need. If you want some help selecting which one is right for you, just book a call with us!</p>
-        <button class="btn btn-lg btn--red">Book a call now!</button>
+        <a href="https://www.thehoth.com/meet/" class="btn btn-lg btn--red">Book a call now!</a>
     </div>
 </div>
-
-
-<!-- Move to scripts -->
-<script>
-    window.onscroll = function() {myFunction()};
-    
-    var cardSection = document.getElementById("cardDeck");
-    var cardBottom = document.getElementById("productFooter");
-    var stickyStart = cardSection.offsetTop;
-    var stickyStop = cardBottom.offsetTop;
-
-    var helpBar = document.getElementById("stickyHelpBar");
-
-    function myFunction() {
-        if (window.pageYOffset > stickyStart && window.pageYOffset < stickyStop-120)  {
-            helpBar.classList.add("sticky");
-        } else {
-            helpBar.classList.remove("sticky");
-        }
-    }
-</script>
-
-<script src="/assets/js/mixitup.min.js"></script>
-<script>
-    var mixer = mixitup('.card-deck', {
-        selectors: {
-            target: '.card'
-        },
-        classNames: {
-            block: '',
-            elementFilter: ''
-        },
-        animation: {
-            duration: 600
-        }
-    });
-</script>
 
 <style>        
     .sticky {

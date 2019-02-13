@@ -1,12 +1,12 @@
 ---
 layout: product
 title: Local
-summary: "Get The Best Local Citation Building With The HOTH Local SEO Services"
-pricing: "$400+"
+summary: "Get the best local citation building with the hoth local SEO services. The ONLY all-in-one local ranking machine. Crush local competition & rank in Google+ local"
+pricing: 
 categories: 
-    - Content Creation
+    - Link Building
 filters: 
-    - content-creation
+    - link-building
 ---
 
 Hoth Local product content

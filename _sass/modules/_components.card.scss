@@ -20,6 +20,11 @@
   }
 }
 
+.card--light-shadow{
+    box-shadow: 0 3px 4px rgba(0,0,0,.08);
+}
+
+
 .card--complete {
   color: $grey--400;
   border-color: $grey--200;
