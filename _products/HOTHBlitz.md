@@ -1,8 +1,9 @@
 ---
 layout: product
 title: Blitz
+hoth-url: https://www.thehoth.com/hothblitz/
 summary: "Need high powered links to rank you faster? Hoth blitz gives you high da, permanent, home page links."
-pricing: ""
+pricing: 
 product-color: text__color--blitz
 categories: 
     - Link Building

@@ -1,6 +1,7 @@
 ---
 layout: product
 title: X
+hoth-url: https://www.thehoth.com/hoth-x/
 summary: "Fully-managed, advanced SEO service. #1 selling!"
 pricing: "Starts at $500/month + $250 set up"
 categories: 

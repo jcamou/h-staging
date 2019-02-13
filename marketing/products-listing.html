@@ -18,7 +18,7 @@ title: GP Pricing
     </div>
 </header>
 
-<div class="container mt-5 mb-5 content" style="min-height: 300vh;">
+<div class="container mt-5 mb-5 content">
     <div class="row justify-content-center mb-4 px-4">
         <!-- Filter seection 
              These filters will target .card elements in the .card-deck container with the respective data-filter classes -->
@@ -39,21 +39,26 @@ title: GP Pricing
             {% for product in site.products %} 
             <!-- each card gets a class that will be used to filter by "tag"/"category" -->
             <div class="card my-3 p-0 card--hoverable card--light-shadow {% for filter in product.filters %} {{filter }} {% endfor %}">
-                <a href="{{ product.url}}" class="link--no-decoration">
+                <a href="{{product.hoth-url}}" class="link--no-decoration">
                     <div class="card-header">
                         {% if product.hide-mascot != true %}<img src="/assets/images/branding/logo__thehoth--mascot.png" class="mr-3" style="width: 40px; height: 50px; float: left;" alt="HOTH">{% endif %}
-                        <h3 class="my-auto">HOTH<span class="{% if product.product-color %}{{product.product-color}}{% else %} text__color--red{% endif %}">{{ product.title }}</span></h3>
+                        <h3 class="my-auto">HOTH<span class="{% if product.product-color %}{{product.product-color}}{% else %} text__color--red{% endif %}">{{ product.title }}{% if product.star %}<i class="material-icons mb-1" style="vertical-align: middle; max-width: 30px;">star_rate</i>{% endif %}
+                        </span></h3>
                         <div>{% for category in product.categories %} <span class="card__keywords">{{ category }}</span> {% endfor %}</div>
                     </div>
                 </a>    
                 <div class="card-body">
                     <p class="card-text">{{ product.summary }}</p>
                     <!-- icon style question -->
-                    <div class="price"><i class="material-icons md-18 mr-1 mb-1" style="vertical-align: middle">monetization_on</i>{{ product.pricing }}</div>
+                    <div class="price">
+                        {% if product.pricing %}
+                        <i class="material-icons md-18 mr-1 mb-1" style="vertical-align: middle">monetization_on</i>{{ product.pricing }}
+                        {% endif %}
+                    </div>
                 </div>
                 <div class="card-footer">
-                    <a href="{{ product.url}}" class="card-link text__heading--uppercase link--red">Take a tour</a>
-                    <a href="{{ product.url}}" class="card-link text__heading--uppercase link--red">Place order</a>
+                    <a href="{{ product.hoth-url}}" class="card-link text__heading--uppercase link--red">Take a tour</a>
+                    <!--<a href="{{ product.url}}" class="card-link text__heading--uppercase link--red">Place order</a>-->
                 </div>
             </div>
             {% endfor %}

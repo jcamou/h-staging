@@ -1,6 +1,7 @@
 ---
 layout: product
 title: GP
+hoth-url: https://www.thehoth.com/guestpost/
 summary: "Premium guest post & blogger outreach service. Get awesome, in-content white hat links through manual blogger outreach – done for you!"
 pricing: "Starts at $75"
 product-color: text__color--gp

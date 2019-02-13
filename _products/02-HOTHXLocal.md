@@ -1,6 +1,7 @@
 ---
 layout: product
 title: XLocal
+hoth-url: https://www.thehoth.com/hoth-x-local/
 summary: "The ONLY all-in-one local ranking machine crush local competition & rank in Google + Local"
 pricing: "Starts at $500/month + $250 set up"
 categories: 
