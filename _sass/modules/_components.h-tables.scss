@@ -32,6 +32,7 @@
   }
 
   tbody tr {
+    background-color: $grey--100;
     &:nth-child(odd) {
       background-color: white;
     }
@@ -43,8 +44,8 @@
     font-size     : 12px;
     line-height   : 1.5em;
     font-weight   : 500;
-    color         : $color__gray--dark;
-    border-color  : $color__gray--light;
+    color         : $grey--700;
+    border-color  : $grey--200;
 
     &:first-of-type {
       padding-left   : 16px;

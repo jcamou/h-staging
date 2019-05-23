@@ -1,0 +1,26 @@
+///*------------------------------------*\
+//    #SEGMENTED-LIST
+//\*------------------------------------*/
+
+.segmented-list {
+
+
+}
+
+.segmented-list__item {
+  border-right: 1px solid $grey--200;
+
+  &:last-of-type {
+    border-right: none;
+  }
+}
+
+.segmented-list--vertical {
+  .segmented-list__item {
+    border-bottom: 1px solid $grey--200;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}

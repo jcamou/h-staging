@@ -1,0 +1,162 @@
+---
+layout: backend
+title: HOTH X Schedule Call
+---
+<style type="text/css">
+
+  .text__font-size--18 {
+    font-size     : 18px !important;
+  }
+  .text--bold {
+    font-weight   : 700 !important;
+  }
+  .section__p {
+    color: #5d5c5b !important;
+    margin-bottom: 2rem!important;
+    max-width: 44em; 
+    line-height: 1.7em;
+    margin-top: 8px;
+  }
+
+  .radio-container {
+    position: relative;
+    margin-bottom: 2em;
+  }
+
+  .form-group {
+    position: relative;
+  }
+
+  .radio__input {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+  }
+
+  .form-group__label-container {
+    padding: 1em 1em 1em 3em;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: all 0.29s ease-in-out 0s;
+  }
+
+  .form-group__label-container:hover {
+    background-color: #f7f7f7;
+  }
+
+  input[type="radio"]:checked+.form-group__label-container {
+    background-color:  #f2f8fc;
+    border: 1px solid #84bff4;
+  }
+
+  .form-group__label--radio {
+    cursor: pointer;
+  }
+
+  .label-radio__title {
+    color: #808080;
+    font-size: 16px;
+    margin-bottom: 4px;
+    font-weight: 500;
+    transition: color 0.29s ease-in-out 0s;
+  }
+
+  input[type="radio"]:hover+ div label .label-radio__title {
+    color:  #464646;
+  }
+
+  input[type="radio"]:checked+ div label .label-radio__title {
+  color:  #298ee9;
+  }
+
+  .label-radio__description {
+    color: #5d5c5b;
+    margin-bottom: 0;
+    line-height: 1.7em;
+    max-width: 44em;
+  }
+
+  .form-group__label {
+    font-size: 12px;
+    color: #808080;
+    font-weight: 500;
+    letter-spacing: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: color 0.29s ease-in-out 0s;
+  }
+
+  #input-cel{
+    display: none;
+    margin-top: 1em;
+  }
+
+  .form__input--cel::placeholder {
+    font-size: 14px;
+    color: #b6b4b4 !important;
+  }
+
+  .form__input--cel {
+    outline: none;
+    font-size: 16px !important;
+    border: none !important;
+    padding-top: 24px !important;
+    padding-bottom: 12px !important;
+    width: 100%;
+    max-width: 200px;
+    background-color: transparent !important;
+    border-bottom: 2px solid #cfcfcf !important;
+    transition: all 0.29s ease-in-out 0s !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .form__input--cel:hover {
+    border-color: #5d5c5b !important;
+  }
+
+  .form__input--cel:focus {
+    border-color: #298ee9 !important;
+  }
+
+  input[type="radio"]:checked+ div .form-group .form-group__label {
+    color:  #464646;
+  }
+
+  input[type="radio"]:checked+ div #input-cel {
+    display: block;
+  }
+
+</style>
+
+<div style="margin-top: 30px;">
+    <div class="text__font-size--18 text--bold mb-2">Schedule your HOTH X Onboarding Call</div>
+    <p class="section__p">We'd like to learn more about your business and SEO goals through an onboarding call to come up with the best possible strategy for you.</p>
+    
+    <div class="radio-container">
+      <input type="radio" id="call-now" name="call" value="call-now" class="radio__input" checked>
+      <div class="form-group__label-container">
+        <label for="call-now" class="form-group__label--radio">
+          <div class="label-radio__title">Call me now</div>
+          <p class="label-radio__description">Ready to get started? We will make an effort to call you in the next few minutes. If we can’t make contact for any reason, we’ll send you a link to schedule a call.</p>
+        </label>
+        <div id="input-cel" class="form-group">
+          <input type="tel" name="phone" placeholder="Enter phone number" class="form__input--cel">
+          <label for="phone" class="form-group__label">Best number to reach you at?</label>
+        </div>
+      </div>
+    </div>
+    <div class="radio-container">
+      <input type="radio" id="call-later" name="call" value="call-later" class="radio__input">
+      <div class="form-group__label-container">
+        <label for="call-later" class="form-group__label--radio">
+          <div class="label-radio__title">Schedule a call later</div>
+          <p class="label-radio__description">No time to discuss your HOTH X campaign right now? We can send you link to our team calendar so that you can pick a convenient time to discuss your site.</p>
+        </label>
+      </div>
+    </div>
+</div>

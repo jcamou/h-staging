@@ -2,25 +2,81 @@
     #PANELS
 \*------------------------------------*/
 
+$panel__border-radius: 4px;
+
 .panel {
   position        : relative;
   flex-direction  : column;
   min-width       : 0;
   word-wrap       : break-word;
-  padding         : 1.25rem;
 	background-color: white;
 	border          : 0;
-  border-radius   : 8px;
+  border-radius   :$panel__border-radius;
 	box-shadow      : 0px 3px 15px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+// Panel Header
+.panel__header {
+  display: block;
+  padding: 1.25em;
+  border-top-left-radius: $panel__border-radius;
+  border-top-right-radius: $panel__border-radius;
+}
+
+.panel__body {
+  @extend .clearfix; 
+
+  display: block;
+  padding: 1.25em;
+  background-color: white;
+  border-radius: $panel__border-radius;
+}
+
+.panel__body--np {
+  padding: 0;
+}
+
+.panel__body-padding {
+  padding: 1.25em !important;
 }
 
 
 
 // Panel Colors
+.panel__purple--300 {
+  background-color: $purple--300;
+  color: white;
+}
+
+.panel__purple--400 {
+  background-color: $purple--400;
+  color: white;
+}
 
 .panel__purple--500 {
   background-color: $purple--500;
   color: white;
+}
+ 
+.panel__blue--600 {
+  background-color: $blue--600;
+  color: white;
+}
+
+.panel__red--100 {
+  background-color: $red--100;
+}
+
+.panel__red--500 {
+  background-color: $red--primary;
+}
+
+.panel__bg--wave {
+  background-image: url('../images/imgs/img__wave-background.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 

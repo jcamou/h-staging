@@ -35,12 +35,6 @@
   }
 }
 
-.h-btn-lg, .btn-lg{
-    font-size: 18px;
-    border-radius: 3px;
-}
-
-
 .h-btn--primary, .btn--primary {
   background-color: $blue--primary;
   color           : white;
@@ -100,18 +94,36 @@
   }
 }
 
-.h-btn--red-inverse {
+.h-btn--red-inverse, .btn--red-inverse {
   background-color: white;
-  border: 2px solid $color__red--base;
-  color           : $color__red--base;
+  border: 2px solid $red--primary;
+  color           : $red--primary;
 
   &:hover, &:focus {
-    background-color: $color__red--dark;
+    background-color: rgba(255,255,255,.25);
+    border-color: white;
     color: white;
   }
 
   &:active {
-    background-color: $color__red--darkest !important;
+    background-color: $red--600 !important;
+  }
+}
+
+
+
+.btn--blue-inverse {
+  background-color: white;
+  border: 2px solid $blue--primary;
+  color           : $blue--primary;
+
+  &:hover, &:focus {
+    background-color: $blue--primary;
+    color: white;
+  }
+
+  &:active {
+    background-color: $blue--600 !important;
   }
 }
 
@@ -132,14 +144,26 @@
 
 
 
+// Button Sizes
+
+.h-btn-lg, .btn-lg{
+    font-size: 18px;
+    border-radius: 3px;
+}
 
 .h-btn--full-width, .btn--full-width {
   display: block;
   width: 100%;
 }
 
-.h-btn--husky {
-  font-size: 16px;
+.btn__mobile--full-width {
+  @media screen and (max-width: 767px) { 
+    width: 100%;
+  }  
+}
+
+.h-btn--husky, .btn--husky {
+  font-size: 14px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -153,13 +177,13 @@
 .btn-link {
   font-size      : 12px;
   text-decoration: none;
-  color          : $color__blue--base;
+  color          : $blue--primary;
   cursor         : pointer;
   font-weight    : $font-weight--med;
   transition     : color $transition;
 
   &:hover, &:focus {
-    color        : darken($color__blue--base, 10%);
+    color        : $blue--600
   }
 }
 

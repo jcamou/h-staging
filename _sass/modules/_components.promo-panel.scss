@@ -1,0 +1,15 @@
+///*------------------------------------*\
+//    #PROMO-PANEL
+//\*------------------------------------*/
+
+.promo-panel {
+  padding                   : 1em;
+  background-color          : $green--100;
+  border-left               : 2px solid $green--500;
+  color                     : $green--700;
+  font-size                 : 14px;
+  text-align                : left;
+  border-top-right-radius   : 2px;
+  border-bottom-right-radius: 2px;
+  margin-bottom             : 2em;
+}

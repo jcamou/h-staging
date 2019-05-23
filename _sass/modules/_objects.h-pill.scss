@@ -7,7 +7,7 @@
   background-color: $grey--200;
   font-size       : 10px;
   font-weight     : $font-weight--med;
-  padding         : 2px 12px;
+  padding         : 0px 12px;
   letter-spacing  : .5px;
   border-radius   : 50px;
   vertical-align  : middle;
@@ -21,6 +21,16 @@
   font-weight: $font-weight--bold;
 }
 
+.h-pill--tight {
+  padding: 2px 6px;
+}
+
+
+.h-pill__blue--500 {
+  background-color: $blue--primary;
+  color: white;
+}
+
 .h-pill__green--500 {
   background-color: $green--500;
   color: white;
@@ -29,6 +39,18 @@
 .h-pill__green--600 {
   background-color: $green--600;
   color: white;
+}
+
+.h-pill__green--inverse {
+  background-color: white;
+  color: $green--600;
+  border: 1px solid $green--600;
+}
+
+.h-pill__red--inverse {
+  background-color: white;
+  color: $red--primary;
+  border: 1px solid $red--primary;
 }
 
 .h-pill__red--500 {
