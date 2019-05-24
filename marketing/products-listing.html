@@ -1,0 +1,95 @@
+---
+layout: product
+title: GP Pricing
+---
+
+<!-- Sticky header with "Need any help"-button
+     This header will only appear while over the section with all the products
+     When the user scrolls passed the products the header will hide again  -->
+<header class="my-header py-3 shadow hidden" id="stickyHelpBar">
+    <div class="container">
+        <div class="row my-row just-content-space-between align-items-center">
+            <div class="col-md-6 my-col1 d-none d-md-inline-block">
+                <img src="/assets/images/branding/logo__thehoth--dark.svg" width="100px" class="my-auto" alt="2 Months Left">
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <span class="mr-3 text__font-size--18">Want some help?</span><a href="https://www.thehoth.com/meet/" class="btn btn--red btn-lg">Book a call</a></div>
+        </div>
+    </div>
+</header>
+
+<div class="container mt-5 mb-5 content">
+    <div class="row justify-content-center mb-4 px-4">
+        <!-- Filter seection 
+             These filters will target .card elements in the .card-deck container with the respective data-filter classes -->
+        <h1 class="text-center mb-4">What kind of SEO service are you looking for?</h1>       
+            <div class="responsive-btn-group">
+                <button class="btn" data-filter="all">All Services</button>
+                <button class="btn" data-filter=".managed-seo">Managed SEO</button>
+                <button class="btn" data-filter=".link-building">Link Building</button>
+                <button class="btn" data-filter=".content-creation">Content Creation</button>
+                <button class="btn" data-filter=".reputation-mgmt">Reputation Mgmt.</button>
+                <button class="btn" data-filter=".other">Other</button>
+            </div>
+    </div>
+    
+    <div class="container p-1 mb-5">
+        <!-- Card deck with equal height .card elements -->
+        <div class="card-deck" id="cardDeck">
+            {% for product in site.products %} 
+            <!-- each card gets a class that will be used to filter by "tag"/"category" -->
+            <div class="card my-3 p-0 card--hoverable card--light-shadow {% for filter in product.filters %} {{filter }} {% endfor %}">
+                <a href="{{product.hoth-url}}" class="link--no-decoration">
+                    <div class="card-header">
+                        {% if product.hide-mascot != true %}<img src="/assets/images/branding/logo__thehoth--mascot.png" class="mr-3" style="width: 40px; height: 50px; float: left;" alt="HOTH">{% endif %}
+                        <h3 class="my-auto">HOTH<span class="{% if product.product-color %}{{product.product-color}}{% else %} text__color--red{% endif %}">{{ product.title }}{% if product.star %}<i class="material-icons mb-1" style="vertical-align: middle; max-width: 30px;">star_rate</i>{% endif %}
+                        </span></h3>
+                        <div>{% for category in product.categories %} <span class="card__keywords">{{ category }}</span> {% endfor %}</div>
+                    </div>
+                </a>    
+                <div class="card-body">
+                    <p class="card-text">{{ product.summary }}</p>
+                    <!-- icon style question -->
+                    <div class="price">
+                        {% if product.pricing %}
+                        <i class="material-icons md-18 mr-1 mb-1" style="vertical-align: middle">monetization_on</i>{{ product.pricing }}
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ product.hoth-url}}" class="card-link text__heading--uppercase link--red">Take a tour</a>
+                    <!--<a href="{{ product.url}}" class="card-link text__heading--uppercase link--red">Place order</a>-->
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="well text-center pt-5 pb-5" id="productFooter">
+        <h2>Want some help?</h2>
+        <p class="mx-auto">We have a full suite of products for every need. If you want some help selecting which one is right for you, just book a call with us!</p>
+        <a href="https://www.thehoth.com/meet/" class="btn btn-lg btn--red">Book a call now!</a>
+    </div>
+</div>
+
+<style>        
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+    }
+
+    .my-header:not(.sticky){
+        top: -100px;
+        z-index: 9;
+        opacity: 0;      
+    }
+
+    .my-header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        transition: all 300ms ease-in; 
+    }    
+</style>

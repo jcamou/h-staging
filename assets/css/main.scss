@@ -28,6 +28,8 @@
  * Dividers.............Styles for different hr dividers.
  * Branding.............Styles for logos or any other branding asset.
  * Range................Styles for slider input.
+ * Bar-chart............Styles for bar chart that shows distribution.
+ * Segmented-list.......Flexbox-list seperated by thin divider.
  *
  * COMPONENTS
  * Panels...............Card-like panels used on ther dashboard.
@@ -51,15 +53,21 @@
  * Keyword-panel........Panels for keyword changes.
  * Text-panel...........Top bordered panel to show text. Usually for the user to do somehting with. 
  * Article..............Article overlay styles.
+ * Responsive Btn Group.A responsive button group (e.g. used for filter tags).
+ * Card-deck............Overriding styles for card-deck component.
  * Card.................Overriding styles for card component.
  * Modals...............Overriding styles for modal component.
  * Price-panel..........Panel that contains order info and estimated price.
  * Selection-panel......Bordered panels used for menus and selections. 
+ * Wells................Section without border or shadow to hightlight text or call to actions.
+ * Promo-panel..........Promotional container. 
  *
  * HELPERS
  * Type.................Text helpers.
  * Sizing...............Utility classes for sizing.
  * Spacing..............Utility classes for spacing.
+ * Color................Utility classes for colors, e.g., background color. 
+ * Clearfix.............Includes clearfix class that can be extended anywhere else.
  *
  * TEMP
  * Boostrap-Fillins.....Bootstrap 4 classes for backend.
@@ -70,8 +78,8 @@
  * #SETTINGS
  */
 @import "modules/settings.colors";
-// @import "modules/settings.global";
-@import "modules/settings.global--order-reports";
+@import "modules/settings.global";
+// @import "modules/settings.global--order-reports";
 
 
 
@@ -104,6 +112,8 @@
 @import "modules/objects.branding";
 @import "modules/objects.video-container";
 @import "modules/objects.range";
+@import "modules/objects.bar-chart";
+@import "modules/objects.segmented-list";
 
 
 /**
@@ -129,10 +139,14 @@
 @import "modules/components.order-container";
 @import "modules/components.keyword-panel";
 @import "modules/components.article";
+@import "modules/components.responsive-btn-group"; // Can be used to display filter tags
+@import "modules/components.card-deck"; // Responsive card-deck columns
 @import "modules/components.card";
 @import "modules/components.modals";
 @import "modules/components.price-panel";
 @import "modules/components.selection-panel";
+@import "modules/components.wells";
+@import "modules/components.promo-panel";
 
 
 /**
@@ -141,6 +155,8 @@
 @import "modules/helpers.type";
 @import "modules/helpers.sizing";
 @import "modules/helpers.spacing";
+@import "modules/helpers.color";
+@import "modules/helpers.clearfix";
 
 
 /**
@@ -149,5 +165,10 @@
 // @import "modules/temp.marketing";
 // @import "modules/temp.bootstrap-filling";
 
+
+/**
+ * #VENDORS
+ */
+@import "modules/vendors.filterElements"; // put specific css for 3rd party 
 
 

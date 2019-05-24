@@ -135,6 +135,19 @@ input[type=range]::-moz-range-track {
  * Range Labels
  */
 
+.range__labels {
+  display        : flex;
+  justify-content: space-between;
+  padding-top: 4px;
+ }
+
+.range__label {
+  font-size: 12px;
+  text-align: center;
+  min-width: 24px;
+}
+
+
  .range__end-labels {
   font-size: 14px;
   color: $grey--600;
@@ -151,4 +164,3 @@ input[type=range]::-moz-range-track {
   text-align: right;
   padding-right: 4px;
  }
-

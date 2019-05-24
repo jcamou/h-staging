@@ -61,7 +61,7 @@ function calculateEstimatedTotal() {
   var discount = 0.0;
   var baseUnitPrice = 0;
   var contentLevelUpsell = 0;
-  var promo = 1;
+  var promo = 0;
 
   packageID = pk['da'+daStrength];
 

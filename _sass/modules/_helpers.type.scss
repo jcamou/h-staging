@@ -101,12 +101,24 @@
   line-height   : 2rem;
 }
 
+.text__lh--14 {
+  line-height: 14px;
+}
+
 .text__lh--16 {
   line-height: 16px;
 }
 
 .text__lh--18 {
   line-height: 18px;
+}
+
+.text__lh--22 {
+  line-height: 22px;
+}
+
+.text__lh--24 {
+  line-height: 24px;
 }
 
 .text__lh--26 {
@@ -148,7 +160,7 @@
 
 
 .text__grey--700 {
-  color: $grey--700;
+  color: $grey--700 !important;
 }
 
 .text__color--orange {
@@ -161,8 +173,16 @@
   color: $blue--primary;
 }
 
+.text__blue--600 {
+  color: $blue--600;
+}
+
 .text__blue--700 {
-  color: $blue--700;
+  color: $blue--700 !important;
+}
+
+.text__blue--800 {
+  color: $blue--800;
 }
 
 .text__color--blue {
@@ -173,8 +193,21 @@
   color         : $color__blue--dark;
 }
 
+
+/**
+ * Green
+ */
+
 .text__green--600 {
   color: $green--600;
+}
+
+.text__green--800 {
+  color: $green--800;
+}
+
+.text__green--blogger {
+  color: $green--blogger;
 }
 
 .text__color--green {
@@ -199,6 +232,54 @@
 
 .text__color--white {
   color: white;
+}
+
+
+/**
+ * PRODUCT COLORS
+ */
+.text__color--gp {
+  color         : $color__gp--base;
+}
+
+.text__color--mega {
+  color         : $color__mega--base;
+}
+
+.text__color--blitz {
+  color         : $color__blitz--base;
+}
+
+.text__color--blogger {
+  color         : $color__blogger--base;
+}
+
+.text__color--onpage {
+  color         : $color__onpage--base;
+}
+
+.text__color--ecommercepd {
+  color         : $color__ecommercepd--base;
+}
+
+.text__color--stars {
+  color         : $color__stars--base;
+}
+
+.text__color--press {
+  color         : $color__press--base;
+}
+
+.text__color--lmb {
+  color         : $color__lmb--base;
+}
+
+.text__color--ranktracker {
+  color         : $color__ranktracker--base;
+}
+
+.text__color--credits {
+  color         : $color__credits--base;
 }
 
 
@@ -230,6 +311,7 @@
   text-transform: capitalize;
 }
 
+/* TODO: split up ? */
 .text__heading--uppercase {
   letter-spacing: .5px;
   font-weight: $font-weight--bold;

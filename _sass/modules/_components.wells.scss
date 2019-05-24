@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #WELLS
+\*------------------------------------*/
+
+.well {
+  position        : relative;
+  flex-direction  : column;
+  min-width       : 0;
+  word-wrap       : break-word;
+  padding         : 1.25rem;
+	background-color: #EDEDED;
+	border          : 0;
+  border-radius   : 8px;
+	box-shadow      : none;
+}

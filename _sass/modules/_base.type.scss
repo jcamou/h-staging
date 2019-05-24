@@ -45,3 +45,7 @@
   max-width    : 40em;
   line-height  : 1.5em;
 }
+
+b, strong {
+  font-weight: $font-weight--bold;
+}
