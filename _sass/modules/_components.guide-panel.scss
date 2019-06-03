@@ -1,0 +1,82 @@
+/*------------------------------------*\
+    #GUIDE-PANEL
+\*------------------------------------*/
+
+
+.guide-panel {
+    position               : relative;
+    padding                : 0;
+    background-color       : white;
+    border-radius          : 4px;
+    box-shadow             : $box-shadow;
+}
+
+.guide-panel .topic-header{
+    width: 100%;
+    
+    h2{
+      margin-bottom: 10px;
+    }
+
+    img{
+      max-width: 100px;
+    }
+}
+
+.panel__bg--blue{
+  background-image: url('../images/imgs/img__bg--blue.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $blue--primary;
+}
+
+.panel__bg--purple{
+  background-image: url('../images/imgs/img__bg--purple.gif');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $purple--300;
+}
+
+.panel__bg--yellow{
+  background-image: url('../images/imgs/img__bg--yellow.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color__seo-sales--base;
+}
+
+.panel__bg--green{
+  background-image: url('../images/imgs/img__bg--green.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color__ppc--base;
+}
+
+
+.guide-panel i{
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+
+.guide-panel__guide-list{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+
+  li{
+    margin-bottom: 10px;
+  }
+  
+  li a {
+    color: black;
+  }
+
+  li i{
+    margin-left: -4px;
+  }
+}
+
+

@@ -110,7 +110,6 @@ $purple--200: #b3b0ef;
 $purple--100: #e7e6fa;
 
 
-
 // TEMP COLORS
 $color__black--base : #464646;
 
@@ -136,6 +135,16 @@ $color__gray--background: #FBFBFB;
 
 $color__orange--base: #F49742; 
 $color__purple--base: #5B4799;
+
+
+// LEARNING HUB COLORS
+
+$color__yellow--base:  #F8AD42; // Yellow LEARNING HUB
+$color__topic-green:  #23B9BD; // Green LEARNING HUB
+
+$color__seo-sales--base: $color__yellow--base;
+$color__ppc--base: $color__topic-green;
+
 
 // PRODUCT COLORS
 $color__gp--base: #F49742; // GP orange

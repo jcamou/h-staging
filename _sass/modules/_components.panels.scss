@@ -24,6 +24,40 @@ $panel__border-radius: 4px;
   border-top-right-radius: $panel__border-radius;
 }
 
+
+// class that adapts corners when header image gets stacked from the right to the top
+.panel__header--responsive-corners--right{
+  
+    border-top-right-radius: $panel__border-radius;
+    border-bottom-right-radius: $panel__border-radius;
+  
+    // Replace with bootstrap breakpoint variable
+  @media screen and (max-width: 992px) { 
+    border-top-left-radius: $panel__border-radius;
+    border-top-right-radius: $panel__border-radius;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+  }
+}
+
+// class that adapts corners when header image gets stacked from the LEFT to the top
+.panel__header--responsive-corners--left{
+  
+    border-top-left-radius: $panel__border-radius;
+    border-bottom-left-radius: $panel__border-radius;
+  
+    // Replace with bootstrap breakpoint variable
+  @media screen and (max-width: 992px) { 
+    border-top-left-radius: $panel__border-radius;
+    border-top-right-radius: $panel__border-radius;
+    border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+  }
+}
+
+
 .panel__body {
   @extend .clearfix; 
 
@@ -77,6 +111,26 @@ $panel__border-radius: 4px;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.panel__bg--learn-curve {
+  background-image: url('../images/imgs/img__learn-curve-bg.gif');
+  background-position: bottom;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // Replace with bootstrap breakpoint variable
+  @media screen and (max-width: 992px) { 
+    background-image: none;
+
+  }
+}
+
+.panel__header--max-width{
+   max-width: 500px; // Learning header image
+   margin-left: auto;
+   margin-right: auto;
 }
 
 
