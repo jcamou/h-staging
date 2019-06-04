@@ -23,6 +23,19 @@
     }
 }
 
+.guide-panel .guide-header{
+    width: 100%;
+    
+    h2{
+      margin-bottom: 10px;
+    }
+
+    img{
+      max-width: 250px;
+    }
+}
+
+
 .panel__bg--blue{
   background-image: url('../images/imgs/img__bg--blue.jpg');
   background-position: bottom;
