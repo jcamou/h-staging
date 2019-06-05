@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #RIBBONS 
+\*------------------------------------*/
+
+.ribbon {
+  position      : absolute;
+  font-size     : 14px;
+  font-weight   : $font-weight--extrabold;
+  padding       : 4px 14px;
+  right         : -13px;
+  top           : 12px;
+  box-shadow    : $box-shadow;
+  text-transform: uppercase;
+}
+
+.ribbon--blue {
+  background-color: $blue--primary;
+  color: white;
+
+  &:after {
+    content     : "";
+    position    : absolute;
+    display     : block;
+    border-style: solid;
+    border-color: $blue--700 transparent transparent transparent;
+    bottom      : -1em;
+    right       : 0;
+    border-width: 1em 1em 0 0;
+  }
+}

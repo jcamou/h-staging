@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    #DROPDOWN
+\*------------------------------------*/
+
+.dropdown {
+  width           : 100%;
+  min-width       : 150px;
+  height          : 36px;
+  border          : 2px solid $grey--400;
+  background-color: white;
+  font-size       : 14px;
+  color           : $grey--700;
+  cursor          : pointer;
+  transition      : all $transition;
+
+  &:hover {
+    border-color: $grey--700;
+  }
+
+  &:focus{
+    border-color: $blue--primary;
+  }
+}

@@ -119,3 +119,102 @@
   text-align: center;
 
 }
+
+.table__checkout {
+  width: 100%;
+
+  thead {
+    font-size        : 16px;
+    color            : $grey--700;
+
+    th {
+      padding-top    : 10px;
+      padding-bottom : 10px;
+      border-top:   none;
+      border-bottom: 2px solid $grey--700;
+      cursor         : pointer;
+      transition: color $transition;
+
+      &:first-of-type {
+        padding-left : 16px;
+      }
+
+      &:last-of-type {
+        padding-right: 16px;
+      }
+    }
+  }
+
+  tbody tr {
+    background-color: white;
+  }
+
+  td {
+    padding-top   : 12px;
+    padding-bottom: 12px;
+    line-height   : 1.5em;
+    color         : $grey--700;
+    border-bottom: 1px solid $grey--200;
+
+    &:first-of-type {
+      padding-left   : 16px;
+    }
+
+    &:last-of-type {
+      padding-right  : 16px;
+    }
+  }
+}
+
+td.checkout__select {
+  vertical-align: top;
+  padding-top: 16px;
+  padding-right: 10px;
+}
+
+.checkout__total-row {
+  background-color: $grey--100;
+  padding: 24px 16px;
+  border-bottom: 2px solid $grey--700;
+  line-height: 1.5em;
+}
+
+.checkout__item-td {
+  min-width: 250px;
+  padding-right: 1em;
+}
+.checkout__price-td {
+  min-width: 115px;
+}
+
+.checkout__discount-label {
+  position        : relative;
+  background-color: $green--600;
+  color           : white;
+  font-size       : 12px;
+  font-weight     : 700;
+  padding         : 4px 8px;
+  margin-left     : 4px;
+  text-transform  : uppercase;
+
+  &:before {
+    content      : "";
+    position     : absolute;
+    right        : -12px;
+    bottom       : 0;
+    width        : 0;
+    height       : 0;
+    border-bottom: 12px solid $green--600;
+    border-right : 12px solid transparent;
+  }
+  &:after {
+    content     : "";
+    position    : absolute;
+    right       : -12px;
+    top         : 0;
+    width       : 0;
+    height      : 0;
+    border-top  : 12px solid $green--600;
+    border-right: 12px solid transparent;
+  }
+}

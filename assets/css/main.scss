@@ -30,6 +30,8 @@
  * Range................Styles for slider input.
  * Bar-chart............Styles for bar chart that shows distribution.
  * Segmented-list.......Flexbox-list seperated by thin divider.
+ * Dropdown.............You guessed it, dropdowns.
+ * Ribbon...............Floating ribbon that sits above panel. Used for promos, discounts, etc..
  *
  * COMPONENTS
  * Panels...............Card-like panels used on ther dashboard.
@@ -114,6 +116,8 @@
 @import "modules/objects.range";
 @import "modules/objects.bar-chart";
 @import "modules/objects.segmented-list";
+@import "modules/objects.dropdown";
+@import "modules/objects.ribbon";
 
 
 /**
