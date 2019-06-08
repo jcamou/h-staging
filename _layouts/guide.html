@@ -4,10 +4,28 @@
 {% include head.html %}
 
 <body>
+  <!-- Guide header -->
+  <header>
+    <!-- Logo bar -->
+    <div class="d-flex align-items-center" style="background-color: #312929;">
+      <img src="/assets/images/imgs/img__hoth-logo.jpg" width="180px;" class="mx-auto">
+    </div>
+    <!-- /END Logo bar -->
 
-  <div class="d-flex align-items-center" style="background-color: #312929; z-index: 9">
-    <img src="/assets/images/imgs/img__hoth-logo.jpg" width="180px;" class="mx-auto">
-  </div>
+    <!-- Navigation toggle row -->
+    <div class="row d-lg-none">
+      <!-- Toggle sidebar button -->
+      <a href="#" onclick="openNav()" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+
+          <span id="collapse-text" class="menu-collapsed text-white">☰ Toggle navigation</span>
+        </div>
+      </a>
+    </div>
+    <!-- /END navigation toggle row -->
+
+  </header>
+
 
   <main role="main" class='main-content__container' style="background-color: #f7f7f7">
     {{ content }}

@@ -1,0 +1,127 @@
+<footer>
+    <!-- ------------------------------------------------------------
+        FOOTER
+    ------------------------------------------------------------ -->
+
+    <!-- -------MOVE TO HEADER ------------------------------------------------------------ -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slick').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+    </script>
+    <!-- -------MOVE TO HEADER ------------------------------------------------------------ -->
+
+
+
+    <div class="container-fluid py-5" style="background-color: white">
+        <div class="container text-center">
+            <h2 class="py-4">Other topics</h2>
+            <div class="slick" style="height: 300px;">
+
+
+                <!-- slide 1
+          <div class="mx-3 p-3 pb-5 d-flex align-items-center panel__bg--blue guide-panel__header"
+            style="position: relative; border-radius: 4px;">
+            <div class="d-block text-center mt-5 mb-5 topic-header" style="width: 100%">
+              <h2 class="text__color--white mb-4">SEO</h2>
+              <img src="/assets/images/imgs/illustration__topic--seo.png" width="100px" style="display: inline;" />
+            </div>
+            <a href="#" style="position: absolute; bottom: 0px; right: 20px; color: white;">
+              <p class="start-now">Start Now <i class="fas fa-arrow-right"></i></p>
+            </a>
+          </div>-->
+
+
+                <!-- slide 2 -->
+                <div class="mx-0 mx-md-3 p-3 pb-5 d-flex align-items-center panel__bg--purple guide-panel__header"
+                    style="position: relative; border-radius: 4px;">
+                    <div class="d-block text-center mt-5 mb-5 topic-header" style="width: 100%">
+                        <h2 class="text__color--white mb-4">Content Marketing</h2>
+                        <img src="/assets/images/imgs/illustration__topic--content-marketing.png"
+                            style="display: inline; max-width: 150px;" />
+                    </div>
+                    <a href="#" style="position: absolute; bottom: 0px; right: 20px; color: white;">
+                        <p class="start-now">Start Now <i class="fas fa-arrow-right"></i></p>
+                    </a>
+                </div>
+
+                <!-- slide 3 -->
+                <div class="mx-0 mx-md-3  p-3 pb-5 d-flex align-items-center panel__bg--yellow guide-panel__header"
+                    style="position: relative; border-radius: 4px;">
+                    <div class="d-block text-center mt-5 mb-5 topic-header" style="width: 100%">
+                        <h2 class="text__color--white mb-4">Learn SEO</h2>
+                        <img src="/assets/images/imgs/illustration__topic--seo-sales.png" width="100px"
+                            style="display: inline;" />
+                    </div>
+                    <a href="#" style="position: absolute; bottom: 0px; right: 20px; color: white;">
+                        <p class="start-now">Start Now <i class="fas fa-arrow-right"></i></p>
+                    </a>
+                </div>
+
+                <!-- slide 4 -->
+                <div class="mx-0 mx-md-3  p-3 pb-5 d-flex align-items-center panel__bg--green guide-panel__header"
+                    style="position: relative; border-radius: 4px;">
+                    <div class="d-block text-center mt-5 mb-5 topic-header" style="width: 100%">
+                        <h2 class="text__color--white mb-4">Learn SEO</h2>
+                        <img src="/assets/images/imgs/illustration__topic--ppc.png" width="100px"
+                            style="display: inline;" />
+                    </div>
+                    <a href="#" style="position: absolute; bottom: 0px; right: 20px; color: white;">
+                        <p class="start-now">Start Now <i class="fas fa-arrow-right"></i></p>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Home button -------------------------------------------------------->
+            <div class="row">
+                <div class="col text-center">
+
+                    <a href="/learning-hub/" class="btn btn--red col-md-3 text-center mx-auto mt-5 mb-5 p-2"
+                        style="margin: auto;"><i class="fas fa-arrow-left"></i> Back to HOTH Learn Hub</a>
+                </div>
+            </div>
+            <!-- -------------------------------------------------------------------->
+
+        </div>
+    </div>
+</footer>

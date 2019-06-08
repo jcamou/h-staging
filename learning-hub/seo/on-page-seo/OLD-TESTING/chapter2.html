@@ -1,0 +1,154 @@
+---
+layout: learning
+title: Learning Hub Home
+---
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .arr-right .breadcrumb-item+.breadcrumb-item::before {
+    content: "›";
+    vertical-align: middle;
+    padding-bottom: 2px;
+    color: rgba(0, 0, 0, 0.35);
+  }
+
+  .arr-right .breadcrumb-item+.active {
+    color: rgba(255, 255, 255, 0.45);
+  }
+</style>
+
+<!-- ------------------------------------------------------------
+    BREAD CRUMS
+------------------------------------------------------------ -->
+<div class="container-fluid p-0 d-none d-lg-block" style="background-color: #298EE9; ">
+  <div class="row no-gutters align-items-center m-0" style="height: 80px;">
+    <div class="col d-flex align-items-center;">
+      <!-- button -->
+      <div class="d-flex mr-3 align-items-center" style="background-color:rgba(255,255,255,0.15); height: 80px; ">
+
+        <a href="/learning-hub/seo/" class="px-4 link--white text__font-size--18">
+          <i class="fas fa-arrow-left mr-3" style="font-size: 14px;"></i>Learn SEO
+        </a>
+      </div>
+      <!-- breadcrums -->
+      <nav aria-label="breadcrumb m-0" class="d-flex align-items-center" style="height: 80px;">
+        <ol class="breadcrumb arr-right m-0 text-white" style="background-color: transparent;">
+          <li class="breadcrumb-item"><a href="/learning-hub/" class="link--white">HOTH Learning Hub</a></li>
+          <li class="breadcrumb-item"><a href="/learning-hub/seo/" class="link--white">SEO Overview</a></li>
+          <li class="breadcrumb-item"><a href="/learning-hub/seo/on-page-seo/" class="link--white">On-page SEO</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Chapter 1</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+<!-- ------------------------------------------------------------
+    CONTENT
+------------------------------------------------------------ -->
+
+<style>
+  .content-section {
+    min-height: 2000px;
+  }
+
+  .sidebar-section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .sidebar-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .make-me-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0 0px;
+  }
+
+  .title-section,
+  .content-section,
+  .sidebar-section {
+    background: #f7f7f7;
+  }
+
+  .title-section {
+    text-align: center;
+    padding: 50px 15px;
+    margin-bottom: 30px;
+  }
+
+  .content-section h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 200px;
+  }
+
+  .sidebar-item {
+    text-align: center;
+    background-color: #343434;
+  }
+</style>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+</script>
+
+<div class="container-fluid">
+  <button class="openbtn" onclick="openNav()">☰ Toggle Sidebar</button>
+
+  <div class="row no-gutter">
+
+    <!--sidebar-->
+    <div class="col-4" id="mySidebar" class="sidebar">
+      <div class="sidebar-item">
+        <div class="make-me-sticky p-5" style="color: white;">
+          <h3>Item 1</h3>
+          <ul>
+            <li>Chapter name</li>
+            <li>Chapter name</li>
+            <li>Chapter name</li>
+            <li>Chapter name</li>
+            <li>Chapter name</li>
+            <li>Chapter name</li>
+            <li>Chapter name</li>
+            <li>Chapter name</li>
+            <li>Chapter name</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!--content-->
+    <div class="col-8 p-0">
+      <div class="content-section">
+        <h2>Content Section</h2>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

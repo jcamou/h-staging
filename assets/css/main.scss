@@ -61,6 +61,7 @@
  * Selection-panel......Bordered panels used for menus and selections. 
  * Wells................Section without border or shadow to hightlight text or call to actions.
  * Promo-panel..........Promotional container. 
+ * Sticky sidebar.......Sticky sidebar (Learning hub guides).
  *
  * HELPERS
  * Type.................Text helpers.
@@ -150,6 +151,7 @@
 @import "modules/components.selection-panel";
 @import "modules/components.wells";
 @import "modules/components.promo-panel";
+@import "modules/components.sticky-sidebar"; // learninghub guide
 
 
 /**
