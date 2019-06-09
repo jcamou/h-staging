@@ -1,0 +1,10 @@
+---
+layout: chapter
+title: Chapter 1
+short-title: E-commerce SEO
+anchor: chapter-1
+summary: "xxxxx"
+categories: e-commerce-seo
+---
+
+Intro text to the guide.

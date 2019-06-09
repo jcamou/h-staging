@@ -55,7 +55,7 @@ title: On-page SEO
 </div>
 
 <!-- ------------------------------------------------------------
-    HERO
+    Guide hero section
 ------------------------------------------------------------ -->
 
 <div class="container-fluid mb-5"
@@ -76,21 +76,22 @@ title: On-page SEO
 
 
 <!-- ------------------------------------------------------------
-    CHAPTER LIST
+    Guide chapter list
 ------------------------------------------------------------ -->
-
 
 <div class="container pb-5  ">
 
-
-  <!-- CHAPTER BLOCK  -------------------------------------------------------->
+  {% assign sorted_chapters = site.categories.on-page-seo | sort:"chapter-number" %}
+  {% for sorted_chapters in site.categories.on-page-seo reversed %}
+  <!-- Loop over all the chapters of this guide -->
   <div class="panel mx-auto mt-3" style="max-width: 700px;">
 
     <div class="px-4 py-4 d-flex justify-content-between">
       <!-- chapter title -->
       <div>
-        <h3 class="card-title">01. Introduction</h3>
-        <a href="chapter1.html" style="color:#298EE9;">Read this chapter <i class="fas fa-arrow-right"></i></a>
+        <h3 class="card-title">{{ sorted_chapters.title }}</h3>
+        <a href="{{ sorted_chapters.url }}" style="color:#298EE9;">Read this chapter <i
+            class="fas fa-arrow-right"></i></a>
       </div>
       <!-- arrow right -->
       <div class="d-flex align-items-center">
@@ -99,53 +100,10 @@ title: On-page SEO
       </div>
     </div>
   </div>
-  <!-- ----------------------------------------------------------------------->
+  {% endfor %}
+  <!-- /END chapter loop -->
 
-
-  <!-- CHAPTER BLOCK  -------------------------------------------------------->
-  <div class="panel mx-auto mt-3" style="max-width: 700px;">
-
-    <div class="px-4 py-4 d-flex justify-content-between">
-      <!-- chapter title -->
-      <div>
-        <h3 class="card-title">01. Introduction</h3>
-        <a href="chapter1.html" style="color:#298EE9;">Read this chapter <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <!-- arrow right -->
-      <div class="d-flex align-items-center">
-        <i class="fas fa-arrow-right circle-icon text-white"
-          style="float: right !important; background-color: #298EE9; padding: 10px; border-radius: 50%; "></i>
-      </div>
-    </div>
-  </div>
-  <!-- ----------------------------------------------------------------------->
-
-
-  <!-- CHAPTER BLOCK  -------------------------------------------------------->
-  <div class="panel mx-auto mt-3" style="max-width: 700px;">
-
-    <div class="px-4 py-4 d-flex justify-content-between">
-      <!-- chapter title -->
-      <div>
-        <h3 class="card-title">01. Introduction</h3>
-        <a href="chapter1.html" style="color:#298EE9;">Read this chapter <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <!-- arrow right -->
-      <div class="d-flex align-items-center">
-        <i class="fas fa-arrow-right circle-icon text-white"
-          style="float: right !important; background-color: #298EE9; padding: 10px; border-radius: 50%; "></i>
-      </div>
-    </div>
-  </div>
-  <!-- ----------------------------------------------------------------------->
 
 </div>
-
-
-
-
-
-
-
 
 </div>

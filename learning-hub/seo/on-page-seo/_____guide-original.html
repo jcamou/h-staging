@@ -12,9 +12,9 @@
     </div>
     <!-- /END Logo bar -->
 
-    <!-- Navigation toggle row 
+    <!-- Navigation toggle row -->
     <div class="row d-lg-none">
- 
+      <!-- Toggle sidebar button -->
       <a href="#" onclick="openNav()" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
         <div class="d-flex w-100 justify-content-start align-items-center">
 
@@ -22,7 +22,7 @@
         </div>
       </a>
     </div>
-    /END navigation toggle row -->
+    <!-- /END navigation toggle row -->
 
   </header>
 
@@ -103,15 +103,11 @@
             {{ page.guide-title }}</h4>
 
           <style>
-            .chapter-nav li a {
-              color: #C1C1C1;
-            }
-
             .active-nav::before {
               content: '›';
               color: #FFCC00;
               position: absolute;
-              left: -30px;
+              left: 10px;
               top: -5px;
               font-size: 21px;
             }
@@ -122,21 +118,37 @@
           </style>
 
           <!-- List of chapters : TODO REPLACE WITH NAV-->
-          <ol class="text-left chapter-nav" style="color: #C1C1C1; position: relative;">
-            {% assign sorted_chapters = site.categories.on-page-seo | sort:"chapter-number" %}
-            {% for sorted_chapters in site.categories.on-page-seo reversed %}
-            {% assign active = false %}
-            {% if sorted_chapters.chapter-number==page.chapter-number %}
-            {% assign active = true %}
-            {% endif%}
-
-            <!-- Loop over all the chapters of this guide -->
-            <li class="{% if active %} active-nav {% endif%}" style="position:relative; margin-top: 10px; ">
-              <a {% if active == false %} href="{{sorted_chapters.url}}" {% endif %}>{{ sorted_chapters.title }}</a>
+          <ol class="text-left" style="color: #C1C1C1; position: relative;">
+            <li class="active-nav" style="margin-top: 10px; ">
+              <a>What Is Blogger Outreach?</a>
             </li>
-
-            {% endfor %}
-            <!-- /END chapter loop -->
+            <li style="margin-top: 10px;">
+              <a href="#" style="color: #C1C1C1;">Find the Right Influencers</a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="#" style="color: #C1C1C1;">Start with Pre-Outreach</a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="#" style="color: #C1C1C1;">Send an Outreach Email</a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="#" style="color: #C1C1C1;">Follow Up Cold Outreach Emails</a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="#" style="color: #C1C1C1;">Find the Right Influencers</a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="#" style="color: #C1C1C1;">Start with Pre-Outreach</a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="#" style="color: #C1C1C1;">How to Find Email Addresses</a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="#" style="color: #C1C1C1;">Send an Outreach Email</a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="#" style="color: #C1C1C1;">Follow Up Cold Outreach Emails</a>
+            </li>
           </ol>
 
           <!--Star email capture form -->
@@ -164,12 +176,9 @@
       <!-- Bootstrap column for CONTENT, full width for small screens -->
       <div class="col-12 col-lg-8" style="min-height: 100vh;">
         <!-- sticky navigation toggle for small screens -->
-        <div class="d-lg-none row no-gutter" style="display: flex; background-color: #313131; padding: 10px; color: white;
+        <div class="d-lg-none row no-gutter" style="display: flex; background-color: #313131; border: 2px solid blue; padding: 10px; color: white;
         position: sticky; position: -webkit-sticky; top: 0;">
-          <a href="#" onclick="openNav()">
-            <span id="collapse-text" class="menu-collapsed text-white">☰ Toggle navigation</span>
-          </a>
-
+          ☰ Toggle navigation
         </div>
         <!-- /END sticky navigation toggle-->
 
