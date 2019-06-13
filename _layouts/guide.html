@@ -142,14 +142,16 @@
           <!--Star email capture form -->
           <div class="p-3 pt-5">
             <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1" style="color:white">Email address</label>
+              <div class="form-group" style="position: relative;">
+                <img src="/assets/images/imgs/img__arrow--yellow.png"
+                  style="position: absolute; left: -55px; top: 5px;" />
+                <label for="exampleInputEmail1" style="color:white">Want more content like this?</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Enter email" style="max-width: 230px">
+                  placeholder="Enter your email" style="max-width: 230px">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                   else.</small>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary h-btn--blue">Submit</button>
             </form>
           </div>
           <!--/END email capture form -->
@@ -172,8 +174,6 @@
           </a>--->
 
         </div>
-
-
 
         <!-- /END sticky navigation toggle-->
 
@@ -212,20 +212,30 @@
 
         </nav>
 
-
-
-
-
         <!-- Chapter HERO for first chapter-->
         {% if page.chapter-number == "1" %}
-        <div class="row" style="height: 300px; background-color: #e4e4e4">
+        <div class="row align-items-center" style="background-color: #e4e4e4">
           <!-- ******************************************************************************** -->
+          <!-- ******************        GUIDE HERO SECTION      ****************************** -->
           <!-- ******************************************************************************** -->
-          <!-- ******************                                ****************************** -->
-          <!-- ******************    INSERT GUIDE HERO SECTION   ****************************** -->
-          <!-- ******************                                ****************************** -->
-          <!-- ******************************************************************************** -->
-          <!-- ******************************************************************************** -->
+          <div class="container-fluid {% if page.background-pattern %} {{ page.background-pattern }} {% endif %}" style="background-color: {{ page.main-color }}; 
+                      {% if page.background-image %} background-image: url({{ page.background-image }}); {% endif %}
+                      ">
+            <div class="container my-3" style="max-width: 670px; ">
+              <div class="row d-flex align-items-center">
+                <div class="col-lg-8 col-sm-12 col-md-8 text-sm-center text-lg-left">
+                  <h1 style="font-size: 48px"
+                    class="mt-5 mt-md-0 text-center text-lg-left {% if page.dark-background == "true" %} text-white {% endif %}">
+                    {{page.guide-title}}</h1>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-4 d-flex align-items-center">
+                  <div class="d-block text-center mt-3 mb-3 guide-header mx-auto mx-lg-0">
+                    <img src="{{ page.featured-image }}" style="max-width: 100%;" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         {% endif %}
 
@@ -239,15 +249,53 @@
             <div style="font-size: 18px;">
               {{ content }}
             </div>
+          </div> <!-- end chapter content -->
 
-            <!-- Previous / Next chapter -->
-            <div>
-              <!-- ******************--------------------------------****************************** -->
-              <!-- ******************       INSERT PREV/NEXT         ****************************** -->
-              <!-- ******************--------------------------------****************************** -->
-            </div><!-- /END PREV/NEXT chapter -->
+          <!-- PREV/NEXT Chapter navigation -->
+          <div class="row mx-auto mt-5">
+            <div class="col-lg-6 p-0 pr-lg-3">
+              <!-- Next chapter panel -->
+              <a href="#" style="text-decoration: none; color: #312929;">
+                <div class="panel p-4">
+                  <div class="d-flex justify-content-between">
+                    <!-- arrow left -->
+                    <div class="d-flex align-items-center">
 
-          </div>
+                      <i class="fas fa-arrow-left circle-icon text-white"
+                        style="float: right !important; background-color: {{ page.dark-color }}; padding: 10px; border-radius: 50%; "></i>
+                    </div>
+                    <!-- chapter title -->
+                    <div class="text-left pl-4" style="width: 100%">
+                      <span style="color: {{ page.category-color }}">Previous</span>
+                      <h3 class="card-title">Chapter index</h3>
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6 p-0 pl-lg-3">
+              <!-- Next chapter panel -->
+              <a href="#" style="text-decoration: none; color: #312929;">
+                <div class="panel p-4">
+                  <div class="d-flex justify-content-between">
+                    <!-- chapter title -->
+                    <div class="text-right pr-4" style="width: 100%">
+                      <span style="color: {{ page.category-color }}">Next</span>
+                      <h3 class="card-title">What is on-page SEO?</h3>
+
+                    </div>
+                    <!-- arrow right -->
+                    <div class="d-flex align-items-center">
+
+                      <i class="fas fa-arrow-right circle-icon text-white"
+                        style="float: right !important; background-color: {{ page.dark-color }}; padding: 10px; border-radius: 50%; "></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div><!-- /END PREV/NEXT Chapter navigation -->
         </div><!-- /END content container -->
 
         <!-- Overlay class to darken screen with the collapsable sidebar on mobile devices -->

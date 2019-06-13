@@ -56,61 +56,23 @@
             <h2 class="py-4">Other topics</h2>
             <div class="slick" style="height: 300px;">
 
-
-                <!-- slide 1
-          <div class="mx-3 p-3 pb-5 d-flex align-items-center panel__bg--blue guide-panel__header"
-            style="position: relative; border-radius: 4px;">
-            <div class="d-block text-center mt-5 mb-5 topic-header" style="width: 100%">
-              <h2 class="text__color--white mb-4">SEO</h2>
-              <img src="/assets/images/imgs/illustration__topic--seo.png" width="100px" style="display: inline;" />
+                <!-- Loop over all topics -->
+                {% for topic in site.topics reversed %}
+                <div class="mx-2 mx-md-3 p-4 pb-5 d-flex align-items-center guide-panel__header" style="position: relative; border-radius: 4px; background-image: url({{ topic.background-image }});
+                                background-color: {{ topic.main-color }}; ">
+                    <a href="/topics/{{topic.name}}" class="mx-auto link--no-decoration">
+                        <div class="d-block text-center mt-5 mb-5 topic-header" style="width: 100%">
+                            <h2 class="text__color--white mb-4 text-uppercase">{{topic.name}}</h2>
+                            <img src="{{topic.icon-image}}" style="display: inline; max-width: 100px;" />
+                        </div>
+                    </a>
+                    <a href="/topics/{{topic.name}}"
+                        style="position: absolute; bottom: 0px; right: 20px; color: white;">
+                        <p class="start-now">Start Now <i class="fas fa-arrow-right"></i></p>
+                    </a>
+                </div>
+                {% endfor %}
             </div>
-            <a href="#" style="position: absolute; bottom: 0px; right: 20px; color: white;">
-              <p class="start-now">Start Now <i class="fas fa-arrow-right"></i></p>
-            </a>
-          </div>-->
-
-
-                <!-- slide 2 -->
-                <div class="mx-0 mx-md-3 p-3 pb-5 d-flex align-items-center panel__bg--purple guide-panel__header"
-                    style="position: relative; border-radius: 4px;">
-                    <div class="d-block text-center mt-5 mb-5 topic-header" style="width: 100%">
-                        <h2 class="text__color--white mb-4">Content Marketing</h2>
-                        <img src="/assets/images/imgs/illustration__topic--content-marketing.png"
-                            style="display: inline; max-width: 150px;" />
-                    </div>
-                    <a href="#" style="position: absolute; bottom: 0px; right: 20px; color: white;">
-                        <p class="start-now">Start Now <i class="fas fa-arrow-right"></i></p>
-                    </a>
-                </div>
-
-                <!-- slide 3 -->
-                <div class="mx-0 mx-md-3  p-3 pb-5 d-flex align-items-center panel__bg--yellow guide-panel__header"
-                    style="position: relative; border-radius: 4px;">
-                    <div class="d-block text-center mt-5 mb-5 topic-header" style="width: 100%">
-                        <h2 class="text__color--white mb-4">Learn SEO</h2>
-                        <img src="/assets/images/imgs/illustration__topic--seo-sales.png" width="100px"
-                            style="display: inline;" />
-                    </div>
-                    <a href="#" style="position: absolute; bottom: 0px; right: 20px; color: white;">
-                        <p class="start-now">Start Now <i class="fas fa-arrow-right"></i></p>
-                    </a>
-                </div>
-
-                <!-- slide 4 -->
-                <div class="mx-0 mx-md-3  p-3 pb-5 d-flex align-items-center panel__bg--green guide-panel__header"
-                    style="position: relative; border-radius: 4px;">
-                    <div class="d-block text-center mt-5 mb-5 topic-header" style="width: 100%">
-                        <h2 class="text__color--white mb-4">Learn SEO</h2>
-                        <img src="/assets/images/imgs/illustration__topic--ppc.png" width="100px"
-                            style="display: inline;" />
-                    </div>
-                    <a href="#" style="position: absolute; bottom: 0px; right: 20px; color: white;">
-                        <p class="start-now">Start Now <i class="fas fa-arrow-right"></i></p>
-                    </a>
-                </div>
-
-            </div>
-
 
             <!-- Home button -------------------------------------------------------->
             <div class="row">

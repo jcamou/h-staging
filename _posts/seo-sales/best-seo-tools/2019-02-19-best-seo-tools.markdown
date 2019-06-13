@@ -5,8 +5,11 @@ short-title: Best SEO tools
 anchor: best-seo-tools
 summary: "xxxxx"
 categories: seo-sales
-main-color: "#f6b93c"
+main-color: "hsl(2, 57%, 40%)"
 featured-image: "/assets/images/imgs/illustration__guide--on-page-ecommerce.png"
+
+dark-background: "true" 
+background-pattern: bg-image--seo-tools
 ---
 
 Intro text to the guide.

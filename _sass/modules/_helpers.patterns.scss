@@ -20,3 +20,10 @@ background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox=
     background-color: #fffff9;
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%2310c0c5' fill-opacity='0.11' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
+
+
+// Red Circles
+.bg-image--seo-tools {
+background-color: gray;
+background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);
+}

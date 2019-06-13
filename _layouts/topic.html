@@ -113,12 +113,8 @@
                   <!-- Topic image -->
 
                   <div class="col-lg-4 d-flex align-items-center guide-panel__header panel__header--responsive-corners--left
-                    {% if guide.background-pattern %} guide.background-pattern {% endif %}" style="background-color: {{ guide.main-color }}; 
-                                  
-                                    {% if guide.background-image %} background-image: url({{ guide.background-image}});
-                                    {% else %} background-image: none;        {% endif %}                      
-
-                        background-position-y: center; background-repeat: no-repeat; background-size: cover">
+                    {% if guide.background-pattern %} {{ guide.background-pattern }} {% endif %}"
+                    style="background-color: {{guide.main-color}}">
                     <a href="{{guide.url}}" class="mx-auto">
                       <div class="d-block text-center mt-5 mb-5 guide-header">
                         <img src="{{ guide.featured-image }}" />
@@ -133,7 +129,10 @@
                     <div class="row mt-2 px-5 py-4 p-lg-5 pt-lg-4">
                       <!-- Topic guides list -->
                       <div class="col">
-                        <h2 class="mb-4">{{ guide.title }}</h2>
+                        <!-- Clickable title -->
+                        <a href="{{guide.url}}/" class="link--no-decoration">
+                          <h2 class="mb-4">{{ guide.title }}</h2>
+                        </a>
                         <ul class="guide-panel__guide-list">
                           <!-- Loop over all the chapters of this guide -->
                           {% assign sorted_chapters = site.categories.[guide.anchor] %}

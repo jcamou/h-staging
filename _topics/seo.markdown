@@ -1,7 +1,7 @@
 ---
 layout: topic
 name: seo
-title: "Learn SEO overview"
+title: "Learn SEO"
 main-color: "#298EE9"
 icon-image: "/assets/images/imgs/illustration__topic--seo.png"
 background-image: "/assets/images/imgs/img__bg--blue.jpg"
