@@ -1,0 +1,146 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <!-- Guide header -->
+  <header>
+    <!-- Logo bar -->
+    <div class="d-flex align-items-center" style="background-color: #312929;">
+      <img src="/assets/images/imgs/img__hoth-logo.jpg" width="180px;" class="mx-auto">
+    </div>
+
+  </header>
+
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .arr-right .breadcrumb-item+.breadcrumb-item::before {
+      content: "›";
+      vertical-align: middle;
+      padding-bottom: 2px;
+      color: rgba(0, 0, 0, 0.35);
+    }
+
+    .arr-right .breadcrumb-item+.active {
+      color: rgba(255, 255, 255, 0.45);
+    }
+  </style>
+
+  <!-- ------------------------------------------------------------
+    BREAD CRUMS
+  ------------------------------------------------------------ -->
+  <div class="container-fluid p-0 d-none d-lg-block" style="background-color: {{ page.category-color }};">
+    <div class="row no-gutters align-items-center m-0" style="height: 80px;">
+      <div class="col d-flex align-items-center;">
+        <!-- button -->
+        <div class="d-flex mr-3 align-items-center" style="background-color:rgba(255,255,255,0.15); height: 80px; ">
+
+          <a href="/learning-hub/" class="px-4 link--white text__font-size--18">
+            <i class="fas fa-arrow-left mr-3" style="font-size: 14px;"></i>Learning Home
+          </a>
+        </div>
+        <!-- breadcrums -->
+        <nav aria-label="breadcrumb m-0" class="d-flex align-items-center" style="height: 80px;">
+          <ol class="breadcrumb arr-right m-0 text-white" style="background-color: transparent;">
+            <li class="breadcrumb-item"><a href="/learning-hub/" class="link--white">HOTH Learning Hub</a></li>
+            <li class="breadcrumb-item"><a href="/topics/seo/" class="link--white">{{page.category-title}}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------------------
+    Guide hero section
+------------------------------------------------------------ -->
+  <div class="container-fluid mb-5 {% if page.background-pattern %} {{ page.background-pattern }} {% endif %}" style="background-color: {{ page.main-color }}; 
+          {% if page.background-image %} background-image: url({{ page.background-image }}); {% endif %}
+          ">
+    <div class="container" style="max-width: 900px;">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-8 col-sm-12">
+          <h1 style="font-size: 48px" class="{% if page.dark-background == "true" %} text-white {% endif %}">
+            {{page.title}}</h1>
+        </div>
+        <div class="col-lg-4 col-sm-12 d-flex align-items-center">
+          <div class="d-block text-center mt-5 mb-5 guide-header">
+            <img src="{{ page.featured-image }}" style="max-width: 300px;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------------------
+    Guide chapter list
+------------------------------------------------------------ -->
+
+  <div class="container pb-5  ">
+
+    {% for sorted_chapters in site.categories.[page.anchor] reversed %}
+
+    <!-- Loop over all the chapters of this guide -->
+    <a href="{{ sorted_chapters.url }}" style="text-decoration: none;">
+      <div class="click-div panel mx-auto mt-3" style="max-width: 700px;">
+        <div class="px-4 py-4 d-flex justify-content-between">
+          <!-- chapter title -->
+          <div>
+            <h3 class="card-title">{{ sorted_chapters.title }}</h3>
+            <span style="color: {{ page.category-color }}">Read this chapter <i class="fas fa-arrow-right"></i></span>
+          </div>
+          <!-- arrow right -->
+          <div class="d-flex align-items-center">
+            <i class="fas fa-arrow-right circle-icon text-white"
+              style="float: right !important; background-color: {{ page.category-color }}; padding: 10px; border-radius: 50%; "></i>
+          </div>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+    <!-- /END chapter loop -->
+
+
+  </div>
+
+
+  <!-- TODO: hide footer on learning home page -->
+  {% include learning-footer.html %}
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src='/assets/js/scripts.js'></script>
+  <script type="text/javascript" src="/assets/js/mixitup.min.js"></script>
+  <script type="text/javascript" src='/assets/js/productslisting.js'></script>
+
+  <!-- slider slick -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/slick/slick.min.js"></script>
+
+</body>
+
+</html>

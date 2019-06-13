@@ -36,36 +36,10 @@
 }
 
 
-.panel__bg--blue{
-  background-image: url('../images/imgs/img__bg--blue.jpg');
+.panel__bg--cover{
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: $blue--primary;
-}
-
-.panel__bg--purple{
-  background-image: url('../images/imgs/img__bg--purple.gif');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $purple--300;
-}
-
-.panel__bg--yellow{
-  background-image: url('../images/imgs/img__bg--yellow.jpg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $color__seo-sales--base;
-}
-
-.panel__bg--green{
-  background-image: url('../images/imgs/img__bg--green.jpg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $color__ppc--base;
 }
 
 

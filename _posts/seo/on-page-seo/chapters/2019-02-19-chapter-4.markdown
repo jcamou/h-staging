@@ -7,6 +7,10 @@ short-title: On Page SEO
 anchor: chapter-4
 summary: "xxxxx"
 category: on-page-seo
+category-title: "Learn SEO"
+
+light-color: "#FFCC00"
+dark-color: "#10C0C5"
 ---
 
 Chapter 2 text

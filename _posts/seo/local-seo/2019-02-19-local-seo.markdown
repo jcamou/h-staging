@@ -1,12 +1,17 @@
 ---
-layout: guide
+layout: guide-index
 title: The ultimate guide to local SEO
 short-title: Local SEO
 anchor: local-seo
 summary: "xxxxx"
 category: seo
-main-color: "#3BAAE2"
+category-title: "Learn SEO"
+category-color: "#298EE9"
+
+dark-background: "true" 
+main-color: "#1D77C9" 
 featured-image: "/assets/images/imgs/illustration__guide--on-page-local.jpg"
+background-pattern: bg-image--circles
 ---
 
 Intro text to the guide.

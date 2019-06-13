@@ -296,3 +296,9 @@
       }
     }
   }
+
+
+  /* Darkens a button of unknown background color */
+.btn--hover-dark:hover{
+  filter: brightness(92%);
+}

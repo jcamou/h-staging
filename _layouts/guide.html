@@ -70,8 +70,8 @@
         <nav aria-label="breadcrumb m-0" class="d-flex align-items-center" style="height: 80px;">
           <ol class="breadcrumb arr-right m-0 text-white" style="background-color: transparent;">
             <li class="breadcrumb-item"><a href="/learning-hub/" class="link--white">HOTH Learning Hub</a></li>
-            <li class="breadcrumb-item"><a href="/learning-hub/seo/" class="link--white">SEO Overview</a></li>
-            <li class="breadcrumb-item active" aria-current="page">On-page SEO</li>
+            <li class="breadcrumb-item"><a href="/topics/seo/" class="link--white">{{page.category-title}}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
           </ol>
         </nav>
       </div>
@@ -109,7 +109,7 @@
 
             .active-nav::before {
               content: '›';
-              color: #FFCC00;
+              /*color: #FFCC00;*/
               position: absolute;
               left: -30px;
               top: -5px;
@@ -117,21 +117,21 @@
             }
 
             .active-nav {
-              color: #FFCC00;
+              /*color: #FFCC00;*/
             }
           </style>
 
           <!-- List of chapters : TODO REPLACE WITH NAV-->
           <ol class="text-left chapter-nav" style="color: #C1C1C1; position: relative;">
-            {% assign sorted_chapters = site.categories.on-page-seo | sort:"chapter-number" %}
-            {% for sorted_chapters in site.categories.on-page-seo reversed %}
+            {% for sorted_chapters in site.categories.[page.category] reversed %}
             {% assign active = false %}
             {% if sorted_chapters.chapter-number==page.chapter-number %}
             {% assign active = true %}
             {% endif%}
 
             <!-- Loop over all the chapters of this guide -->
-            <li class="{% if active %} active-nav {% endif%}" style="position:relative; margin-top: 10px; ">
+            <li class="{% if active %} active-nav {% endif%}" style="position:relative; margin-top: 10px;
+            {% if active %} color: {{sorted_chapters.light-color}}; {% endif%} ">
               <a {% if active == false %} href="{{sorted_chapters.url}}" {% endif %}>{{ sorted_chapters.title }}</a>
             </li>
 
@@ -162,16 +162,59 @@
       </div> <!-- End Bootstrap column sidebar -->
 
       <!-- Bootstrap column for CONTENT, full width for small screens -->
-      <div class="col-12 col-lg-8" style="min-height: 100vh;">
+      <div class="col-12 col-lg-8" style="min-height: 100vh; background-color: #f7f7f7;">
         <!-- sticky navigation toggle for small screens -->
-        <div class="d-lg-none row no-gutter" style="display: flex; background-color: #313131; padding: 10px; color: white;
-        position: sticky; position: -webkit-sticky; top: 0;">
-          <a href="#" onclick="openNav()">
+        <div id="sidebarCollapse" class="d-lg-none row no-gutter" style="display: flex; background-color: #313131; padding: 10px; color: white;
+        position: sticky; position: -webkit-sticky; top: 0; cursor: pointer; z-index: 998;">
+          <span id="collapse-text" class="menu-collapsed text-white">☰ Toggle navigation</span>
+          <!--a href="" onclick="openNav()">
             <span id="collapse-text" class="menu-collapsed text-white">☰ Toggle navigation</span>
-          </a>
+          </a>--->
 
         </div>
+
+
+
         <!-- /END sticky navigation toggle-->
+
+
+        <!-- ******************************************************************************** -->
+        <!-- ******************      Collapsable sidebar       ****************************** -->
+        <!-- ******************************************************************************** -->
+
+        <nav id="sidebar" class="active pt-5 px-3">
+
+          <div id="dismiss">
+            <i class="fas fa-times"></i>
+          </div>
+
+          <h4 class="mb-4" style="font-size: 18px;  padding-left: 18px; font-weight: 600; color: white;">
+            {{ page.guide-title }}</h4>
+
+
+          <!-- List of chapters : TODO REPLACE WITH NAV-->
+          <ol class="text-left chapter-nav" style="color: #C1C1C1; position: relative;">
+            {% for sorted_chapters in site.categories.[page.category] reversed %}
+            {% assign active = false %}
+            {% if sorted_chapters.chapter-number==page.chapter-number %}
+            {% assign active = true %}
+            {% endif%}
+
+            <!-- Loop over all the chapters of this guide -->
+            <li class="{% if active %} active-nav {% endif%}" style="position:relative; margin-top: 10px;
+                                {% if active %} color: {{sorted_chapters.light-color}}; {% endif%} ">
+              <a {% if active == false %} href="{{sorted_chapters.url}}" {% endif %}>{{ sorted_chapters.title }}</a>
+            </li>
+
+            {% endfor %}
+            <!-- /END chapter loop -->
+          </ol>
+
+        </nav>
+
+
+
+
 
         <!-- Chapter HERO for first chapter-->
         {% if page.chapter-number == "1" %}
@@ -192,8 +235,8 @@
           START CHAPTER CONTENT
           -------------------------------------------------------------------------------------->
           <div class="row mx-auto" style="max-width: 650px;">
-            <h1 class="mb-4 d-block" style="width:100%;">{{ page.title }}</h1>
-            <div>
+            <h1 class="mb-4 d-block" style="width:100%; color: {{ page.dark-color }}">{{ page.title }}</h1>
+            <div style="font-size: 18px;">
               {{ content }}
             </div>
 
@@ -207,18 +250,17 @@
           </div>
         </div><!-- /END content container -->
 
+        <!-- Overlay class to darken screen with the collapsable sidebar on mobile devices -->
+        <div class="overlay d-lg-none">
+        </div>
       </div>
 
 
     </div><!-- /END Bootstrap row -->
   </div><!-- /END main content container-->
 
-
-
   <!-- TODO: hide footer on learning home page -->
   {% include learning-footer.html %}
-
-
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -240,6 +282,30 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $('#sidebarCollapse').on('click', function () {
+        // open sidebar
+        $('#sidebar').removeClass('active');
+        // fade in the overlay
+        $('.overlay').addClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      $('#dismiss, .overlay').on('click', function () {
+        // hide sidebar
+        $('#sidebar').addClass('active');
+        // hide overlay
+        $('.overlay').removeClass('active');
+      });
+
+
+    });
+  </script>
+
 
 </body>
 

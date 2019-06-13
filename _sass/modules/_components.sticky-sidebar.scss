@@ -1,47 +1,56 @@
 ///*------------------------------------*\
 //    #STICKY SIDEBAR
 //\*------------------------------------*/
-/*
-  .sidebar-section {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-  }
+#sidebar {
+  min-width: 320px;
+  max-width: 320px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  /* top layer */
+  z-index: 9999;
+    transition: all 0.5s ease-in-out;
+}
 
-  .sidebar-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+.overlay {
+  z-index: 0; 
+  background-color: rgba(0,0,0,0.4); 
+  display: block; 
+  top: 0; 
+  left: 0;
+  right: 0; 
+  bottom: 0; 
+  height: 100vh; 
+  width: 100vw; 
+  position: fixed;
 
-  .make-me-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 150px; /* MAKE dyname on size of the header: What is the proper way to do this? */ /*
-    padding: 0 0px;
-  }
+    /* middle layer, i.e. appears below the sidebar */
+  opacity: 0;
+  /* animate the transition */
+  transition: all 0.5s ease-in-out;
+}
 
-  .title-section,
-  .content-section,
-  .sidebar-section {
-    background: #f7f7f7;
-  }
+#sidebar.active {
+  margin-left: -320px;
 
-  .title-section {
-    text-align: center;
-    padding: 50px 15px;
-    margin-bottom: 30px;
-  }
+}
 
-  .content-section h2 {
-    text-align: center;
-    margin: 0;
-    padding-top: 200px;
-  }
+/* display .overlay when it has the .active class */
+.overlay.active {
+  display: block;
+  opacity: 1;
+  z-index: 999;
+}
 
-  .sidebar-item {
-    text-align: center;
-    background-color: #343434;
-  }*/
+#dismiss {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  /* top right corner of the sidebar */
+  top: 10px;
+  right: 0px;
+  color: white;
+  font-size: 24px;
+}

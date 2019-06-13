@@ -1,16 +1,12 @@
 ---
 layout: guide
 chapter-number: "1"
-guide-title: "The ultimate guide to on-page SEO"
-title: "What is On-Page SEO?"
-short-title: On Page SEO
+guide-title: "The ultimate guide to local SEO"
+title: "What is LOCAL SEO?"
+short-title: Local SEO
 anchor: chapter-1
 summary: "xxxxx"
-category: on-page-seo
-category-title: "Learn SEO"
-
-light-color: "#FFCC00"
-dark-color: "#10C0C5"
+category: local-seo
 ---
 
 Chapter 1 text

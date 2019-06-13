@@ -1,0 +1,12 @@
+---
+layout: guide
+title: The ultimate guide to PPC HOTH
+short-title: PPC Crash Course
+anchor: ppc-course1
+summary: "xxxxx"
+categories: ppc
+main-color: "#323232"
+featured-image: "/assets/images/imgs/illustration__guide--on-page-ecommerce.png"
+---
+
+Intro text to the guide.
