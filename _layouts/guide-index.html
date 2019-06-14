@@ -70,12 +70,13 @@
     <div class="container" style="max-width: 900px;">
       <div class="row d-flex align-items-center">
         <div class="col-lg-8 col-sm-12">
-          <h1 style="font-size: 48px" class="{% if page.dark-background == "true" %} text-white {% endif %}">
+          <h1 style="font-size: 48px"
+            class="text-center text-lg-left mt-4 mt-lg-0 {% if page.dark-background == "true" %} text-white {% endif %}">
             {{page.title}}</h1>
         </div>
         <div class="col-lg-4 col-sm-12 d-flex align-items-center">
-          <div class="d-block text-center mt-5 mb-5 guide-header">
-            <img src="{{ page.featured-image }}" style="max-width: 300px;" />
+          <div class="d-block text-center mt-lg-5 mb-lg-5 guide-header mx-auto">
+            <img src="{{ page.featured-image }}" style="width: 100%; max-width: 250px" />
           </div>
         </div>
       </div>
