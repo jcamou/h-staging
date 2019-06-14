@@ -8,8 +8,8 @@ categories: seo
 category-title: "Learn SEO"
 category-color: "#298EE9"
 
-main-color: "#282D8B"
-dark-background: "true"
+main-color: "#c0e7de"
+dark-background: "false"
 featured-image: "/assets/images/imgs/illustration__guide--on-page-ecommerce.png"
 background-pattern: bg-image--dots
 

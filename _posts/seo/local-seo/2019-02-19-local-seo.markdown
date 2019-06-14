@@ -10,7 +10,7 @@ category-color: "#298EE9"
 
 dark-background: "true" 
 main-color: "#1D77C9" 
-featured-image: "/assets/images/imgs/illustration__guide--on-page-local.jpg"
+featured-image: "/assets/images/imgs/illustration__guide--on-page-local.png"
 background-pattern: bg-image--circles
 ---
 
