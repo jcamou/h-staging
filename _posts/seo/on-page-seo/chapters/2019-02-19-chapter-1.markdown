@@ -1,5 +1,7 @@
 ---
 layout: guide
+topic-name: seo
+guide-name: on-page-seo
 chapter-number: "1"
 guide-title: "The ultimate guide to on-page SEO"
 title: "What is On-Page SEO?"

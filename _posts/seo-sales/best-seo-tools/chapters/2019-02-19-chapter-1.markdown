@@ -1,5 +1,6 @@
 ---
 layout: guide
+name: seo
 chapter-number: "1"
 guide-title: "The ultimate guide to local SEO"
 title: "Best SEO tools"

@@ -1,6 +1,7 @@
 ---
 layout: guide-index
 title: The ultimate guide to local SEO
+guide-name: local-seo
 short-title: Local SEO
 anchor: local-seo
 summary: "xxxxx"

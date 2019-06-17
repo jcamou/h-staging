@@ -3,11 +3,6 @@ layout: learning-home
 title: Learning Hub Home
 has_footer: no;
 ---
-<style>
-    html {
-        scroll-behavior: smooth;
-    }
-</style>
 
 <div class="container pt-0 pt-sm-4 pb-5">
 
@@ -49,10 +44,9 @@ has_footer: no;
                 <!-- bootstrap row -->
                 <div class="row no-gutters">
                     <!-- Categroy Topic image -->
-                    <div class="col-lg-4 d-flex align-items-center panel__bg--cover guide-panel__header panel__header--responsive-corners--left"
-                        style="background-image: url({{ topic.background-image }});
-                                background-color: {{ topic.main-color }}; ">
-                        <a href="{{topic.url}}" class="mx-auto" style="text-decoration: none;">
+                    <div
+                        class="col-lg-4 d-flex align-items-center bg-img--{{topic.topic-name}} bg-color--{{topic.topic-name}} panel__bg--cover guide-panel__header panel__header--responsive-corners--left">
+                        <a href="{{topic.url}}" class="mx-auto link--no-decoration">
                             <div class="d-block text-center mt-5 mb-5 topic-header">
                                 <h2 class="text__color--white">{{topic.title}}</h2>
                                 <img src="{{topic.icon-image}}" />
@@ -66,14 +60,14 @@ has_footer: no;
                         <div class="row mt-2 px-5 py-4 p-lg-5">
                             <!-- Right column: Guides list -->
                             <div class="col-md-5 order-md-2">
-                                <h4 class="mb-4 text--bold" style="color: {{ topic.main-color }}">
-                                    {{ site.categories.[topic.name] | size }} Guides
+                                <h4 class="mb-4 text--bold text-color--{{topic.topic-name}}">
+                                    {{ site.categories.[topic.topic-name] | size }} Guides
                                 </h4>
                                 <ul class="guide-panel__guide-list">
-                                    {% for guide in site.categories.[topic.name] %}
+                                    {% for guide in site.categories.[topic.topic-name] %}
                                     <li>
-                                        <i class="material-icons md-18"
-                                            style="color: {{ topic.main-color }}">keyboard_arrow_right</i>
+                                        <i
+                                            class="material-icons md-18 text-color--{{topic.topic-name}}">keyboard_arrow_right</i>
                                         <a href="{{ guide.url }}">{{ guide.short-title}}</a>
                                     </li>
                                     {% endfor %}
@@ -84,14 +78,13 @@ has_footer: no;
                             <!-- Left column: Topic intro text and button -->
                             <div class="col-md-7 order-md-1 justify-content-center p-0 pl-lg-3 pr-lg-5">
                                 <div class="d-none d-md-block">
-                                    <h4 class="mb-4 text--bold" style="color: {{ topic.main-color }}">What you'll learn
+                                    <h4 class="mb-4 text--bold text-color--{{topic.topic-name}}">What you'll learn
                                     </h4>
                                     <p>{{ topic.intro }}</p>
                                 </div>
 
                                 <a href="{{topic.url}}"
-                                    class="btn btn--hover-dark btn__mobile--full-width mt-4 mt-sm-2 text__color--white"
-                                    style="background-color: {{ topic.main-color }};">Start
+                                    class="btn btn--hover-dark btn__mobile--full-width mt-4 mt-sm-2 text__color--white bg-color--{{topic.topic-name}}">Start
                                     to learn SEO <i class="material-icons md-14">arrow_forward</i></a>
                             </div>
                         </div>

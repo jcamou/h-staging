@@ -1,5 +1,6 @@
 ---
 layout: guide
+name: seo
 title: The best SEO tools
 short-title: Best SEO tools
 anchor: best-seo-tools

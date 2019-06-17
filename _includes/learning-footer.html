@@ -3,23 +3,22 @@
         FOOTER
     ------------------------------------------------------------ -->
 
-    <div class="container-fluid py-5" style="background-color: white">
+    <div class="container-fluid py-5 bg-color--white">
         <div class="container text-center">
             <h2 class="py-4">Other topics</h2>
-            <div class="slick" style="height: 300px;">
+            <div class="slick h-300px">
 
                 <!-- Loop over all topics -->
                 {% for topic in site.topics reversed %}
-                <div class="mx-2 mx-md-3 p-4 pb-5 d-flex align-items-center guide-panel__header" style="position: relative; border-radius: 4px; background-image: url({{ topic.background-image }});
-                                background-color: {{ topic.main-color }}; ">
-                    <a href="/topics/{{topic.name}}" class="mx-auto link--no-decoration">
-                        <div class="d-block text-center mt-5 mb-5 topic-header" style="width: 100%">
-                            <h2 class="text__color--white mb-4 text-uppercase">{{topic.name}}</h2>
-                            <img src="{{topic.icon-image}}" style="display: inline; max-width: 100px;" />
+                <div class="mx-2 mx-md-3 p-4 pb-5 d-flex align-items-center guide-panel__header position-relative border-radius--4
+                bg-img--{{topic.topic-name}} bg-color--{{topic.topic-name}} bg-fit">
+                    <a href="/topics/{{topic.topic-name}}" class="mx-auto link--no-decoration">
+                        <div class="d-block text-center mt-5 mb-5 topic-header w-100pc">
+                            <h2 class="text__color--white mb-4 text-uppercase">{{topic.topic-name}}</h2>
+                            <img src="{{topic.icon-image}}" class="d-inline max-w--100px" />
                         </div>
                     </a>
-                    <a href="/topics/{{topic.name}}"
-                        style="position: absolute; bottom: 0px; right: 20px; color: white;">
+                    <a href="/topics/{{topic.name}}" class="text-white bottom-right mr-3">
                         <p class="start-now">Start Now <i class="fas fa-arrow-right"></i></p>
                     </a>
                 </div>

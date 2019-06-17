@@ -1,6 +1,7 @@
 ---
 layout: guide-index
 title: The ultimate guide to e-commerce SEO
+guide-name: e-commerce-seo
 short-title: E-commerce SEO
 anchor: e-commerce-seo
 summary: "xxxxx"

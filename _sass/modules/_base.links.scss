@@ -32,6 +32,15 @@ a {
   }
 }
 
+
+.link--dark-grey {
+  color          : $color__gray--dark !important;
+
+  &:hover, &:focus {
+    color        : $color__gray--dark;
+  }
+}
+
 .link--red {
   color          : $red--primary;
 

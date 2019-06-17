@@ -29,16 +29,56 @@
   width: 75px;
 }
 
+.max-w--100px {
+  max-width: 100px;
+}
+
 .w-180 {
   width: 180px;
+}
+
+.max-w--200 {
+  max-width: 200px;
+}
+
+.max-w--250 {
+  max-width: 250px;
 }
 
 .max-w--600 {
   max-width: 600px;
 }
 
+.max-w--650 {
+  max-width: 650px;
+}
+
+.max-w--670 {
+  max-width: 670px;
+}
+
+.max-w--700 {
+  max-width: 700px;
+}
+
+.max-w--900 {
+  max-width: 900px;
+}
+
+.max-w--1300 {
+  max-width: 1300px;
+}
+
 .min-h--271px {
   min-height: 271px;
+}
+
+.h-80px{
+  height: 80px;
+}
+
+.h-300px{
+  height: 300px;
 }
 
 // Percents
@@ -63,6 +103,10 @@
   width: 100%;
 }
 
-.max-w--100px {
-  max-width: 100px;
+.min-h--100pc {
+  min-height: 100%;
+}
+
+.max-w--100pc {
+  max-width: 100%;
 }

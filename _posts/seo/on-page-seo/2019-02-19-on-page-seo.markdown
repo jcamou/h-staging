@@ -1,9 +1,10 @@
 ---
 layout: guide-index
+topic-name: seo
+guide-name: on-page-seo
 title: "The ultimate guide to on-page SEO"
 short-title: On Page SEO
 anchor: on-page-seo
-summary: "xxxxx"
 category: seo
 category-title: "Learn SEO"
 category-color: "#298EE9"
