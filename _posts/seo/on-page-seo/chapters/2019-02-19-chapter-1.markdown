@@ -2,24 +2,39 @@
 layout: guide
 topic-name: seo
 guide-name: on-page-seo
+
 chapter-number: "1"
-guide-title: "The ultimate guide to on-page SEO"
+
 title: "What is On-Page SEO?"
 short-title: On Page SEO
 anchor: chapter-1
-summary: "xxxxx"
+
+guide-title: "The ultimate guide to on-page SEO"
 category: on-page-seo
 category-title: "Learn SEO"
 
-light-color: "#FFCC00"
-dark-color: "#10C0C5"
-
-
-main-color: "#ffffff"
 featured-image: "/assets/images/imgs/illustration__guide--on-page-seo.png"
 background-pattern: bg-image--stripes
 
 ---
+
+<!-- 
+    Layout: guide.html is used
+    Topic name: used to determine the topic color [seo, seo-sales, ppc, content-marketing]
+    Guide name: used to find the css classes with the guide colors (a dark and a light color) - add css classes to guide-panel.css
+    chapter-number: to sort 
+
+    title: title of the chapter
+    short-title: title of the chapter for in the nav bar
+    anchor: not used
+    
+    guide-title: title of the guide the chapter belongs to
+    category: the guide the chapter belongs to
+
+    featured-image: the guide's featured image
+    background-pattern: the css class used for the hero background (spice it up)
+-->
+
 
 Chapter 1 text
 
