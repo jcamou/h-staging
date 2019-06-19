@@ -1,11 +1,22 @@
 ---
 layout: guide
+topic-name: seo
+guide-name: e-commerce-seo
+
 chapter-number: "1"
+
+title: "What is E-commerce SEO?"
 short-title: E-commerce SEO
 anchor: chapter-1
-summary: "xxxxx"
+
+guide-title: "The ultimate guide to e-commerce SEO"
 category: e-commerce-seo
 category-title: "Learn SEO"
+
+dark-background: "true"
+featured-image: "/assets/images/imgs/illustration__guide--e-commerce-seo.png"
+background-pattern: bg-imagge--e-commerce-seo
+
 ---
 
 Intro text to the guide.

@@ -11,7 +11,6 @@
     <!-- /END Logo bar -->
   </header>
 
-
   <!-- ------------------------------------------------------------
       BREAD CRUMS
   ------------------------------------------------------------ -->
@@ -152,7 +151,7 @@
         </nav>
 
         <!-- Chapter HERO for first chapter-->
-        {% if page.chapter-number == "1" %}
+        {% if true %}
         <div class="row align-items-center">
           <!-- ******************************************************************************** -->
           <!-- ******************        GUIDE HERO SECTION      ****************************** -->
@@ -163,7 +162,7 @@
               <div class="row d-flex align-items-center">
                 <div class="col-lg-8 col-sm-12 col-md-8 text-sm-center text-lg-left">
                   <h1
-                    class="mt-5 mt-md-0 text-center text__font-size--48 text-lg-left {% if page.dark-background == "true" %} text-white {% endif %}">
+                    class="mt-5 mt-md-0 text-center text__font-size--48 text-lg-left {% if page.dark-background == "true" %} text-white text__shadow--light {% endif %}">
                     {{page.guide-title}}</h1>
                 </div>
                 <div class="col-lg-4 col-sm-12 col-md-4 d-flex align-items-center">

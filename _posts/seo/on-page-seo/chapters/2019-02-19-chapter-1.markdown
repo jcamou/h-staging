@@ -13,8 +13,9 @@ guide-title: "The ultimate guide to on-page SEO"
 category: on-page-seo
 category-title: "Learn SEO"
 
+dark-background: "true" 
 featured-image: "/assets/images/imgs/illustration__guide--on-page-seo.png"
-background-pattern: bg-image--stripes
+background-pattern: bg-image--on-page-seo
 
 ---
 

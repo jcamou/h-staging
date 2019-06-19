@@ -11,8 +11,9 @@ category-title: "Learn SEO"
 category: seo
 category-color: "#298EE9"
 
+dark-background: "true" 
 featured-image: "/assets/images/imgs/illustration__guide--on-page-seo.png"
-background-pattern: bg-image--stripes
+background-pattern: bg-image--on-page-seo
 ---
 
 <!-- A guide has:

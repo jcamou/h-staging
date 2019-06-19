@@ -1,19 +1,19 @@
 ---
 layout: guide-index
-title: The ultimate guide to e-commerce SEO
+topic-name: seo
 guide-name: e-commerce-seo
-short-title: E-commerce SEO
 anchor: e-commerce-seo
-summary: "xxxxx"
-categories: seo
+
+title: "The ultimate guide to e-commerce SEO"
+short-title: "E-commerce SEO"
+
 category-title: "Learn SEO"
+category: seo
 category-color: "#298EE9"
 
-main-color: "#c0e7de"
-dark-background: "false"
-featured-image: "/assets/images/imgs/illustration__guide--on-page-ecommerce.png"
-background-pattern: bg-image--dots
-
+dark-background: "true"
+featured-image: "/assets/images/imgs/illustration__guide--e-commerce-seo.png"
+background-pattern: bg-imagge--e-commerce-seo
 ---
 
 Intro text to the guide.

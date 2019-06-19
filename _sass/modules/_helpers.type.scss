@@ -338,3 +338,13 @@
   font-weight: $font-weight--bold;
   text-transform: uppercase;
 }
+
+
+
+/**
+ *  Shadow
+ */
+
+ .text__shadow--light{
+   text-shadow: 0 5px 10px rgba(0,0,0,0.2); 
+ }

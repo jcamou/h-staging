@@ -1,12 +1,22 @@
 ---
 layout: guide
+topic-name: seo
+guide-name: local-seo
+
 chapter-number: "1"
-guide-title: "The ultimate guide to local SEO"
-title: "What is LOCAL SEO?"
+
+title: "What is local SEO?"
 short-title: Local SEO
 anchor: chapter-1
-summary: "xxxxx"
+
+guide-title: "The ultimate guide to local SEO"
 category: local-seo
+category-title: "Learn SEO"
+
+dark-background: "true" 
+featured-image: "/assets/images/imgs/illustration__guide--local-seo.png"
+background-pattern: bg-image--local-seo
+
 ---
 
 Chapter 1 text
