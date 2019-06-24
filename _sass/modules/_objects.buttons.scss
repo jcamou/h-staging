@@ -11,10 +11,11 @@
   font-size       : 12px;
   font-weight     : $font-weight--bold;
   letter-spacing  : .5px;
+  text-shadow     : none;
   border          : none;
   cursor          : pointer;
   border-radius   : 2px;
-  text-align: center;
+  text-align      : center;
   transition      : all $transition;
   box-shadow      : $box-shadow;
 
