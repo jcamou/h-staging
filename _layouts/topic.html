@@ -1,0 +1,183 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+{% include head.html %}
+
+<body class="bg-color--grey--170">
+  <!-- Guide header -->
+  <header>
+    <!-- Logo bar placeholder -->
+    {% include header--placeholder.html %}
+
+  </header>
+
+  <!-- ------------------------------------------------------------
+    BREAD CRUMS
+------------------------------------------------------------ -->
+  <div class="container-fluid p-0 d-none d-lg-block bg-color--{{page.topic-name}}">
+    <div class="row no-gutters align-items-center m-0 h-80px">
+      <div class="col d-flex align-items-center;">
+        <!-- button -->
+        <div class="d-flex mr-3 align-items-center home-button h-80px">
+
+          <a href="/learning-hub/" class="px-4 link--white text__font-size--18">
+            <i class="fas fa-arrow-left mr-3 text__font-size--14"></i>Learning Home
+          </a>
+        </div>
+        <!-- breadcrums -->
+        <nav aria-label="breadcrumb m-0" class="d-flex align-items-center h-80px">
+          <ol class="breadcrumb arr-right m-0 text-white bg-color--transparent">
+            <li class="breadcrumb-item"><a href="/learning-hub/" class="link--white">HOTH Learning Hub</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------------------
+      Main content
+  ------------------------------------------------------------ -->
+
+  <div class="container-fluid pt-0 pt-sm-4 pb-5 max-w--1300">
+    <div class="row">
+
+      <!-- ------------------------------------------------------------
+            Navigation sidebar
+        ------------------------------------------------------------ -->
+
+      <div class="col-md-3 d-none d-lg-block pt-5 p-lg-5">
+        <h4 class="mb-4 text--bold text-color--{{page.topic-name}}">
+          {{ site.categories.[page.topic-name] | size }}
+          Guides</h4>
+
+        <ul class="guide-panel__guide-list">
+          {% for guide in site.categories.[page.topic-name] %}
+          <li>
+            <i class="material-icons md-18 text-color--{{page.topic-name}}">keyboard_arrow_right</i>
+            <a href="#{{ guide.anchor }}">{{ guide.short-title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- ------------------------------------------------------------
+            Content body
+        ------------------------------------------------------------ -->
+      <div class="col-md-12 col-lg-9 pt-5">
+
+        <div class="container" id="guide-list">
+          <!-- Topic title ------------------------------------------>
+          <div class="mb-lg-3 text-center">
+            <h1 class="my-3 text-color--{{page.topic-name}}">{{ page.title }}</h1>
+            <div class="max-w--600 ml-auto text-left mr-auto text__font-size--18">Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Ipsam
+              nesciunt repudiandae aperiam velit aliquid voluptatem expedita ipsum vitae blanditiis totam.
+            </div>
+          </div>
+          <!-- ------------------------------------------------->
+
+
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+
+              {% for guide in site.categories.[page.topic-name] %}
+              <!-- Guide panel -->
+              <div class="guide-panel mb-3 mt-5" id="{{ guide.anchor }}">
+                <div class="row no-gutters">
+                  <!-- Topic image -->
+                  <div class="col-lg-4 d-flex align-items-center guide-panel__header panel__header--responsive-corners--left
+                    {% if guide.background-pattern %} {{ guide.background-pattern }} {% endif %}">
+                    <a href="{{guide.url}}" class="mx-auto">
+                      <div class="d-block text-center mt-5 mb-5 guide-header">
+                        <img src="{{ guide.featured-image }}" />
+                      </div>
+                    </a>
+                  </div>
+
+
+                  <!-- Topic content -->
+                  <div class="col-lg-8">
+
+                    <div class="row mt-2 px-5 py-4 p-lg-5 pt-lg-4">
+                      <!-- Topic guides list -->
+                      <div class="col">
+                        <!-- Clickable title -->
+                        <a href="{{guide.url}}/" class="link--no-decoration">
+                          <h2 class="mb-4">{{ guide.title }}</h2>
+                        </a>
+                        <ul class="guide-panel__guide-list">
+                          <!-- Loop over all the chapters of this guide -->
+                          {% assign sorted_chapters = site.categories.[guide.anchor] %}
+
+                          {% for chapter in sorted_chapters limit:4 reversed %}
+                          <li>
+                            <i class="material-icons md-18 text-color--{{page.topic-name}}">keyboard_arrow_right</i>
+                            <a href="{{chapter.url}}">{{ chapter.title }}</a>
+                          </li>
+                          {% endfor %}
+
+                          <!-- Add more link if there's more than 5 chapters -->
+                          {% if sorted_chapters.size > 4 %}
+                          <li>
+                            <i class="material-icons md-18 text-color--{{page.topic-name}}">keyboard_arrow_right</i>
+                            <a class="blue" href="{{guide.url}}">More...</a>
+                          </li>
+                          {% endif %}
+
+                          <!-- /END chapter loop -->
+                        </ul>
+                        <a href="{{guide.url}}/"
+                          class="btn btn--hover-dark text-white btn__mobile--full-width mt-4 mt-sm-2 bg-color--{{page.topic-name}}">Start
+                          this
+                          guide <i class="material-icons md-14">arrow_forward</i></a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- TODO: hide footer on learning home page -->
+  {% include learning-footer.html %}
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src='/assets/js/scripts.js'></script>
+  <script type="text/javascript" src="/assets/js/mixitup.min.js"></script>
+  <script type="text/javascript" src='/assets/js/productslisting.js'></script>
+
+  <!-- slider slick -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/slick/slick.min.js"></script>
+
+</body>
+
+</html>

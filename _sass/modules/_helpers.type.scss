@@ -236,6 +236,27 @@
 
 
 /**
+ * Red
+ */
+
+ .text__purple--300 {
+  color: $purple--300;
+ }
+
+
+ /*
+  *   LEARNING TOPIC COLORS
+  */
+
+.text__color--seo-sales {
+  color         : $color__seo-sales--base;
+}
+
+.text__color--ppc {
+  color         : $color__ppc--base;
+}
+
+/**
  * PRODUCT COLORS
  */
 .text__color--gp {
@@ -317,3 +338,13 @@
   font-weight: $font-weight--bold;
   text-transform: uppercase;
 }
+
+
+
+/**
+ *  Shadow
+ */
+
+ .text__shadow--light{
+   text-shadow: 0 5px 10px rgba(0,0,0,0.2); 
+ }

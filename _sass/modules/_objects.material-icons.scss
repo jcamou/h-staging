@@ -17,3 +17,10 @@
 /* Rules for using icons as white on a dark background. */
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+/* Colors */
+.material-icons.blue { color: $blue--primary; }
+.material-icons.purple { color: $purple--300; }
+.material-icons.yellow { color: $color__seo-sales--base; }
+.material-icons.green { color: $color__ppc--base; }

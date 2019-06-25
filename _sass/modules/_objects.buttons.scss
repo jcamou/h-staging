@@ -65,6 +65,8 @@
   }
 }
 
+// Red
+
 .btn--red {
   background-color: $red--primary;
   color: white;
@@ -80,6 +82,8 @@
   }
 }
 
+// Blue
+
 .h-btn--blue {
   background-color: $color__blue--base;
   color           : white;
@@ -94,6 +98,58 @@
     color: white;
   }
 }
+
+// Purple
+
+.h-btn--purple {
+  background-color: $purple--300;
+  color           : white;
+
+  &:hover, &:focus {
+    background-color: $purple--600;
+    color: white;
+  }
+
+  &:active {
+    background-color: darken($purple--300, 15%);
+    color: white;
+  }
+}
+
+// Yellow
+
+.h-btn--yellow {
+  background-color: $color__yellow--base;
+  color           : white;
+
+  &:hover, &:focus {
+    background-color: darken($color__yellow--base, 10%);
+    color: white;
+  }
+
+  &:active {
+    background-color: darken($color__yellow--base, 15%);
+    color: white;
+  }
+}
+
+// PPC green 
+.h-btn--ppc-green {
+  background-color: $color__ppc--base;
+  color           : white;
+
+  &:hover, &:focus {
+    background-color: darken($color__ppc--base, 10%);
+    color: white;
+  }
+
+  &:active {
+    background-color: darken($color__ppc--base, 15%);
+    color: white;
+  }
+}
+
+
 
 .h-btn--red-inverse, .btn--red-inverse {
   background-color: white;
@@ -241,3 +297,9 @@
       }
     }
   }
+
+
+  /* Darkens a button of unknown background color */
+.btn--hover-dark:hover{
+  filter: brightness(92%);
+}

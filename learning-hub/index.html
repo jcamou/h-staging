@@ -1,0 +1,101 @@
+---
+layout: learning-home
+title: Learning Hub Home
+has_footer: no;
+---
+
+<div class="container pt-0 pt-sm-4 pb-5">
+
+    <!-- Header hero panel -->
+    <div class="panel">
+        <div class="row justify-content-center">
+            <!-- illustration -->
+            <div
+                class="col-sm-12 col-lg-6 bg-color--red--500 order-lg-2 text-center panel__header--responsive-corners--right">
+                <img src="/assets/images/imgs/illustration__learning-home.jpg"
+                    class="my-5 w-100pc panel__header--max-width" alt="HOTH Learning Hub">
+            </div>
+            <!-- introduction text -->
+            <div class="col-sm-12 col-lg-6 px-5 py-3 d-flex align-items-center panel__bg--learn-curve order-lg-1
+            text-center text-lg-left">
+                <div class="mb-lg-3">
+                    <h1 class="my-3">HOTH Learning Hub</h1>
+                    <p class="pr-lg-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                        nesciunt repudiandae aperiam velit aliquid voluptatem expedita ipsum vitae blanditiis totam.</p>
+                    <a href="#learn-seo" class="text__red--500">
+                        <p>Scroll down <i class="fas fa-arrow-down"></i></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /END hero panel -->
+
+
+    <!-- List of categories (topics) -->
+    <div class="row justify-content-center">
+        <div class="col-lg-11">
+
+            <!-- Loop over all categories -->
+            {% for topic in site.topics reversed limit:5 %}
+
+            <!-- CATEGORY PANEL -->
+            <div class="guide-panel mb-3 mt-5" id="learn-seo">
+                <!-- bootstrap row -->
+                <div class="row no-gutters">
+                    <!-- Categroy Topic image -->
+                    <div
+                        class="col-lg-4 d-flex align-items-center bg-img--{{topic.topic-name}} bg-color--{{topic.topic-name}} panel__bg--cover guide-panel__header panel__header--responsive-corners--left">
+                        <a href="{{topic.url}}" class="mx-auto link--no-decoration">
+                            <div class="d-block text-center mt-5 mb-5 topic-header">
+                                <h2 class="text__color--white">{{topic.title}}</h2>
+                                <img src="{{topic.icon-image}}" />
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Topic content -->
+                    <div class="col-lg-8">
+
+                        <div class="row mt-2 px-5 py-4 p-lg-5">
+                            <!-- Right column: Guides list -->
+                            <div class="col-md-5 order-md-2">
+                                <h4 class="mb-4 text--bold text-color--{{topic.topic-name}}">
+                                    {{ site.categories.[topic.topic-name] | size }} Guides
+                                </h4>
+                                <ul class="guide-panel__guide-list">
+                                    {% for guide in site.categories.[topic.topic-name] %}
+                                    <li>
+                                        <i
+                                            class="material-icons md-18 text-color--{{topic.topic-name}}">keyboard_arrow_right</i>
+                                        <a href="{{ guide.url }}">{{ guide.short-title}}</a>
+                                    </li>
+                                    {% endfor %}
+
+                                </ul>
+                            </div>
+
+                            <!-- Left column: Topic intro text and button -->
+                            <div class="col-md-7 order-md-1 justify-content-center p-0 pl-lg-3 pr-lg-5">
+                                <div class="d-none d-md-block">
+                                    <h4 class="mb-4 text--bold text-color--{{topic.topic-name}}">What you'll learn
+                                    </h4>
+                                    <p>{{ topic.intro }}</p>
+                                </div>
+
+                                <a href="{{topic.url}}"
+                                    class="btn btn--hover-dark btn__mobile--full-width mt-4 mt-sm-2 text__color--white bg-color--{{topic.topic-name}}">Start
+                                    to learn SEO <i class="material-icons md-14">arrow_forward</i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- /END bootstrap row -->
+            </div>
+            {% endfor %}
+            <!-- /END category loop -->
+
+        </div>
+    </div>
+
+</div>

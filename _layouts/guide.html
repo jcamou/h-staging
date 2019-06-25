@@ -1,0 +1,297 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <!-- Guide header -->
+  <header>
+    <!-- Logo bar -->
+    {% include header--placeholder.html %}
+    <!-- /END Logo bar -->
+  </header>
+
+  <!-- ------------------------------------------------------------
+      BREAD CRUMS
+  ------------------------------------------------------------ -->
+  <div class="container-fluid p-0 d-none d-lg-block bg-color--{{page.topic-name}}">
+    <div class="row no-gutters align-items-center m-0 h-80px">
+      <div class="col d-flex align-items-center;">
+        <!-- button -->
+        <div class="d-flex mr-3 align-items-center home-button h-80px">
+
+          <a href="/topics/{{page.topic-name}}/" class="px-4 link--white text__font-size--18">
+            <i class="fas fa-arrow-left mr-3 text__font-size--14"></i>Learn SEO
+          </a>
+        </div>
+        <!-- breadcrums -->
+        <nav aria-label="breadcrumb m-0" class="d-flex align-items-center h-80px">
+          <ol class="breadcrumb arr-right m-0 text-white bg-color--transparent">
+            <li class="breadcrumb-item"><a href="/learning-hub/" class="link--white">HOTH Learning Hub</a></li>
+            <li class="breadcrumb-item"><a href="/topics/seo/" class="link--white">{{page.category-title}}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------------------
+      Main content
+  ------------------------------------------------------------ -->
+
+  <!-- Main content layout: full-width Bootstrap container -->
+  <div class="container-fluid">
+
+    <!-- Bootstrap no-guttor row -->
+    <div class="row no-gutter" stlye="display: flex;">
+
+      <!-- Bootstrap column on large screens
+           It's sticky to the top of the boostrap row when scrolling the CONTENT div -->
+      <div id="sticky-sidebar" class="d-none d-lg-block col-4 col-lg-4 col-xl-3 p-0">
+
+        <!-- Container to give padding to the sidebar content -->
+        <div class="pt-lg-5 pl-lg-3 p-xl-5">
+          <!------------------------------------------------------------------------------------
+          START Sidebar content  
+          -------------------------------------------------------------------------------------->
+          <!-- Chapter title -->
+          <h4 class="mb-4 text-white font-weight-bold text__font-size--18">
+            {{ page.guide-title }}</h4>
+
+          <!-- List of chapters : TODO REPLACE WITH NAV-->
+          <ol class="text-left chapter-nav position-relative">
+            {% for sorted_chapters in site.categories.[page.category] reversed %}
+            {% assign active = false %}
+            {% if sorted_chapters.chapter-number==page.chapter-number %}
+            {% assign active = true %}
+            {% endif%}
+
+            <!-- Loop over all the chapters of this guide -->
+            <li
+              class="{% if active %} active-nav text-color--light--{{page.guide-name}} {% endif%} position-relative mt-2">
+              <a {% if active == false %} href="{{sorted_chapters.url}}" {% endif %}>{{ sorted_chapters.title }}</a>
+            </li>
+
+            {% endfor %}
+            <!-- /END chapter loop -->
+          </ol>
+
+          <!--Star email capture form -->
+          <div class="p-3 pt-5">
+            <form class="guide-form">
+              <div class="form-group position-relative">
+                <img src="/assets/images/imgs/img__arrow--yellow.png" class="flourish" />
+                <span class="text-white font-weight-bold">Want more content like this?</span>
+                <label for="exampleInputEmail1" class="text__font-size--14">Enter your email to join our weekly
+                  newsletter.</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter your email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small>
+              </div>
+              <button type="submit" class="btn btn-primary h-btn--blue">Submit</button>
+            </form>
+          </div>
+          <!--/END email capture form -->
+        </div>
+
+        <!-- /END Sidebar content  
+        -------------------------------------------------------------------------------------->
+
+
+      </div> <!-- End Bootstrap column sidebar -->
+
+      <!-- Bootstrap column for CONTENT, full width for small screens -->
+      <div class="col-12 col-lg-8 col-xl-9 bg-color--grey--150 min-h--100pc">
+        <!-- sticky navigation toggle for small screens -->
+        <div id="sidebarCollapse" class="d-lg-none row no-gutter d-flex text-white p-3 bg-color--black">
+          <span id="collapse-text" class="menu-collapsed text-white">☰ Toggle navigation</span>
+          <!--a href="" onclick="openNav()">
+            <span id="collapse-text" class="menu-collapsed text-white">☰ Toggle navigation</span>
+          </a>--->
+
+        </div>
+
+        <!-- /END sticky navigation toggle-->
+
+
+        <!-- ******************************************************************************** -->
+        <!-- ******************      Collapsable sidebar       ****************************** -->
+        <!-- ******************************************************************************** -->
+
+        <nav id="sidebar" class="active pt-5 px-3">
+
+          <div id="dismiss">
+            <i class="fas fa-times"></i>
+          </div>
+
+          <h4 class="mb-4 text__font-size--18 font-weight-bold text-white pl-3">
+            {{ page.guide-title }}</h4>
+
+
+          <!-- List of chapters : TODO REPLACE WITH NAV-->
+          <ol class="text-left chapter-nav position-relative">
+            {% for sorted_chapters in site.categories.[page.category] reversed %}
+            {% assign active = false %}
+            {% if sorted_chapters.chapter-number==page.chapter-number %}
+            {% assign active = true %}
+            {% endif%}
+
+            <!-- Loop over all the chapters of this guide -->
+            <li
+              class="{% if active %} active-nav text-color--light--{{page.guide-name}}  {% endif%} position-relative mt-2">
+              <a {% if active == false %} href="{{sorted_chapters.url}}" {% endif %}>{{ sorted_chapters.title }}</a>
+            </li>
+
+            {% endfor %}
+            <!-- /END chapter loop -->
+          </ol>
+
+        </nav>
+
+        <!-- Chapter HERO for first chapter-->
+        {% if true %}
+        <div class="row align-items-center">
+          <!-- ******************************************************************************** -->
+          <!-- ******************        GUIDE HERO SECTION      ****************************** -->
+          <!-- ******************************************************************************** -->
+          <div
+            class="container-fluid {% if page.background-pattern %} {{ page.background-pattern }} {% endif %} bg-{{page.guide-name}}">
+            <div class="container my-3 max-w--670">
+              <div class="row d-flex align-items-center">
+                <div class="col-lg-8 col-sm-12 col-md-8 text-sm-center text-lg-left">
+                  <h1
+                    class="mt-5 mt-md-0 text-center text__font-size--48 text-lg-left {% if page.dark-background == "true" %} text-white text__shadow--light {% endif %}">
+                    {{page.guide-title}}</h1>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-4 d-flex align-items-center">
+                  <div class="d-block text-center mt-3 mb-3 guide-header mx-auto mx-lg-0">
+                    <img src="{{ page.featured-image }}" class="w-100pc  max-w--200" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Bootstrap container for the chapter content-->
+        <div class="container mt-5 pb-5">
+          <!------------------------------------------------------------------------------------
+          START CHAPTER CONTENT
+          -------------------------------------------------------------------------------------->
+          <div class="row mx-auto max-w--650">
+            <h1 class="mb-4 d-block w-100pc text-color--dark--{{page.guide-name}} ">{{ page.title }}</h1>
+            <div class="text__font-size--18">
+              {{ content }}
+            </div>
+          </div> <!-- end chapter content -->
+
+          <!-- PREV/NEXT Chapter navigation -->
+          <div class="row mx-auto mt-5">
+            <div class="col-lg-6 p-0 pr-lg-3">
+              <!-- Next chapter panel -->
+              <a href="#" class="link--no-decoration link--dark-grey">
+                <div class="panel panel__hover--shadow p-4 mb-3">
+                  <div class="d-flex justify-content-between">
+                    <!-- arrow left -->
+                    <div class="d-flex align-items-center">
+
+                      <i
+                        class="fas fa-arrow-left circle-icon text-white border-radius--50 p--10 bg-color--dark--{{page.guide-name}}"></i>
+                    </div>
+                    <!-- chapter title -->
+                    <div class="text-left pl-4 w-100pc">
+                      <span>Previous</span>
+                      <h3 class="card-title">Chapter index</h3>
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6 p-0 pl-lg-3">
+              <!-- Next chapter panel -->
+              <a href="#" class="link--no-decoration link--dark-grey">
+                <div class="panel panel__hover--shadow p-4">
+                  <div class="d-flex justify-content-between">
+                    <!-- chapter title -->
+                    <div class="text-right pr-4 w-100pc">
+                      <span>Next</span>
+                      <h3 class="card-title">What is on-page SEO?</h3>
+
+                    </div>
+                    <!-- arrow right -->
+                    <div class="d-flex align-items-center">
+
+                      <i
+                        class="fas fa-arrow-right circle-icon text-white border-radius--50 p--10 bg-color--dark--{{page.guide-name}}"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div><!-- /END PREV/NEXT Chapter navigation -->
+        </div><!-- /END content container -->
+
+        <!-- Overlay class to darken screen with the collapsable sidebar on mobile devices -->
+        <div class="overlay d-lg-none">
+        </div>
+      </div>
+
+
+    </div><!-- /END Bootstrap row -->
+  </div><!-- /END main content container-->
+
+  <!-- TODO: hide footer on learning home page -->
+  {% include learning-footer.html %}
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src='/assets/js/scripts.js'></script>
+  <script type="text/javascript" src="/assets/js/mixitup.min.js"></script>
+  <script type="text/javascript" src='/assets/js/productslisting.js'></script>
+
+  <!-- slider slick -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $('#sidebarCollapse').on('click', function () {
+        // open sidebar
+        $('#sidebar').removeClass('active');
+        // fade in the overlay
+        $('.overlay').addClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      $('#dismiss, .overlay').on('click', function () {
+        // hide sidebar
+        $('#sidebar').addClass('active');
+        // hide overlay
+        $('.overlay').removeClass('active');
+      });
+
+
+    });
+  </script>
+
+
+</body>
+
+</html>

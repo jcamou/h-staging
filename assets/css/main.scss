@@ -63,6 +63,7 @@
  * Selection-panel......Bordered panels used for menus and selections. 
  * Wells................Section without border or shadow to hightlight text or call to actions.
  * Promo-panel..........Promotional container. 
+ * Sticky sidebar.......Sticky sidebar (Learning hub guides).
  *
  * HELPERS
  * Type.................Text helpers.
@@ -80,8 +81,8 @@
  * #SETTINGS
  */
 @import "modules/settings.colors";
-// @import "modules/settings.global";
-@import "modules/settings.global--order-reports";
+@import "modules/settings.global";
+// @import "modules/settings.global--order-reports";
 
 
 
@@ -135,6 +136,8 @@
 @import "modules/components.notifications";
 @import "modules/components.vendor-assets";
 @import "modules/components.bordered-panel";  //Need to revaluate this component
+@import "modules/components.guide-panel";  //Guide panel layout ***********************************************
+@import "modules/components.breadcrums";  //Learning hub breadcrums ***********************************************
 @import "modules/components.h-forms";
 @import "modules/components.sections";
 @import "modules/components.toc-nav";
@@ -151,6 +154,7 @@
 @import "modules/components.selection-panel";
 @import "modules/components.wells";
 @import "modules/components.promo-panel";
+@import "modules/components.sticky-sidebar"; // learninghub guide
 
 
 /**
@@ -161,6 +165,9 @@
 @import "modules/helpers.spacing";
 @import "modules/helpers.color";
 @import "modules/helpers.clearfix";
+@import "modules/helpers.patterns";
+@import "modules/helpers.borders";
+@import "modules/helpers.position";
 
 
 /**

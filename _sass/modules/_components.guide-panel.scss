@@ -1,0 +1,132 @@
+/*------------------------------------*\
+    #GUIDE-PANEL
+\*------------------------------------*/
+
+
+.guide-panel {
+    position               : relative;
+    padding                : 0;
+    background-color       : white;
+    border-radius          : 4px;
+    box-shadow             : $box-shadow;
+}
+
+.guide-panel .topic-header{
+    width: 100%;
+    
+    h2{
+      margin-bottom: 10px;
+    }
+
+    img{
+      max-width: 100px;
+    }
+}
+
+.guide-panel .guide-header{
+    width: 100%;
+    
+    h2{
+      margin-bottom: 10px;
+    }
+
+    img{
+      max-width: 250px;
+    }
+}
+
+
+.panel__bg--cover{
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.guide-panel i{
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+
+.guide-panel__guide-list{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+
+  li{
+    margin-bottom: 10px;
+  }
+  
+  li a {
+    color: black;
+  }
+
+  li i{
+    margin-left: -4px;
+  }
+}
+
+.guide-form{
+    input{
+        background-color: rgba(255,255,255,0.1);
+        border: none;
+        border-bottom: 2px solid #ccc;
+        border-radius: 0; 
+    }  
+
+    label{
+      color: white;
+    }
+
+    input{
+      max-width: 230px;
+    }
+
+    img.flourish{
+      position: absolute; left: -55px; top: 30px;
+    }
+}
+
+.bg-fit{
+    background-size: cover;
+}
+
+// SEO 
+// ---------------------------------
+.bg-color--seo{  background-color: $color__seo--base !important; }
+.bg-img--seo{  background-image: url("/assets/images/imgs/img__bg--blue.jpg");  }
+.text-color--seo{  color: $color__seo--base; }
+
+// SEO Sales
+// ---------------------------------
+.bg-color--seo-sales{    background-color: $color__seo-sales--base !important;}
+.bg-img--seo-sales{  background-image: url("/assets//images/imgs/img__bg--yellow.jpg");  }
+.text-color--seo-sales{  color: $color__seo-sales--base; }
+
+
+// Content Marketing
+// ---------------------------------
+.bg-color--content-marketing{ background-color: $color__content-marketing--base !important;}
+.bg-img--content-marketing{  background-image: url("/assets/images/imgs/img__bg--purple.gif"); }
+.text-color--content-marketing{  color: $color__content-marketing--base; }
+
+// PPC
+// ---------------------------------
+.bg-color--ppc{    background-color: $color__ppc--base !important;}
+.bg-img--ppc{  background-image: url("/assets/images/imgs/img__bg--green.jpg"); }
+.text-color--ppc{  color: $color__ppc--base; }
+
+
+
+// Background colors for the different guides 
+
+// SEO
+.bg-color--on-page-seo{   background-color: #ffffff; }
+.bg-color--local-seo{   background-color: #1D77C9; }
+.bg-color--e-commerce-seo{   background-color: #c0e7de !important; }
+
+// On-page-SEO
+.text-color--light--on-page-seo{  color: #FFCC00; }
+.text-color--dark--on-page-seo{  color: #10C0C5; }
+.bg-color--dark--on-page-seo{ background-color: #10C0C5; }
+.bg--on-page-seo{ /* background setting if no pattern class defined */ }
