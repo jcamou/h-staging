@@ -16,6 +16,13 @@
 
 }
 
+.h-pill__full-width {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+}
+
 .h-pill--med {
   font-size: 12px;
   font-weight: $font-weight--bold;
@@ -25,6 +32,10 @@
   padding: 2px 6px;
 }
 
+.h-pill__blue--100 {
+  background-color: $blue--100;
+  color: $blue--600;
+}
 
 .h-pill__blue--500 {
   background-color: $blue--primary;
