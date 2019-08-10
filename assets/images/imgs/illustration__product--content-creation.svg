@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="52px" viewBox="0 0 78 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 19</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 52 78 52 78 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-2" transform="translate(-554.000000, -104.000000)">
+            <g id="MegaMenu" transform="translate(0.000000, -0.000000)">
+                <g id="cat-1" transform="translate(554.004000, 104.000000)">
+                    <g id="Group-19">
+                        <polygon id="Fill-1" fill="#FFFFFF" points="1 50 39 50 39 0 1 0"></polygon>
+                        <path d="M1,50 L39,50 L39,0 L1,0 L1,50 Z M3,48.001 L37,48.001 L37,2 L3,2 L3,48.001 Z" id="Fill-2" fill="#464646"></path>
+                        <g id="Group-18">
+                            <path d="M25,8 L7,8 C6.448,8 6,7.553 6,7 C6,6.447 6.448,6 7,6 L25,6 C25.552,6 26,6.447 26,7 C26,7.553 25.552,8 25,8" id="Fill-3" fill="#464646"></path>
+                            <path d="M33,27 L7,27 C6.448,27 6,26.553 6,26 C6,25.447 6.448,25 7,25 L33,25 C33.552,25 34,25.447 34,26 C34,26.553 33.552,27 33,27" id="Fill-5" fill="#9B9B9B"></path>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-8"></g>
+                            <polygon id="Fill-7" fill="#298EE9" mask="url(#mask-2)" points="6 20 34 20 34 11 6 11"></polygon>
+                            <path d="M33,32 L7,32 C6.448,32 6,31.553 6,31 C6,30.447 6.448,30 7,30 L33,30 C33.552,30 34,30.447 34,31 C34,31.553 33.552,32 33,32" id="Fill-9" fill="#9B9B9B" mask="url(#mask-2)"></path>
+                            <path d="M25,37 L7,37 C6.448,37 6,36.553 6,36 C6,35.447 6.448,35 7,35 L25,35 C25.552,35 26,35.447 26,36 C26,36.553 25.552,37 25,37" id="Fill-10" fill="#9B9B9B" mask="url(#mask-2)"></path>
+                            <polygon id="Fill-11" fill="#FFFFFF" mask="url(#mask-2)" points="41 26 77 26 77 0 41 0"></polygon>
+                            <path d="M41,26 L77,26 L77,0 L41,0 L41,26 Z M43,24 L75,24 L75,2 L43,2 L43,24 Z" id="Fill-12" fill="#464646" mask="url(#mask-2)"></path>
+                            <polygon id="Fill-13" fill="#E1443D" mask="url(#mask-2)" points="45 22 73 22 73 4 45 4"></polygon>
+                            <polygon id="Fill-14" fill="#E1443D" mask="url(#mask-2)" points="45 22 73 22 73 13 45 13"></polygon>
+                            <path d="M62.1094,13.9004 L57.3174,16.6504 C56.8864,16.8904 56.3444,16.5834 56.3444,16.0794 L56.3444,10.4154 C56.3444,9.9144 56.8834,9.6044 57.3174,9.8434 L62.1094,12.7564 C62.5554,13.0074 62.5554,13.6534 62.1094,13.9004 M58.9594,6.4944 C55.2284,6.4944 52.2064,9.5164 52.2064,13.2474 C52.2064,16.9774 55.2284,20.0004 58.9594,20.0004 C62.6894,20.0004 65.7124,16.9774 65.7124,13.2474 C65.7124,9.5164 62.6894,6.4944 58.9594,6.4944" id="Fill-15" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                            <path d="M39,52 L1,52 C0.448,52 0,51.553 0,51 C0,50.447 0.448,50 1,50 L39,50 C39.552,50 40,50.447 40,51 C40,51.553 39.552,52 39,52" id="Fill-16" fill="#EAEAEA" mask="url(#mask-2)"></path>
+                            <path d="M77,28 L41,28 C40.447,28 40,27.553 40,27 C40,26.447 40.447,26 41,26 L77,26 C77.553,26 78,26.447 78,27 C78,27.553 77.553,28 77,28" id="Fill-17" fill="#EAEAEA" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

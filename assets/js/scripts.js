@@ -632,3 +632,41 @@ $(document).ready(function () {
     ]
   });
 });
+
+
+// megamenu slider initialisation
+$(document).ready(function () {
+  $('.megaslider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});

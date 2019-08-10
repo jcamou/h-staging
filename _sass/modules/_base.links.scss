@@ -32,6 +32,15 @@ a {
   }
 }
 
+.link--dark-blue {
+  color          : $blue--900 !important;
+
+  &:hover, &:focus {
+    transition   : color 0ms;
+    color        : $blue--primary !important;
+  }
+}
+
 
 .link--dark-grey {
   color          : $color__gray--dark !important;
@@ -85,6 +94,11 @@ a {
     color           : white;
   }
 }
+
+.link--bold{
+    font-weight: 600;
+}
+
 
 .link--no-decoration{
   text-decoration: none;
