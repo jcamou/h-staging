@@ -642,6 +642,7 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     arrows: true,
     responsive: [
       {
@@ -663,10 +664,31 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       }
     ]
   });
+});
+
+// opening the megamenu by adding/removing the closed class
+function toggleMegaMenu() {
+  var x = document.getElementById("megamenu-content");
+
+  x.classList.toggle("closed");
+}
+
+// closing the megamenu
+function closeMegaMenu() {
+  var x = document.getElementById("megamenu-content");
+  x.classList.add("closed");
+}
+
+// closing the megamenu by clicking outside of it
+window.addEventListener('mouseup', function (e) {
+  var megamenu = $("#megamenu-content");
+  if (!$('#open').is(e.target) && !megamenu.is(e.target) && megamenu.has(e.target).length == 0) {
+    closeMegaMenu();
+  }
 });

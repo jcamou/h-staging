@@ -64,6 +64,7 @@
  * Wells................Section without border or shadow to hightlight text or call to actions.
  * Promo-panel..........Promotional container. 
  * Sticky sidebar.......Sticky sidebar (Learning hub guides).
+ * Megamenu.............Products megamenu dropdown.
  *
  * HELPERS
  * Type.................Text helpers.
@@ -155,6 +156,7 @@
 @import "modules/components.wells";
 @import "modules/components.promo-panel";
 @import "modules/components.sticky-sidebar"; // learninghub guide
+@import "modules/components.megamenu"; // learninghub guide
 
 
 /**

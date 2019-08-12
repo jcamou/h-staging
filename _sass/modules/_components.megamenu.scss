@@ -1,0 +1,116 @@
+///*------------------------------------*\
+//    #MEGAMENU
+//\*------------------------------------*/
+
+$megamenu-height: 400px;
+
+
+#megamenu-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 15px;
+}
+
+#megamenu-content.closed {
+    margin-top: -550px;
+    transition: opacity 0 ease, margin 1s ease;
+    opacity: 0;
+}
+
+// fixed image height to keep menu items aligned
+.product-featured-image {
+    height: 80px;
+}
+
+.megamenu-container {
+    background-color: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.megaslider {
+    height: 400px;
+}
+
+#megamenu-content hr{
+  border-width: 2px;
+  border-color: #f2f2f2;
+}
+
+.megamenu-footer {
+    background-color: #f7f7f7;
+}
+
+// min height to keep product list aligned
+.megaslider p.product-description {
+    min-height: 70px;
+}
+
+.megaslider ul.product-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+// close button styling
+.close-button {
+    position: absolute;
+    font-size: 1.5em;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+
+// Slick: hide dots if only 1 page 
+
+.megaslider .slick-dots {
+    > li {
+        display: inline-block;
+    }
+    > li:only-child {
+        display: none;
+    }
+}
+
+// Slick slider arrows styling
+.megaslider .slick-prev,
+.megaslider .slick-next {
+    margin: 10px;
+}
+
+.megaslider .slick-prev:before,
+.megaslider .slick-next:before {
+    font-family: "slick";
+    font-size: 40px;
+    line-height: 1;
+    color: $blue--primary;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.megaslider .slick-prev:before {
+    content: "‹";
+}
+
+[dir="rtl"] .megaslider .slick-prev:before {
+    content: "›";
+}
+
+[dir="rtl"] .megaslider .slick-next {
+    left: -10px;
+    right: auto;
+}
+
+.megaslider .slick-next:before {
+    content: "›";
+}
+
+[dir="rtl"] .megaslider .slick-next:before {
+    content: "‹";
+}
