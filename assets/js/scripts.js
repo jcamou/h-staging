@@ -644,6 +644,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     adaptiveHeight: true,
     arrows: true,
+    prevArrow: "<img class='a-left control-c prev slick-prev' src='/assets/images/icons/icon__arrow--left--blue.svg'>",
+    nextArrow: "<img class='a-right control-c next slick-next' src='/assets/images/icons/icon__arrow--right--blue.svg'>",
     responsive: [
       {
         breakpoint: 1100,

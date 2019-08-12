@@ -24,6 +24,15 @@ $megamenu-height: 400px;
 // fixed image height to keep menu items aligned
 .product-featured-image {
     height: 80px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.product-featured-image img{
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .megamenu-container {
@@ -42,11 +51,18 @@ $megamenu-height: 400px;
 
 .megamenu-footer {
     background-color: #f7f7f7;
+
+    @media screen and (max-width: 768px) { 
+    font-size: 12px !important;
+  }
 }
 
 // min height to keep product list aligned
 .megaslider p.product-description {
     min-height: 70px;
+    @media screen and (max-width: 768px) { 
+        font-size: 14px !important;
+  }
 }
 
 .megaslider ul.product-list {
@@ -80,9 +96,14 @@ $megamenu-height: 400px;
 // Slick slider arrows styling
 .megaslider .slick-prev,
 .megaslider .slick-next {
-    margin: 10px;
+    margin: 12px;
+    width: 25px !important;
+    height: 25px !important;
+    z-index: 99;
 }
 
+
+/*
 .megaslider .slick-prev:before,
 .megaslider .slick-next:before {
     font-family: "slick";
@@ -113,4 +134,4 @@ $megamenu-height: 400px;
 
 [dir="rtl"] .megaslider .slick-next:before {
     content: "‹";
-}
+}*/
