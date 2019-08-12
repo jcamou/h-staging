@@ -1,0 +1,22 @@
+///*------------------------------------*\
+//    #ILLUSTRATIONS
+//\*------------------------------------*/
+
+.illustrations__cta {
+  position: absolute;
+  width: 450px;
+  bottom: 0;
+}
+@media only screen and (max-width: 1000px) {
+  .illustrations__cta {
+    display: none;
+  }
+}
+
+.illustrations__cta--right {
+  right: 0;
+}
+
+.illustrations__cta--left {
+  left: 0;
+}

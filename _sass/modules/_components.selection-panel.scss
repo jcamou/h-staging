@@ -14,6 +14,7 @@
   text-align      : center;
   transition      : all $transition;
   cursor          : pointer;
+  height          : 100%;
 
   &:hover, &:focus {
     border-color   : $red--primary;

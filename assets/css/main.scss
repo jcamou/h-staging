@@ -16,6 +16,7 @@
  * Type.................Typography styles.
  * Links................anchor styles.
  * Print................Print reset styles.
+ * Lists................Base styles for ul, ol, and dd. 
  *
  * OBJECTS
  * Simple list..........Simplified list elements.
@@ -32,6 +33,7 @@
  * Segmented-list.......Flexbox-list seperated by thin divider.
  * Dropdown.............You guessed it, dropdowns.
  * Ribbon...............Floating ribbon that sits above panel. Used for promos, discounts, etc..
+ * Illustrations........Illustrations around the website.
  *
  * COMPONENTS
  * Panels...............Card-like panels used on ther dashboard.
@@ -64,6 +66,7 @@
  * Wells................Section without border or shadow to hightlight text or call to actions.
  * Promo-panel..........Promotional container. 
  * Sticky sidebar.......Sticky sidebar (Learning hub guides).
+ * Footer...............Styles for the homepage style footer.
  *
  * HELPERS
  * Type.................Text helpers.
@@ -98,6 +101,7 @@
 @import "modules/base.page";
 @import "modules/base.links";
 @import "modules/base.print";
+@import "modules/base.lists";
 
 
 
@@ -119,6 +123,7 @@
 @import "modules/objects.segmented-list";
 @import "modules/objects.dropdown";
 @import "modules/objects.ribbon";
+@import "modules/objects.illustrations";
 
 
 /**
@@ -155,6 +160,7 @@
 @import "modules/components.wells";
 @import "modules/components.promo-panel";
 @import "modules/components.sticky-sidebar"; // learninghub guide
+@import "modules/components.footer";
 
 
 /**

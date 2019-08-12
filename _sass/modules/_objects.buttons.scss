@@ -65,6 +65,30 @@
   }
 }
 
+.btn__cta {
+  font-weight                           : 800;
+  font-size: 1em;
+  height                                : 50px;
+  padding                               : 12px 40px;
+  box-shadow                            : 0 20px 50px 0 rgba(34, 43, 55, 0.1);
+  transition                            : background-color 0.29s ease-in-out 0s;
+}
+
+.btn__cta--pill {
+  border-radius                         : 25px;
+}
+
+.btn__cta--white {
+  background-color                      : white;
+  color                                 : $red--primary;
+  border                                : 2px solid white;
+
+  &:hover, &:focus {
+    background-color                      : rgba(255, 255, 255, 0.1);
+    color                                 : white;
+  }
+}
+
 // Red
 
 .btn--red {

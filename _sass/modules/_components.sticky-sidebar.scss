@@ -13,10 +13,19 @@
 
 .chapter-nav{
   color: $color__gray--base;
+  list-style-type: decimal;
 }
 
 .chapter-nav li a {
   color: $color__gray--base ;
+}
+
+.active-nav {
+  color: #FFCC00;
+}
+
+li.active-nav a {
+  color: #FFCC00 !important;
 }
 
 .active-nav::before {
@@ -25,6 +34,7 @@
   left: -30px;
   top: -5px;
   font-size: 21px;
+  color: #FFCC00;
 }
 
 #sidebarCollapse{
