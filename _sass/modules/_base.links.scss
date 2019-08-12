@@ -77,6 +77,14 @@ a {
 
 }
 
+.link--white--hover-red {
+  color          : white;
+
+  &:hover, &:focus {
+    color        : $red--primary;
+  }
+}
+
 .link__highlight {
   padding: 6px 10px;
   text-decoration: none;
